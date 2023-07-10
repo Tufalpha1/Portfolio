@@ -1,0 +1,60 @@
+import React from 'react'
+import Link from 'next/link';
+import Image from 'next/image';
+import about from '../../public/assets/about.svg'
+
+const About = () => {
+  return (
+    <section
+      id="about"
+      className="w-full md:h-screen p-2 flex items-center py-16"
+    >
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+        <div className="col-span-2 px-8">
+          <p className="uppercase text-xl tracking-widest text-[#1190CB]">
+            About me
+          </p>
+          <h2 className="py-4">Who I Am</h2>
+          <p className="py-2 text-black text-sm sm:text-lg">
+            I am a passionate web developer with a strong focus on React/Next.js
+            and Node.js. I thrive on building dynamic and interactive web
+            applications that provide engaging user experiences. With a solid
+            foundation in front-end development and a growing expertise in
+            backend technologies, including databases, I am continuously
+            expanding my skill set to become a well-rounded developer.
+          </p>
+          <p className="py-2 text-black text-sm sm:text-lg">
+            Continuous learning is at the core of my professional ethos. I
+            actively seek out new technologies, tools, and best practices to
+            stay up-to-date with the rapidly evolving web development landscape.
+          </p>
+          <Link href="/#projects">
+            <div className="py-12">
+              <div className="grid gap-8 items-start sm:justify-start justify-center">
+                <div className="relative group">
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-[#43cea2] to-[#185a9d] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                  <button className="relative px-7 py-4 bg-slate-100 rounded-lg leading-none flex divide-x divide-gray-600">
+                    <span className="pl-6 text-black group-hover:text-gray-600 transition duration-200 text-sm sm:text-lg">
+                      Check out some of my projects &rarr;
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </Link>
+        </div>
+        <div className="w-full h-auto m-auto shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          <Image
+            src={about}
+            className="rounded-xl"
+            alt="/"
+            width={500}
+            height={300}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default About
