@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
-html {
+* {
   scroll-behavior: smooth;
 }
 
@@ -37,7 +36,22 @@ html {
       background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #81bbd6 100%);
       filter: blur(123px);
     }
-  /* button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#1190CB] to-[#81bbd6] text-white
-  } */
 }
+
+@layer utilities {
+  .shine:hover {
+    animation: shine 1.5s infinite;
+  }
+
+  @keyframes shine {
+    0% {
+      background-position: right;
+    }
+
+    100% {
+      background-position: left;
+    }
+  }
+}
+
+/* linear-gradient(to right, rgb(56, 189, 248), rgb(103, 232, 249)) */

@@ -1,36 +1,59 @@
 "use client";
-import React, {useState} from "react";
-import navLogo from "../../public/navLogo.png"
+import React, { useState, useEffect } from "react";
+import navLogo from "../../public/navLogo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
-const Navbar = () => {
+export const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
-    const [nav, setNav] = useState(false);
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
 
-     const handleNav = () => {
-       setNav(!nav);
-     };
+    window.addEventListener("scroll", handleShadow);
+
+    return () => {
+      window.removeEventListener("scroll", handleShadow);
+    };
+  }, [setShadow]);
+
 
   return (
-    <nav className="fixed w-full h-20 shadow-xl z-[100] flex bg-slate-100">
+    <nav
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-slate-100"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
         <Image src={navLogo} alt="Zain's Logo" width={80} height={40} />
         <div>
           <ul className="hidden font-medium md:flex">
-            <Link href={"/"}>
+            <Link href={"/"} scroll={true}>
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/#about"} scroll={true}>
               <li className="ml-10 text-sm uppercase hover:border-b">About</li>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/#skills"} scroll={true}>
               <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/#projects"} scroll={true}>
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Projects
               </li>
@@ -38,7 +61,7 @@ const Navbar = () => {
             <li className="ml-10 text-sm uppercase hover:border-b">
               <Link href="/resume">Resume</Link>
             </li>
-            <Link href={"/"}>
+            <Link href={"/#contact"} scroll={true}>
               <li className="ml-10 text-sm uppercase hover:border-b">
                 Contact
               </li>
@@ -59,7 +82,7 @@ const Navbar = () => {
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[65%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
-              : "fixed left-[-200%] top-0 p-10 ease-in duration-500"
+              : "fixed left-[-200%] top-0 bottom-0 p-10 ease-in duration-500"
           }
         >
           <div>
@@ -78,22 +101,22 @@ const Navbar = () => {
           </div>
           <div className="py-4 flex flex-col">
             <ul className="font-medium uppercase">
-              <Link href={"/"}>
+              <Link onClick={() => setNav(false)} href={"/"}>
                 <li className="py-4 text-sm">Home</li>
               </Link>
-              <Link href={"/"}>
+              <Link onClick={() => setNav(false)} href={"/#about"}>
                 <li className="py-4 text-sm">About</li>
               </Link>
-              <Link href={"/"}>
+              <Link onClick={() => setNav(false)} href={"/#skills"}>
                 <li className="py-4 text-sm">Skils</li>
               </Link>
-              <Link href={"/"}>
+              <Link onClick={() => setNav(false)} href={"/#projects"}>
                 <li className="py-4 text-sm">Projects</li>
               </Link>
               <Link href={"/"}>
                 <li className="py-4 text-sm">Resume</li>
               </Link>
-              <Link href={"/"}>
+              <Link onClick={() => setNav(false)} href={"/#contact"}>
                 <li className="py-4 text-sm">Contact</li>
               </Link>
             </ul>
@@ -121,4 +144,3 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
