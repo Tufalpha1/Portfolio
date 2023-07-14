@@ -35,7 +35,7 @@ export const Hero = () => {
             integrating back-end technologies.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <a
+            <Link
               href="https://www.linkedin.com/in/mzain-ul-abideen/"
               target="_blank"
               rel="noreferrer"
@@ -43,8 +43,8 @@ export const Hero = () => {
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaLinkedinIn />
               </div>
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://github.com/Tufalpha1"
               target="_blank"
               rel="noreferrer"
@@ -52,13 +52,13 @@ export const Hero = () => {
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <FaGithub />
               </div>
-            </a>
+            </Link>
             <Link href="/#contact">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <AiOutlineMail />
               </div>
             </Link>
-            <Link href="/resume">
+            <Link href="https://teal-jacky-38.tiiny.site">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                 <BsFillPersonLinesFill />
               </div>

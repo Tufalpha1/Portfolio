@@ -9,13 +9,15 @@ const Contact = () => {
           <p className="text-xl tracking-widest uppercase text-[#1190CB] text-center">
             Contact
           </p>
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pt-6">Get in touch</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl pt-6">
+            Get in touch
+          </h2>
           <p className="mt-2 text-lg leading-8 text-gray-600">
             {`I am available for freelance work. Contact me and we'll talk.`}
           </p>
         </div>
         <form
-          action="#"
+          action="https://getform.io/f/f8164cef-4da3-4cb8-85c4-8fdf5384983c"
           method="POST"
           className="mx-auto mt-16 max-w-xl sm:mt-20"
         >
@@ -125,7 +127,7 @@ const Contact = () => {
           </div>
           <div className="mt-10">
             <button
-              type="button"
+              type="submit"
               className="text-white block w-full bg-gradient-to-r from-[#2193b0] to-[#6dd5ed] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
             >
               {`Let's talk`}
