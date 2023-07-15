@@ -23,14 +23,15 @@ export const Navbar = () => {
         setShadow(false);
       }
     };
-
-    window.addEventListener("scroll", handleShadow);
+    if (window != undefined)
+    {
+      window.addEventListener("scroll", handleShadow);
+    }
 
     return () => {
       window.removeEventListener("scroll", handleShadow);
     };
-  }, [setShadow]);
-
+  }, [shadow]);
 
   return (
       <nav
