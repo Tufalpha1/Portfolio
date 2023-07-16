@@ -26,10 +26,10 @@ export const Hero = () => {
           <p className="uppercase text-sm tracking-widest text-gray-600">
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className="py-4 text-black">
+          <h1 className="py-2 md:py-4 text-black">
             Hi, I&#39;m <span className="text-[#1190CB]"> Zain</span>
           </h1>
-          <h1 className="py-2 text-black">A Front-End Web Developer</h1>
+          <h1 className="md:py-2 text-black">A Front-End Web Developer</h1>
           <p className="py-4 text-black sm:max-w-[70%] m-auto">
             I’m focused on building responsive front-end web applications
             integrating back-end technologies.
