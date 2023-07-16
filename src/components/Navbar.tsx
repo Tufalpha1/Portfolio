@@ -105,7 +105,7 @@ export const Navbar = () => {
                   <li className="py-4 text-sm">About</li>
                 </Link>
                 <Link onClick={() => setNav(false)} href={"/#skills"}>
-                  <li className="py-4 text-sm">Skils</li>
+                  <li className="py-4 text-sm">Skills</li>
                 </Link>
                 <Link onClick={() => setNav(false)} href={"/#projects"}>
                   <li className="py-4 text-sm">Projects</li>
