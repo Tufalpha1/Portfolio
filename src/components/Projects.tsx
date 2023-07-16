@@ -25,7 +25,7 @@ const Projects = () => {
             projectUrl="/eshop"
             tech="Next JS"
           />
-          <div className='col-span-2'> 
+          <div className='md:col-span-2'> 
             <ProjectItem
               title="Cybersecurity Company Website"
               backgroundImg={cysecopsImg}
