@@ -15,7 +15,9 @@ const Footer = () => {
           className="w-20 h-20 mx-auto my-4"
           alt="company-logo"
         />
-        <p className='uppercase tracking-widest font-'>Innovation. Collaboration. Success.</p>
+        <p className="uppercase tracking-widest font-">
+          Innovation. Collaboration. Success.
+        </p>
         <div className="flex items-center justify-evenly max-w-[330px] m-auto p-4 gap-8">
           <a
             href="https://www.linkedin.com/in/mzain-ul-abideen/"
@@ -40,7 +42,7 @@ const Footer = () => {
               <AiOutlineMail />
             </div>
           </Link>
-          <Link href="/resume">
+          <Link href="https://teal-jacky-38.tiiny.site">
             <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
               <BsFillPersonLinesFill />
             </div>
