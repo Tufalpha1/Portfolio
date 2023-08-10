@@ -1,10 +1,22 @@
+'use client';
 import React from 'react';
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Link from 'next/link';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 export const Hero = () => {
+  const [text] = useTypewriter({
+    words: [
+      "Developer",
+      "Designer",
+    ],
+    loop: true,
+    deleteSpeed: 90,
+    typeSpeed: 100,
+  });
+
   return (
     <section id="home" className="w-full h-screen text-center ">
       <div className="relative isolate px-6 pt-14 lg:px-8">
@@ -29,7 +41,17 @@ export const Hero = () => {
           <h1 className="py-2 md:py-4 text-black">
             Hi, I&#39;m <span className="text-[#1190CB]"> Zain</span>
           </h1>
-          <h1 className="md:py-2 text-black">A Front-End Web Developer</h1>
+          <h1 className="md:py-2 text-black">
+            A Front-End Web {text}{" "}
+            <span>
+              {" "}
+              <Cursor
+                cursorStyle="|"
+                cursorBlinking={false}
+                cursorColor="#1190CB"
+              />
+            </span>
+          </h1>
           <p className="py-4 text-black sm:max-w-[70%] m-auto">
             I’m focused on building responsive front-end web applications
             integrating back-end technologies.

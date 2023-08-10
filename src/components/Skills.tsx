@@ -8,6 +8,7 @@ import Tailwind from "../../public/assets/skills/tailwind.png";
 import NextJS from "../../public/assets/skills/nextjs.png";
 import NodeJS from "../../public/assets/skills/node.png";
 import Express from "../../public/assets/skills/express.png";
+import Figma from "../../public/assets/skills/figma.png";
 
 
 const Skills = () => {
@@ -94,12 +95,12 @@ const Skills = () => {
             <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src={Express}
+                src={Figma}
                 alt="express"
                 width={158}
                 height={48}
               />
-              <h3>Express JS</h3>
+              <h3>Figma</h3>
             </div>
           </div>
         </div>
