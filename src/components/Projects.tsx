@@ -1,8 +1,9 @@
-import React from 'react'
-import ProjectItem from './ProjectItem';
-import hoobankImg from '../../public/assets/projects/hoobank.png';
+import React from "react";
+import ProjectItem from "./ProjectItem";
+import hoobankImg from "../../public/assets/projects/hoobank.png";
 import eshopImg from "../../public/assets/projects/eshop.png";
-import cysecopsImg from "../../public/assets/projects/cysecops.png"; 
+import cysecopsImg from "../../public/assets/projects/cysecops.png";
+import aucssImg from "../../public/assets/projects/aucss.png";
 
 const Projects = () => {
   return (
@@ -25,18 +26,22 @@ const Projects = () => {
             projectUrl="/eshop"
             tech="Next JS"
           />
-          <div className='md:col-span-2'> 
-            <ProjectItem
-              title="Cybersecurity Company Website"
-              backgroundImg={cysecopsImg}
-              projectUrl="/cysecops"
-              tech="Next JS"
-            />
-          </div>
+          <ProjectItem
+            title="Cybersecurity Company Website"
+            backgroundImg={cysecopsImg}
+            projectUrl="/cysecops"
+            tech="Next JS"
+          />
+          <ProjectItem
+            title="Air University Cyber Security Society Website"
+            backgroundImg={aucssImg}
+            projectUrl="/aucss"
+            tech="Next JS"
+          />
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Projects
+export default Projects;
