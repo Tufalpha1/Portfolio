@@ -53,8 +53,8 @@ export const Hero = () => {
             </span>
           </h1>
           <p className="py-4 text-black sm:max-w-[70%] m-auto">
-            I’m focused on building responsive front-end web applications
-            integrating back-end technologies.
+            I’m focused on building responsive front-end web applications with a
+            keen UI/UX interest, integrating back-end technologies.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link
