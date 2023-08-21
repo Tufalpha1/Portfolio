@@ -3,12 +3,18 @@ import Image from "next/image";
 import Html from "../../public/assets/skills/html.png";
 import Css from "../../public/assets/skills/css.png";
 import Javascript from "../../public/assets/skills/javascript.png";
+import Actions from "../../public/assets/skills/actions.png";
 import ReactImg from "../../public/assets/skills/react.png";
 import Tailwind from "../../public/assets/skills/tailwind.png";
 import NextJS from "../../public/assets/skills/nextjs.png";
 import NodeJS from "../../public/assets/skills/node.png";
+import Mysql from "../../public/assets/skills/mysql.png";
+import Mongodb from "../../public/assets/skills/mongo.png";
 import Express from "../../public/assets/skills/express.png";
 import Figma from "../../public/assets/skills/figma.png";
+import Docker from "../../public/assets/skills/docker.png";
+import Git from "../../public/assets/skills/git.png";
+import Cypress from "../../public/assets/skills/cypress.png";
 
 
 const Skills = () => {
@@ -21,7 +27,7 @@ const Skills = () => {
             Skills
           </p>
           <h2 className="text-center py-4">What I can do</h2>
-          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-4 cursor-pointer">
+          <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 cursor-pointer">
             <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
               <Image
                 className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
@@ -65,6 +71,16 @@ const Skills = () => {
             <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src={NextJS}
+                alt="nextjs"
+                width={158}
+                height={48}
+              />
+              <h3>Next JS</h3>
+            </div>
+            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+              <Image
+                className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Tailwind}
                 alt="tailwind"
                 width={158}
@@ -75,12 +91,12 @@ const Skills = () => {
             <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src={NextJS}
-                alt="nextjs"
+                src={Figma}
+                alt="figma"
                 width={158}
                 height={48}
               />
-              <h3>Next JS</h3>
+              <h3>Figma</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
               <Image
@@ -95,12 +111,70 @@ const Skills = () => {
             <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src={Figma}
+                src={Express}
                 alt="express"
                 width={158}
                 height={48}
               />
-              <h3>Figma</h3>
+              <h3>Express</h3>
+            </div>
+            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+              <Image
+                className="col-span-2 col-start-2 max-h-20 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src={Mysql}
+                alt="mysql"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+              <Image
+                className="col-span-2 col-start-2 max-h-14 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src={Mongodb}
+                alt="mongodb"
+                width={158}
+                height={48}
+              />
+              <h3>MongoDB</h3>
+            </div>
+            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+              <Image
+                className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
+                src={Actions}
+                alt="github-action"
+                width={158}
+                height={48}
+              />
+              <h3>Github Actions</h3>
+            </div>
+            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+              <Image
+                className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src={Docker}
+                alt="docker"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+              <Image
+                className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src={Git}
+                alt="git"
+                width={158}
+                height={48}
+              />
+              <h3>Git</h3>
+            </div>
+            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+              <Image
+                className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src={Cypress}
+                alt="cypress"
+                width={158}
+                height={48}
+              />
+              <h3>Cypress</h3>
             </div>
           </div>
         </div>
