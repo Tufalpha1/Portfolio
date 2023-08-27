@@ -8,7 +8,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 
 const Footer = () => {
   return (
-    <footer className="w-full mx-auto sm:mt-64 py-16 px-4 gap-8 text-black">
+    <footer className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
       <div className="text-center flex flex-col place-content-center">
         <Image
           src={logo}
@@ -18,7 +18,7 @@ const Footer = () => {
         <p className="uppercase tracking-widest font-">
           Innovation. Collaboration. Success.
         </p>
-        <div className="flex items-center justify-evenly max-w-[330px] m-auto p-4 gap-8">
+        <div className="flex items-center justify-evenly max-w-[330px] m-auto py-4 gap-8">
           <a
             href="https://www.linkedin.com/in/mzain-ul-abideen/"
             target="_blank"

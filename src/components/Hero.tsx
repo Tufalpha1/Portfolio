@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Link from 'next/link';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
+
 export const Hero = () => {
   const [text] = useTypewriter({
     words: [
