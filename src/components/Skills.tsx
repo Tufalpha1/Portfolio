@@ -15,6 +15,7 @@ import Figma from "../../public/assets/skills/figma.png";
 import Docker from "../../public/assets/skills/docker.png";
 import Git from "../../public/assets/skills/git.png";
 import Cypress from "../../public/assets/skills/cypress.png";
+import Spline from "../../public/assets/skills/spline.png";
 
 
 const Skills = () => {
@@ -101,22 +102,22 @@ const Skills = () => {
             <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
+                src={Spline}
+                alt="express"
+                width={158}
+                height={48}
+              />
+              <h3>Spline</h3>
+            </div>
+            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+              <Image
+                className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={NodeJS}
                 alt="nodejs"
                 width={158}
                 height={48}
               />
               <h3>Node JS</h3>
-            </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
-              <Image
-                className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
-                src={Express}
-                alt="express"
-                width={158}
-                height={48}
-              />
-              <h3>Express</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
               <Image
