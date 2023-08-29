@@ -26,7 +26,7 @@ const page = () => {
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 w-full py-8">
-        <div className="col-span-4">
+        <div className="col-span-4 text-center">
           <p className="uppercase text-xl tracking-widest text-center text-[#1190CB] pt-4">
             Project
           </p>
