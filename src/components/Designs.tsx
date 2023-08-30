@@ -1,6 +1,8 @@
 import React from 'react'
 import DesignItem from './DesignItem';
+import DesignItem2 from './DesignItem2';
 import decentraImg from '../../public/assets/designs/decentra.png';
+import dexhubImg from '../../public/assets/designs/dexhub.png';
 
 const Designs = () => {
   return (
@@ -15,6 +17,12 @@ const Designs = () => {
             title="Decentralized Social Media UI"
             backgroundImg={decentraImg}
             projectUrl="/decentra"
+            tech="Figma"
+          />
+          <DesignItem2
+            title="Decentralized Exchange UI"
+            backgroundImg={dexhubImg}
+            projectUrl="/dexhub"
             tech="Figma"
           />
         </div>

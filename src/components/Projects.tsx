@@ -27,13 +27,13 @@ const Projects = () => {
             tech="Next JS"
           />
           <ProjectItem
-            title="Cybersecurity Company Website"
+            title="CySecOps Website"
             backgroundImg={cysecopsImg}
             projectUrl="/cysecops"
             tech="Next JS"
           />
           <ProjectItem
-            title="Air University Cyber Security Society Website"
+            title="AUCSS Website"
             backgroundImg={aucssImg}
             projectUrl="/aucss"
             tech="Next JS"
