@@ -16,7 +16,9 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   projectUrl,
 }) => {
   return (
-    <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#2193b0] to-[#6dd5ed]">
+    <div
+      className={`relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#2193b0] to-[#6dd5ed]`}
+    >
       <Image
         className="rounded-xl group-hover:opacity-10"
         src={backgroundImg}

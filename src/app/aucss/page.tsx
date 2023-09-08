@@ -31,17 +31,11 @@ const page = () => {
             Project
           </p>
           <h2 className="text-center py-6">Overview</h2>
-          <p>
+          <p className="text-center">
             This project was built for AUCSS (Air University Cyber Security
             Society). The website is built using next js and tailwind css.
           </p>
           <div className="mt-10 flex justify-center">
-            <button
-              type="button"
-              className="text-white bg-gradient-to-r from-[#2193b0] to-[#6dd5ed] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-            >
-              <Link href="https://github.com/Tufalpha1/AUCSS">Code</Link>
-            </button>
             <button className="text-white bg-gradient-to-r from-[#1190CB] via-blue-500 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
               <Link href="https://www.aucss.live/">Demo</Link>
             </button>
@@ -78,7 +72,7 @@ const page = () => {
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={Headless}
-              alt="sanity"
+              alt="headless"
               width={158}
               height={48}
             />
@@ -88,7 +82,7 @@ const page = () => {
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={Framer}
-              alt="stripe"
+              alt="framer"
               width={158}
               height={48}
             />

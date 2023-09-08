@@ -1,12 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import hoobankImg from "../../../public/assets/projects/hoobank.png";
-import ReactImg from "../../../public/assets/skills/react.png";
+import intelligenImg from "../../../public/assets/projects/intelligen.png";
+import Next from "../../../public/assets/skills/nextjs.png";
 import Tailwind from "../../../public/assets/skills/tailwind.png";
-import NodeJS from "../../../public/assets/skills/node.png";
-import Express from "../../../public/assets/skills/express.png";
-import MySQL from "../../../public/assets/skills/mysql.png";
+import Headless from "../../../public/assets/skills/headless-ui.png";
+import Framer from "../../../public/assets/skills/motion.png";
+import planetScale from "../../../public/assets/skills/planet-scale.png";
+import stripe from "../../../public/assets/skills/stripe.png";
+import prisma from "../../../public/assets/skills/prisma.png";
 
 const page = () => {
   return (
@@ -17,35 +19,43 @@ const page = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={hoobankImg}
+          src={intelligenImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Hoobank Database App</h2>
-          <h3>React JS / Tailwind / Node JS / MySQL</h3>
+          <h2 className="py-2">Full Stack AI Website</h2>
+          <h3>Next JS / Tailwind / Stripe / MySQL</h3>
         </div>
       </div>
+      <div className="bg-[#c73636] px-4 py-3 text-white">
+        <p className="text-center text-sm font-medium">
+          Heads up! Due to OpenAI and Replica API limit being exceeded,{" "} 
+          <span className="underline">{`You won't be able to generate any content.`}</span> You can still
+          view the website and its features.
+        </p>
+      </div>
       <div className="max-w-[1240px] mx-auto p-2 w-full py-8">
-        <div className="col-span-4">
+        <div className="col-span-4 text-center">
           <p className="uppercase text-xl tracking-widest text-center text-[#1190CB] pt-4">
             Project
           </p>
           <h2 className="text-center py-6">Overview</h2>
-          <p className="text-center">
-            This application was developed utilizing the React JS framework for
-            the front-end, while the back-end was implemented using Node.js. The
-            database employed in this application is MySQL. It enables users to
-            create accounts and login to access their personalized account
-            information. In addition, an administrative user has the capability
-            to view comprehensive user account details, including transaction
-            history.
+          <p>
+            IntelliGen is an AI-powered Software as a Service (SaaS) platform
+            designed to empower businesses and individuals with the creative
+            potential of artificial intelligence. IntelliGen harnesses the
+            latest advancements in AI technology to generate a wide range of
+            creative content, including images, videos, code, text, and music.
           </p>
           <div className="mt-10 flex justify-center">
             <button
               type="button"
-              className="text-white bg-gradient-to-r from-[#2193b0] to-[#6dd5ed] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+              className="text-white bg-[#36b49f] hover:bg-[#4fc2af]  focus:ring-4 focus:outline-none focus:ring-emerald-300 dark:focus:ring-emerald-800 shadow-lg shadow-emerald-500/50 dark:shadow-lg dark:shadow-emerald-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
             >
-              <Link href="https://github.com/Tufalpha1/Hoobank">Code</Link>
+              <Link href="https://github.com/Tufalpha1/IntelliGen">Code</Link>
+            </button>
+            <button className="text-black bg-[#DBFF75] hover:bg-[#cde785] border border-[#bfe74f] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-emerald-400 dark:focus:ring-emerald-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+              <Link href="https://intelligen.vercel.app/">Demo</Link>
             </button>
             <button className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
               <Link href="/#projects">
@@ -55,16 +65,16 @@ const page = () => {
           </div>
         </div>
         <h2 className="text-center py-4 mt-16">Technologies</h2>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-5 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 cursor-pointer">
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-y-10 sm:max-w-xl sm:grid-cols-5 lg:mx-0 lg:max-w-none cursor-pointer">
           <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
             <Image
               className="col-span-2 max-h-16 w-full object-contain sm:col-start-2 lg:col-span-1"
-              src={ReactImg}
-              alt="react"
+              src={Next}
+              alt="next"
               width={158}
               height={48}
             />
-            <h3>React</h3>
+            <h3>Next JS</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
             <Image
@@ -79,32 +89,32 @@ const page = () => {
           <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src={NodeJS}
-              alt="nodejs"
+              src={stripe}
+              alt="stripe"
               width={158}
               height={48}
             />
-            <h3>Node JS</h3>
+            <h3>Payment</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src={Express}
-              alt="express"
+              src={prisma}
+              alt="prisma"
               width={158}
               height={48}
             />
-            <h3>Express JS</h3>
+            <h3>Prisma</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src={MySQL}
-              alt="mysql"
+              src={planetScale}
+              alt="planet-scale"
               width={158}
               height={48}
             />
-            <h3>MySQL Database</h3>
+            <h3>MySQL Platform</h3>
           </div>
         </div>
       </div>

@@ -29,7 +29,7 @@ const page = () => {
             Design
           </p>
           <h2 className="py-6">Overview</h2>
-          <p>
+          <p className="text-center">
             This is a design created for a decentralized exchange platform that
             was based upon uniswap v3. The design was created using Figma.
           </p>

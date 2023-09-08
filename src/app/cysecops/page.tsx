@@ -30,19 +30,13 @@ const page = () => {
             Project
           </p>
           <h2 className="text-center py-6">Overview</h2>
-          <p>
+          <p className="text-center">
             This project was built for a cybersecurity startup namely CySecOps.
             The website is built using next js and tailwind css. The content is
             managed using the Strapi CMS.
           </p>
           <div className="mt-10 flex justify-center">
-            <button
-              type="button"
-              className="text-white bg-gradient-to-r from-[#2193b0] to-[#6dd5ed] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
-            >
-              <Link href="https://github.com/Tufalpha1/Cysecops">Code</Link>
-            </button>
-            <button className="text-white bg-gradient-to-r from-[#1190CB] via-blue-500 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+            <button className="text-white bg-gradient-to-r from-[#0d182c] via-sky-700 to-[#28ABE3] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
               <Link href="https://cysecops-demo.netlify.app">Demo</Link>
             </button>
             <button className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
