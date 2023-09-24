@@ -132,7 +132,7 @@ const Contact = () => {
             <div className="mt-8 flex justify-center">
               <button
                 type="submit"
-                className="text-white block w-full bg-gradient-to-r from-[#1190CB] to-[#8ed7e7] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                className="text-white block w-full bg-gradient-to-r from-[#1190CB] to-[#43cea2] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
               >
                 {`Let's talk`}
               </button>

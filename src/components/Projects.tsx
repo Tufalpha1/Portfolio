@@ -5,6 +5,8 @@ import eshopImg from "../../public/assets/projects/eshop.png";
 import cysecopsImg from "../../public/assets/projects/cysecops.png";
 import aucssImg from "../../public/assets/projects/aucss.png";
 import intelligenImage from "../../public/assets/projects/intelligen.png";
+import decentralizedConnect from "../../public/assets/projects/decentralizedconnect.png";
+import DesignItem from "./DesignItem";
 
 const Projects = () => {
   return (
@@ -39,14 +41,18 @@ const Projects = () => {
             projectUrl="/intelligen"
             tech="Next JS"
           />
-          <div className="md:col-span-2">
-            <ProjectItem
-              title="AUCSS Website"
-              backgroundImg={aucssImg}
-              projectUrl="/aucss"
-              tech="Next JS"
-            />
-          </div>
+          <DesignItem
+            title="DecentralizedConnect"
+            backgroundImg={decentralizedConnect}
+            projectUrl="/decentralizedconnect"
+            tech="Next JS/Express/Solidity"
+          />
+          <ProjectItem
+            title="AUCSS Website"
+            backgroundImg={aucssImg}
+            projectUrl="/aucss"
+            tech="Next JS"
+          />
         </div>
       </div>
     </section>
