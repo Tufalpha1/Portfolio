@@ -1,7 +1,8 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-import Spline from "@splinetool/react-spline";
+import contact from "../../public/contact.png";
+
 
 
 const Contact = () => {
@@ -17,7 +18,16 @@ const Contact = () => {
               {`I am available for freelance work. Contact me and we'll talk.`}
             </p>
             <br />
-            <Spline scene="https://prod.spline.design/AuBpDZ3OOj21OEAY/scene.splinecode" />
+            <div className="flex flex-col items-center justify-center px-4 py-8 sm:px-16 sm:py-24">
+              <div className="relative w-full max-w-lg">
+                <div className="absolute top-0 -right-4 w-48 h-48 md:w-72 md:h-72 bg-gradient-to-r from-[#1190CB] to-[#43cea2] rounded-full opacity-40 mix-blend-multiply filter animate-blob animation-delay-2000" />
+                <div className="m-8">
+                  <div className="relative space-y-4">
+                    <Image src={contact} alt="contact-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <form
@@ -132,7 +142,7 @@ const Contact = () => {
             <div className="mt-8 flex justify-center">
               <button
                 type="submit"
-                className="text-white block w-full bg-gradient-to-r from-[#1190CB] to-[#43cea2] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                className="text-white block w-full bg-gradient-to-r from-[#1190CB] via-teal-400 to-[#43cea2] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
               >
                 {`Let's talk`}
               </button>

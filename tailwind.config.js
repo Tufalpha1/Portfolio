@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  mode: "jit",
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -14,9 +15,6 @@ module.exports = {
       },
     },
   },
-  animation: {
-    tilt: "tilt 10s infinite linear",
-  },
   keyframes: {
     tilt: {
       "0%, 50%, 100%": {
@@ -29,6 +27,24 @@ module.exports = {
         transform: "rotate(-0.5deg)",
       },
     },
+    blob: {
+      "0%, 100%": {
+        transform: "translate(0, 0) scale(1)",
+      },
+      "25%": {
+        transform: "translate(20px, -50px) scale(1.1)",
+      },
+      "50%": {
+        transform: "translate(0, 20px) scale(1)",
+      },
+      "75%": {
+        transform: "translate(-20px, -15px) scale(0.9)",
+      },
+    },
+  },
+  animation: {
+    tilt: "tilt 10s infinite linear",
+    blob: "blob 10s infinite",
   },
   plugins: [],
 };
