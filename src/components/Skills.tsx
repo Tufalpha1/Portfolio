@@ -29,7 +29,7 @@ const Skills = () => {
           </p>
           <h2 className="text-center py-4">What I can do</h2>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 cursor-pointer">
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
                 src={Html}
@@ -39,7 +39,7 @@ const Skills = () => {
               />
               <h3>HTML</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
                 src={Css}
@@ -49,7 +49,7 @@ const Skills = () => {
               />
               <h3>CSS</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
                 src={Javascript}
@@ -59,7 +59,7 @@ const Skills = () => {
               />
               <h3>Javascript</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 max-h-16 w-full object-contain sm:col-start-2 lg:col-span-1"
                 src={ReactImg}
@@ -69,7 +69,7 @@ const Skills = () => {
               />
               <h3>React</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={NextJS}
@@ -79,7 +79,7 @@ const Skills = () => {
               />
               <h3>Next JS</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Tailwind}
@@ -89,7 +89,7 @@ const Skills = () => {
               />
               <h3>Tailwind</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Figma}
@@ -99,7 +99,7 @@ const Skills = () => {
               />
               <h3>Figma</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Spline}
@@ -109,7 +109,7 @@ const Skills = () => {
               />
               <h3>Spline</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={NodeJS}
@@ -119,7 +119,7 @@ const Skills = () => {
               />
               <h3>Node JS</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-20 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Mysql}
@@ -128,7 +128,7 @@ const Skills = () => {
                 height={48}
               />
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-14 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Mongodb}
@@ -138,7 +138,7 @@ const Skills = () => {
               />
               <h3>MongoDB</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
                 src={Actions}
@@ -148,7 +148,7 @@ const Skills = () => {
               />
               <h3>Github Actions</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Docker}
@@ -157,7 +157,7 @@ const Skills = () => {
                 height={48}
               />
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Git}
@@ -167,7 +167,7 @@ const Skills = () => {
               />
               <h3>Git</h3>
             </div>
-            <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Cypress}

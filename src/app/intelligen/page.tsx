@@ -65,7 +65,7 @@ const page = () => {
         </div>
         <h2 className="text-center py-4 mt-16">Technologies</h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-y-10 sm:max-w-xl sm:grid-cols-6 lg:mx-0 lg:max-w-none cursor-pointer">
-          <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
               className="col-span-2 max-h-16 w-full object-contain sm:col-start-2 lg:col-span-1"
               src={Next}
@@ -75,7 +75,7 @@ const page = () => {
             />
             <h3>Next JS</h3>
           </div>
-          <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={Tailwind}
@@ -85,7 +85,7 @@ const page = () => {
             />
             <h3>Tailwind</h3>
           </div>
-          <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={stripe}
@@ -95,7 +95,7 @@ const page = () => {
             />
             <h3>Payment</h3>
           </div>
-          <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={prisma}
@@ -105,7 +105,7 @@ const page = () => {
             />
             <h3>Prisma</h3>
           </div>
-          <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={planetScale}
@@ -114,7 +114,7 @@ const page = () => {
               height={48}
             />
           </div>
-          <div className="hover:scale-105 ease-in duration-300 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={clerk}
