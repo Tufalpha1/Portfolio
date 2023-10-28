@@ -60,6 +60,11 @@ export const Navbar = () => {
                 Skills
               </li>
             </Link>
+            <Link href={"/#experience"} scroll={true}>
+              <li className="ml-10 text-sm hover:border-b hover:border-[#1190CB]">
+                Experience
+              </li>
+            </Link>
             <Link href={"/#projects"} scroll={true}>
               <li className="ml-10 text-sm hover:border-b hover:border-[#1190CB]">
                 Projects
