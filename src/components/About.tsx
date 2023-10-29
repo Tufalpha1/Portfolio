@@ -5,29 +5,29 @@ import about from '../../public/assets/about.svg'
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="w-full md:h-screen p-2 flex items-center"
-    >
+    <section id="about" className="w-full md:h-screen p-2 flex items-center">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2 px-8">
           <p className="uppercase text-xl tracking-widest text-[#1190CB]">
             About me
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-black text-sm sm:text-lg">
-            I am a passionate web developer with a strong focus on React/Next.js
-            and Node.js. I thrive on building dynamic and interactive web
-            applications that provide engaging user experiences. With a solid
-            foundation in front-end development and a growing expertise in
-            backend technologies, including databases, I am continuously
-            expanding my skill set to become a well-rounded developer.
-          </p>
-          <p className="py-2 text-black text-sm sm:text-lg">
-            Continuous learning is at the core of my professional ethos. I
-            actively seek out new technologies, tools, and best practices to
-            stay up-to-date with the rapidly evolving web development landscape.
-          </p>
+          <div className='py-2 text-black text-sm sm:text-lg'>
+            <p>
+              I am a Cybersecurity undergraduate with a love for web development.
+              I thrive on building dynamic and interactive web applications that
+              provide engaging user experiences. With a solid foundation in
+              front-end development and a growing expertise in backend
+              technologies, including databases, I am continuously expanding my
+              skill set to become a well-rounded developer.
+            </p>
+            <p className='mt-4 font-semibold'>I specialize in:</p>
+            <div className='text-sm sm:text-base text-gray-700'>
+              <p>• Front-End Development (React/Next JS)</p>
+              <p>• Back-End Development (Node JS)</p>
+              <p>• UI/UX Design (Figma/Spline 3D)</p>
+            </div>
+          </div>
           <Link href="/#projects">
             <div className="py-12">
               <div className="grid gap-8 items-start sm:justify-start justify-center">
