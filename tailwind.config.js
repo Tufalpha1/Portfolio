@@ -13,6 +13,13 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      animation: {
+        "spin-slow": "spin 4s linear infinite",
+        "spin-slower": "spin 6s linear infinite",
+        "spin-reverse": "spin-reverse 1s linear infinite",
+        "spin-reverse-slow": "spin-reverse 4s linear infinite",
+        "spin-reverse-slower": "spin-reverse 6s linear infinite",
+      },
     },
   },
   keyframes: {
@@ -39,6 +46,11 @@ module.exports = {
       },
       "75%": {
         transform: "translate(-20px, -15px) scale(0.9)",
+      },
+    },
+    "spin-reverse": {
+      to: {
+        transform: "rotate(-360deg)",
       },
     },
   },
