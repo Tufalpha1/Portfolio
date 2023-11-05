@@ -11,7 +11,7 @@ import DesignItem from "./DesignItem";
 const Projects = () => {
   return (
     <section id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
+      <div className="max-w-[1240px] mx-auto px-2 py-24">
         <p className="text-xl tracking-widest uppercase text-[#1190CB] text-center">
           Projects
         </p>
