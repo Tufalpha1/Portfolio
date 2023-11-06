@@ -37,7 +37,6 @@ const Skills = () => {
                 width={168}
                 height={48}
               />
-              <h3>HTML</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -47,7 +46,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>CSS</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -57,7 +55,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>Javascript</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -67,7 +64,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>React</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -77,7 +73,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>Next JS</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -87,7 +82,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>Tailwind</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -97,7 +91,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>Figma</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -107,7 +100,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>Node JS</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -126,7 +118,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>MongoDB</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -136,7 +127,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>Github Actions</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -164,7 +154,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>Git</h3>
             </div>
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
@@ -174,7 +163,6 @@ const Skills = () => {
                 width={158}
                 height={48}
               />
-              <h3>Postman</h3>
             </div>
           </div>
         </div>
