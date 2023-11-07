@@ -66,7 +66,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Next JS</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -76,7 +75,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Tailwind</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -86,7 +84,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Sanity.io</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -96,7 +93,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Payment</h3>
           </div>
         </div>
       </div>

@@ -73,7 +73,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Next JS</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -83,7 +82,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Tailwind</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -93,17 +91,15 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Payment</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
-              className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-14 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={prisma}
               alt="prisma"
               width={158}
               height={48}
             />
-            <h3>Prisma</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -122,7 +118,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3 className="text-center">Clerk authentication</h3>
           </div>
         </div>
       </div>

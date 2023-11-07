@@ -64,7 +64,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>React</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -74,7 +73,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Tailwind</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -84,27 +82,24 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Node JS</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
-              className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-20 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={Express}
               alt="express"
               width={158}
               height={48}
             />
-            <h3>Express JS</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
-              className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-20 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={MySQL}
               alt="mysql"
               width={158}
               height={48}
             />
-            <h3>MySQL Database</h3>
           </div>
         </div>
       </div>

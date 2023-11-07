@@ -6,7 +6,7 @@ import Tailwind from "../../../public/assets/skills/tailwind.png";
 import NodeJS from "../../../public/assets/skills/node.png";
 import Express from "../../../public/assets/skills/express.png";
 import nextjs from "../../../public/assets/skills/nextjs.png";
-import solidity from "../../../public/assets/skills/solidity.png";
+import ipfs from "../../../public/assets/skills/ipfs.png";
 
 const page = () => {
   return (
@@ -58,7 +58,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Next JS</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -68,7 +67,6 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Tailwind</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
@@ -78,27 +76,24 @@ const page = () => {
               width={158}
               height={48}
             />
-            <h3>Node JS</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
-              className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
+              className="col-span-2 col-start-2 max-h-20 w-full object-contain sm:col-start-auto lg:col-span-1"
               src={Express}
               alt="express"
               width={158}
               height={48}
             />
-            <h3>Express JS</h3>
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image
               className="col-span-2 col-start-2 max-h-16 w-full object-contain sm:col-start-auto lg:col-span-1"
-              src={solidity}
-              alt="solidity"
+              src={ipfs}
+              alt="ipfs"
               width={158}
               height={48}
             />
-            <h3>Solidity</h3>
           </div>
         </div>
       </div>
