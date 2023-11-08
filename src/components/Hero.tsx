@@ -4,23 +4,15 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
-import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { motion } from "framer-motion";
 
 
 export const Hero = () => {
-  const [text] = useTypewriter({
-    words: ["Developer", "Designer"],
-    loop: true,
-    deleteSpeed: 90,
-    typeSpeed: 100,
-  });
+
 
   let id = useId();
   return (
-    <section
-      id="home"
-      className="w-full h-screen text-center"
-    >
+    <section id="home" className="w-full h-screen text-center">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -36,7 +28,12 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <motion.div
+        className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.3 }}
+      >
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-700">
             LET&#39;S BUILD SOMETHING TOGETHER
@@ -48,17 +45,7 @@ export const Hero = () => {
               Zain
             </span>
           </h1>
-          <h1 className="md:py-2 text-black">
-            A Front-End Web {text}{" "}
-            <span>
-              {" "}
-              <Cursor
-                cursorStyle="|"
-                cursorBlinking={false}
-                cursorColor="#43cea2"
-              />
-            </span>
-          </h1>
+          <h1 className="md:py-2 text-black">A Full-Stack Web Developer</h1>
           <p className="py-4 text-black sm:max-w-[70%] m-auto">
             I’m focused on building responsive front-end web applications with a
             keen UI/UX interest, integrating back-end technologies.
@@ -94,7 +81,7 @@ export const Hero = () => {
             </Link>
           </div>
         </div>
-      </div>
+      </motion.div>
       <div
         className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
         aria-hidden="true"
