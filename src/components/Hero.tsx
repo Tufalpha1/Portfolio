@@ -45,10 +45,15 @@ export const Hero = () => {
               Zain
             </span>
           </h1>
-          <h1 className="md:py-2 text-black">A Full-Stack Web Developer</h1>
+          <h1 className="md:py-2 text-black">
+            A Full-Stack Web Developer and a Security Researcher
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1190CB] to-[#43cea2]">
+              .
+            </span>
+          </h1>
           <p className="py-4 text-black sm:max-w-[70%] m-auto">
             I’m focused on building responsive front-end web applications with a
-            keen UI/UX interest, integrating back-end technologies.
+            keen UI/UX interest, integrating back-end technologies. I am also invested in the field of Cybersecurity.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link
