@@ -37,7 +37,7 @@ export const Navbar = () => {
     <nav
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white"
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[#ECF0F3]"
           : "fixed w-full h-20 z-[100]"
       }
     >
@@ -129,22 +129,22 @@ export const Navbar = () => {
               <p className="uppercase tracking-widest text-[#1190CB]">{`Let's Connect`}</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <Link href="https://www.linkedin.com/in/mzain-ul-abideen/">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
                     <FaLinkedinIn />
                   </div>
                 </Link>
                 <Link href="https://github.com/Tufalpha1">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
                     <FaGithub />
                   </div>
                 </Link>
                 <Link href={"/#contact"}>
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
                     <AiOutlineMail />
                   </div>
                 </Link>
                 <Link href="https://teal-jacky-38.tiiny.site">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
                     <BsFillPersonLinesFill />
                   </div>
                 </Link>

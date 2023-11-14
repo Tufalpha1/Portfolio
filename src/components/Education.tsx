@@ -42,7 +42,7 @@ const Education = () => {
             </span>{" "}
           </h2>
         </div>
-        <div className="grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3">
+        <div className="fade grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3">
           <div className="p-5 duration-300 transform bg-slate-100 border-2 border-dashed rounded-3xl shadow-sm border-[#43cea2] hover:-translate-y-2">
             <div className="flex items-center mb-2">
               <Image

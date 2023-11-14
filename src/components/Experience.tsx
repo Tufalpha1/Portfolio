@@ -1,9 +1,21 @@
-import React from "react";
+'use client';
+import React, { useRef } from "react";
 import Image from "next/image";
 import aucss from "../../public/assets/experience/AUCSS-Logo.png";
 import xgrid from "../../public/assets/experience/Xgrid_logo.png";
 import cysecops from "../../public/assets/experience/Cysecops-logo.png";
+import {
+  motion,
+  useScroll,
+  useSpring,
+  useTransform,
+  MotionValue,
+} from "framer-motion";
+
+
+
 const Experience = () => {
+
   return (
     <section className="relative isolate py-32" id="experience">
       <div>
@@ -34,7 +46,7 @@ const Experience = () => {
                   alt="aucss-logo"
                 />
               </div>
-              <div>
+              <div className="fade">
                 <h2 className="text-xl font-bold tracking-tighter sm:text-2xl">
                   Air University Cyber Security Society
                 </h2>
@@ -69,7 +81,7 @@ const Experience = () => {
                   alt="xgrid-logo"
                 />
               </div>
-              <div>
+              <div className="fade">
                 <h2 className="text-xl font-bold tracking-tighter sm:text-2xl">
                   Xgrid
                 </h2>
@@ -99,7 +111,7 @@ const Experience = () => {
                   alt="cysecops-logo"
                 />
               </div>
-              <div>
+              <div className="fade">
                 <h2 className="text-xl font-bold tracking-tighter sm:text-2xl">
                   CySecOps
                 </h2>

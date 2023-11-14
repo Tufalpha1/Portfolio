@@ -24,7 +24,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100">
               <FaLinkedinIn />
             </div>
           </a>
@@ -33,17 +33,17 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100">
               <FaGithub />
             </div>
           </a>
           <Link href="/#contact">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100">
               <AiOutlineMail />
             </div>
           </Link>
           <Link href="https://teal-jacky-38.tiiny.site">
-            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100">
               <BsFillPersonLinesFill />
             </div>
           </Link>
