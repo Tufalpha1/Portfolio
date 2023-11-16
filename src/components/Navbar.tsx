@@ -37,7 +37,7 @@ export const Navbar = () => {
     <nav
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-[#ECF0F3]"
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300  bg-white/50 backdrop-blur-xl"
           : "fixed w-full h-20 z-[100]"
       }
     >
@@ -83,7 +83,7 @@ export const Navbar = () => {
       </div>
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/30" : ""
         }
       >
         <div

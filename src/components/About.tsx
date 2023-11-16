@@ -11,18 +11,20 @@ const About = () => {
           <p className="uppercase text-xl tracking-widest text-[#1190CB]">
             About me
           </p>
-          <h2 className="py-4">Who I Am</h2>
-          <div className='py-2 text-black text-sm sm:text-lg'>
+          <h2 className="py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent">
+            Who I Am
+          </h2>
+          <div className="py-2 text-black text-sm sm:text-lg">
             <p>
-              I am a Cybersecurity undergraduate with a love for web development.
-              I thrive on building dynamic and interactive web applications that
-              provide engaging user experiences. With a solid foundation in
-              front-end development and a growing expertise in backend
-              technologies, including databases, I am continuously expanding my
-              skill set to become a well-rounded developer.
+              I am a Cybersecurity undergraduate with a love for web
+              development. I thrive on building dynamic and interactive web
+              applications that provide engaging user experiences. With a solid
+              foundation in front-end development and a growing expertise in
+              backend technologies, including databases, I am continuously
+              expanding my skill set to become a well-rounded developer.
             </p>
-            <p className='mt-4 font-semibold'>I specialize in:</p>
-            <div className='text-sm sm:text-base text-gray-700'>
+            <p className="mt-4 font-semibold">I specialize in:</p>
+            <div className="text-sm sm:text-base text-gray-700">
               <p>• Front-End Development (React/Next JS)</p>
               <p>• Back-End Development (Node JS)</p>
               <p>• UI/UX Design (Figma/Spline 3D)</p>

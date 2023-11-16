@@ -24,10 +24,12 @@ const Skills = () => {
       <div className="absolute z-[-200] w-[60%] h-[60%] -left-[40%] top-[-20%] rounded-full blue__gradient bottom-40 overflow-hidden" />
       <div className="py-12 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="uppercase text-xl tracking-widest text-center text-[#1190CB]">
+          <p className="uppercase text-xl tracking-widest text-center text-[#1190CB] ">
             Skills
           </p>
-          <h2 className="text-center py-4">What I can do</h2>
+          <h2 className="text-center py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent">
+            What I can do
+          </h2>
           <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 cursor-pointer">
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image

@@ -38,14 +38,14 @@ export const Hero = () => {
           <p className="uppercase text-sm tracking-widest text-gray-700">
             LET&#39;S BUILD SOMETHING TOGETHER
           </p>
-          <h1 className="py-2 md:py-4 text-black">
+          <h1 className="py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent">
             Hi, I&#39;m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1190CB] to-[#43cea2] sm:text-6xl">
               {" "}
               Zain
             </span>
           </h1>
-          <h1 className="md:py-2 text-black">
+          <h1 className="md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent">
             A Full Stack Web Developer and a Security Researcher
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1190CB] to-[#43cea2]">
               .

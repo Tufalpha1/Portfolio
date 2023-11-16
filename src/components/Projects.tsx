@@ -15,7 +15,9 @@ const Projects = () => {
         <p className="text-xl tracking-widest uppercase text-[#1190CB] text-center">
           Projects
         </p>
-        <h2 className="py-8 text-center">What I&apos;ve Built</h2>
+        <h2 className="py-8 text-center bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent">
+          What I&apos;ve Built
+        </h2>
         <div className="grid md:grid-cols-2 gap-8 ">
           <ProjectItem
             title="Bank Database App"
