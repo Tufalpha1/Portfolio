@@ -1,4 +1,3 @@
-import { Navbar } from '@/components/Navbar'
 import { Analytics } from "@vercel/analytics/react";
 import './globals.css'
 import type { Metadata } from 'next'
@@ -18,8 +17,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <Navbar />
+    <html
+      lang="en"
+      className="scroll-smooth"
+      style={{ scrollBehavior: "smooth" }}
+    >
       <body className={inter.className}>
         {children}
         <Analytics />

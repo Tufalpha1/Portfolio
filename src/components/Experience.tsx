@@ -23,7 +23,7 @@ const Experience = () => {
           Experience
         </p>
       </div>
-      <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent sm:text-4xl md:mx-auto tracking-tighter">
+      <h2 className="max-w-lg mb-6 text-3xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent sm:text-4xl md:mx-auto tracking-tighter">
         Where I have worked
       </h2>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -38,7 +38,7 @@ const Experience = () => {
               </div>
               <div className="w-px h-full bg-gray-400" />
             </div>
-            <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
+            <div className="flex flex-col sm:items-center sm:flex-row py-16">
               <div className="sm:mr-5 sm:my-12">
                 <Image
                   className="flex items-center justify-center w-20 h-20 my-3 rounded-full"
@@ -73,7 +73,7 @@ const Experience = () => {
               </div>
               <div className="w-px h-full bg-gray-400" />
             </div>
-            <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
+            <div className="flex flex-col sm:items-center sm:flex-row py-16">
               <div className="sm:mr-5 sm:my-6">
                 <Image
                   className="flex items-center justify-center w-20 h-20 my-3 rounded-full"
@@ -103,7 +103,7 @@ const Experience = () => {
               </div>
               <div className="w-px h-full opacity-0" />
             </div>
-            <div className="flex flex-col pb-6 sm:items-center sm:flex-row sm:pb-0">
+            <div className="flex flex-col sm:items-center sm:flex-row py-16">
               <div className="sm:mr-5 sm:my-6">
                 <Image
                   className="flex items-center justify-center w-20 h-20 my-3 rounded-full"

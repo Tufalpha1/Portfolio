@@ -12,8 +12,8 @@ export const Hero = () => {
 
   let id = useId();
   return (
-    <section id="home" className="w-full h-screen text-center ">
-      <div className="relative isolate px-6 pt-14 lg:px-8">
+    <section id="home" className="w-full h-screen text-center">
+      <div className="relative isolate px-6 pt-6 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
@@ -53,7 +53,7 @@ export const Hero = () => {
               .
             </span>
           </h1>
-          <p className="py-4 text-black sm:max-w-[70%] m-auto text-sm md:text-lg">
+          <p className="py-4 text-black sm:max-w-[70%] m-auto text-sm sm:text-lg">
             I’m focused on building responsive frontend web applications with a
             keen UI/UX interest, integrating backend technologies. I also like
             to play CTFs.

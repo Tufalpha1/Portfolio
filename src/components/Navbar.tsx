@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import navLogo from "../../public/navLogo.png";
+import navLogo from "../../public/zLogo.png";
 import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineClose, AiOutlineMenu, AiOutlineMail } from "react-icons/ai";
@@ -41,8 +41,14 @@ export const Navbar = () => {
           : "fixed w-full h-20 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16">
-        <Image src={navLogo} alt="Zain's Logo" width={80} height={40} />
+      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 mt-2">
+        <Image
+          src={navLogo}
+          alt="Zain's Logo"
+          width={80}
+          height={40}
+          className="h-12 w-8"
+        />
         <div>
           <ul className="hidden font-medium md:flex">
             <Link href={"/"} scroll={true}>
@@ -58,11 +64,6 @@ export const Navbar = () => {
             <Link href={"/#skills"} scroll={true}>
               <li className="ml-10 text-sm hover:border-b hover:border-[#1190CB]">
                 Skills
-              </li>
-            </Link>
-            <Link href={"/#experience"} scroll={true}>
-              <li className="ml-10 text-sm hover:border-b hover:border-[#1190CB]">
-                Experience
               </li>
             </Link>
             <Link href={"/#projects"} scroll={true}>
@@ -95,7 +96,13 @@ export const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image src={navLogo} alt="Zain's Logo" width={80} height={40} />
+              <Image
+                src={navLogo}
+                alt="Zain's Logo"
+                width={80}
+                height={40}
+                className="h-12 w-8"
+              />
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"

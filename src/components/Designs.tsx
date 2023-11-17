@@ -14,7 +14,7 @@ const Designs = () => {
         <h2 className="py-8 text-center bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
           What I&apos;ve Made
         </h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 py-10">
           <DesignItem
             title="Decentralized Social Media UI"
             backgroundImg={decentraImg}
