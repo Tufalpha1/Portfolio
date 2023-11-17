@@ -12,10 +12,10 @@ const Projects = () => {
   return (
     <section id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-24">
-        <p className="text-xl tracking-widest uppercase text-[#1190CB] text-center">
+        <p className="text-xl tracking-tighter uppercase text-[#1190CB] text-center">
           Projects
         </p>
-        <h2 className="py-8 text-center bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent">
+        <h2 className="py-8 text-center bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
           What I&apos;ve Built
         </h2>
         <div className="grid md:grid-cols-2 gap-8 ">

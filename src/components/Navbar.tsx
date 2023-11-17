@@ -126,7 +126,7 @@ export const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-20">
-              <p className="uppercase tracking-widest text-[#1190CB]">{`Let's Connect`}</p>
+              <p className="uppercase tracking-tighter text-center text-[#1190CB]">{`Let's Connect`}</p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
                 <Link href="https://www.linkedin.com/in/mzain-ul-abideen/">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">

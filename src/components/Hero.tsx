@@ -12,14 +12,14 @@ export const Hero = () => {
 
   let id = useId();
   return (
-    <section id="home" className="w-full h-screen text-center">
+    <section id="home" className="w-full h-screen text-center ">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
           aria-hidden="true"
         >
           <div
-            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#1190CB] to-[#43cea2] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#1190CB] to-[#43cea2] opacity-25 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             style={{
               clipPath:
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
@@ -34,18 +34,20 @@ export const Hero = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
       >
-        <div>
-          <p className="uppercase text-sm tracking-widest text-gray-700">
-            LET&#39;S BUILD SOMETHING TOGETHER
-          </p>
-          <h1 className="py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent">
+        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+          <div className="mb-8 flex justify-center">
+            <div className="relative rounded-full px-1 sm:px-3 py-0 sm:py-1 text-xs sm:text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10 hover:ring-gray-900/20 tracking-normal">
+              Let&#39;s build something together &rarr;
+            </div>
+          </div>
+          <h1 className="py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             Hi, I&#39;m{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1190CB] to-[#43cea2] sm:text-6xl">
               {" "}
               Zain
             </span>
           </h1>
-          <h1 className="md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent">
+          <h1 className="md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             A Full Stack Web Developer and a Security Researcher
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1190CB] to-[#43cea2]">
               .
@@ -53,8 +55,8 @@ export const Hero = () => {
           </h1>
           <p className="py-4 text-black sm:max-w-[70%] m-auto text-sm md:text-lg">
             I’m focused on building responsive frontend web applications with a
-            keen UI/UX interest, integrating backend technologies. I am also
-            invested in the field of Cybersecurity.
+            keen UI/UX interest, integrating backend technologies. I also like
+            to play CTFs.
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <Link
@@ -93,7 +95,7 @@ export const Hero = () => {
         aria-hidden="true"
       >
         <div
-          className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#43cea2] to-[#1190CB] opacity-20 sm:opacity-50 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+          className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#43cea2] to-[#1190CB] opacity-25 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           style={{
             clipPath:
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",

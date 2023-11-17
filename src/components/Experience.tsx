@@ -19,11 +19,11 @@ const Experience = () => {
   return (
     <section className="relative isolate py-32" id="experience">
       <div>
-        <p className="text-xl tracking-widest uppercase text-[#1190CB] text-center my-4">
+        <p className="text-xl tracking-tighter uppercase text-[#1190CB] text-center my-4">
           Experience
         </p>
       </div>
-      <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold text-center leading-none tracking-tight bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent sm:text-4xl md:mx-auto">
+      <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent sm:text-4xl md:mx-auto tracking-tighter">
         Where I have worked
       </h2>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
@@ -130,7 +130,7 @@ const Experience = () => {
         aria-hidden="true"
       >
         <div
-          className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#1190CB] to-[#43cea2] opacity-0 sm:opacity-40"
+          className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#1190CB] to-[#43cea2] opacity-0 sm:opacity-25"
           style={{
             clipPath:
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",

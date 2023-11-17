@@ -15,7 +15,7 @@ const Footer = () => {
           className="w-20 h-20 mx-auto my-4"
           alt="company-logo"
         />
-        <p className="uppercase tracking-widest font-">
+        <p className="bg-clip-text bg-gradient-to-br from-black to-stone-500 text-transparent tracking-tighter font-semibold text-lg sm:text-xl">
           Innovation. Collaboration. Success.
         </p>
         <div className="flex items-center justify-evenly max-w-[330px] m-auto py-4 gap-8">
@@ -49,8 +49,8 @@ const Footer = () => {
           </Link>
         </div>
         <hr />
-        <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-600 line-clamp-2">
-          <h6 className="py-2">© Zain 2023. All rights reserved.</h6>
+        <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-900 line-clamp-2">
+          <h6 className="py-2">Developed by Zain with 🖤</h6>
         </div>
       </div>
     </footer>

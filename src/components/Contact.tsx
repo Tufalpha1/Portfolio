@@ -11,10 +11,10 @@ const Contact = () => {
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 sm:pt-32 lg:static lg:px-8 ">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight text-navprimary sm:text-4xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bold text-navprimary sm:text-4xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
               Get in touch
             </h2>
-            <p className="my-6 text-lg leading-8 text-gray-600 ">
+            <p className="my-6 text-base sm:text-lg leading-8 text-gray-600 ">
               {`I am available for freelance work. Contact me and we'll talk.`}
             </p>
             <br />
@@ -142,7 +142,7 @@ const Contact = () => {
             <div className="mt-8 flex justify-center">
               <button
                 type="submit"
-                className="text-white block w-full bg-gradient-to-r from-[#1190CB] via-teal-400 to-[#43cea2] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                className="text-white block w-full bg-gradient-to-r from-[#1190CB] via-teal-500 to-[#6ed1b2]  hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
               >
                 {`Let's talk`}
               </button>
