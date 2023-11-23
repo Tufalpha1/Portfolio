@@ -37,8 +37,8 @@ export const Navbar = () => {
     <nav
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300  bg-white/50 backdrop-blur-xl"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed top-0 w-full p-4 h-24 shadow-xl z-[100] ease-in-out duration-300  bg-white/50 backdrop-blur-xl"
+          : "fixed top-0 w-full h-20 z-[100]"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 mt-2">
