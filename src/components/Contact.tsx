@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import contact from "../../public/contact.png";
-import logo from "../../public/logo.png";
+import logo from "../../public/zLogo.png";
 
 
 
@@ -21,22 +21,22 @@ const Contact = () => {
             <br />
 
             <div className="relative w-full lg:max-w-lg flex flex-col items-center justify-center px-4 py-8 sm:px-16 sm:py-16">
-              <div className="absolute -bottom-4 sm:-bottom-8 left-8 sm:left-28 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#6ed1b2] to-[#33e7ae] rounded-full filter opacity-40 blur-md animate-blob animation-delay-4000">
-                <div className="absolute -bottom-4 sm:-bottom-8 left-8 sm:left-28 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#6ed1b2] to-[#33e7ae] rounded-full filter opacity-60 blur-3xl animate-blob animation-delay-4000"></div>
+              <div className="absolute -bottom-4 sm:-bottom-8 left-8 sm:-left-10 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#6ed1b2] to-[#33e7ae] rounded-full filter animate-blob animation-delay-4000">
+                <div className="absolute -bottom-4 sm:-bottom-8 left-8 sm:-left-10 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#6ed1b2] to-[#33e7ae] rounded-full opacity-50 filter blur-3xl animate-blob animation-delay-4000"></div>
               </div>
-              <div className="absolute top-10 right-4 sm:right-4 lg:-right-6 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#77bedf] to-[#1190CB]  rounded-full opacity-30 filter blur-md animate-blob animation-delay-2000">
-                <div className="absolute top-10 right-4 sm:right-4 lg:-right-6 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#77bedf] to-[#1190CB] rounded-full opacity-50 filter blur-2xl animate-blob animation-delay-2000"></div>
+              <div className="absolute top-10 right-4 sm:right-4 lg:-right-14 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#77bedf] to-[#1190CB]  rounded-full filter animate-blob animation-delay-2000">
+                <div className="absolute top-10 right-4 sm:right-4 lg:-right-4 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#77bedf] to-[#1190CB] rounded-full opacity-50 filter blur-3xl animate-blob animation-delay-2000"></div>
               </div>
               <div className="m-4 sm:m-8">
                 <div className="relative space-y-4">
-                  <div className="sm:ml-16 p-4 bg-white/30 backdrop-blur-xl rounded-lg">
+                  <div className="sm:ml-16 p-4 bg-white/0 shadow-2xl backdrop-filter backdrop-blur-lg rounded-lg">
                     <Image
-                      className="w-12 h-12 sm:w-20 sm:h-20 mx-auto"
+                      className="w-7 h-10 sm:w-10 sm:h-14 mx-auto"
                       src={logo}
                       alt="logo"
                     />
                   </div>
-                  <div className="sm:ml-16 p-4 bg-white/20 backdrop-blur-xl rounded-lg text-center">
+                  <div className="sm:ml-16 p-4 bg-white/0 shadow-2xl backdrop-filter backdrop-blur-lg rounded-lg text-center">
                     <h2 className="text-2xl font-bold sm:text-4xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
                       {`Open for opportunities!`}
                     </h2>
