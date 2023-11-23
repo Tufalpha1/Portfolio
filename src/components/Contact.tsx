@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import contact from "../../public/contact.png";
+import logo from "../../public/logo.png";
 
 
 
@@ -11,19 +12,34 @@ const Contact = () => {
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 sm:pt-32 lg:static lg:px-8 ">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <h2 className="text-3xl font-bold text-navprimary sm:text-4xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
               Get in touch
             </h2>
             <p className="my-6 text-base sm:text-lg leading-8 text-gray-600 ">
               {`I am available for freelance work. Contact me and we'll talk.`}
             </p>
             <br />
-            <div className="flex flex-col items-center justify-center px-4 py-8 sm:px-16 sm:py-24">
-              <div className="relative w-full max-w-lg">
-                <div className="absolute top-0 -right-4 w-48 h-48 md:w-72 md:h-72 bg-gradient-to-r from-[#1190CB] to-[#43cea2] rounded-full opacity-40 mix-blend-multiply filter animate-blob animation-delay-2000" />
-                <div className="m-8">
-                  <div className="relative space-y-4">
-                    <Image src={contact} alt="contact-img" />
+
+            <div className="relative w-full lg:max-w-lg flex flex-col items-center justify-center px-4 py-8 sm:px-16 sm:py-16">
+              <div className="absolute -bottom-4 sm:-bottom-8 left-8 sm:left-28 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#6ed1b2] to-[#33e7ae] rounded-full filter opacity-40 blur-md animate-blob animation-delay-4000">
+                <div className="absolute -bottom-4 sm:-bottom-8 left-8 sm:left-28 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#6ed1b2] to-[#33e7ae] rounded-full filter opacity-60 blur-3xl animate-blob animation-delay-4000"></div>
+              </div>
+              <div className="absolute top-10 right-4 sm:right-4 lg:-right-6 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#77bedf] to-[#1190CB]  rounded-full opacity-30 filter blur-md animate-blob animation-delay-2000">
+                <div className="absolute top-10 right-4 sm:right-4 lg:-right-6 w-36 sm:w-72 h-36 sm:h-72 bg-gradient-to-r from-[#77bedf] to-[#1190CB] rounded-full opacity-50 filter blur-2xl animate-blob animation-delay-2000"></div>
+              </div>
+              <div className="m-4 sm:m-8">
+                <div className="relative space-y-4">
+                  <div className="sm:ml-16 p-4 bg-white/30 backdrop-blur-xl rounded-lg">
+                    <Image
+                      className="w-12 h-12 sm:w-20 sm:h-20 mx-auto"
+                      src={logo}
+                      alt="logo"
+                    />
+                  </div>
+                  <div className="sm:ml-16 p-4 bg-white/20 backdrop-blur-xl rounded-lg text-center">
+                    <h2 className="text-2xl font-bold sm:text-4xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+                      {`Open for opportunities!`}
+                    </h2>
                   </div>
                 </div>
               </div>

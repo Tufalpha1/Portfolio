@@ -1,21 +1,15 @@
 'use client';
 import React, { useRef } from "react";
 import Image from "next/image";
+import airoverflow from "../../public/assets/experience/Airoverflow-logo.png";
 import aucss from "../../public/assets/experience/AUCSS-Logo.png";
 import xgrid from "../../public/assets/experience/Xgrid_logo.png";
 import cysecops from "../../public/assets/experience/Cysecops-logo.png";
-import {
-  motion,
-  useScroll,
-  useSpring,
-  useTransform,
-  MotionValue,
-} from "framer-motion";
+
 
 
 
 const Experience = () => {
-
   return (
     <section className="relative isolate py-32" id="experience">
       <div>
@@ -26,7 +20,7 @@ const Experience = () => {
       <h2 className="max-w-lg mb-6 text-3xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent sm:text-4xl md:mx-auto tracking-tighter">
         Where I have worked
       </h2>
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
         <div className="grid max-w-2xl mx-auto">
           <div className="flex">
             <div className="flex flex-col items-center mr-6">
@@ -34,6 +28,41 @@ const Experience = () => {
               <div>
                 <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#1190CB]">
                   1
+                </div>
+              </div>
+              <div className="w-px h-full bg-gray-400" />
+            </div>
+            <div className="flex flex-col sm:items-center sm:flex-row py-16">
+              <div className="sm:mr-5 sm:my-12">
+                <Image
+                  className="flex items-center justify-center w-24 h-32 my-3 sm:w-36 rounded-full"
+                  src={airoverflow}
+                  alt="aucss-logo"
+                />
+              </div>
+              <div className="fade">
+                <h2 className="text-xl font-bold tracking-tighter sm:text-2xl">
+                  AirOverFlow
+                </h2>
+                <p className="text-sm sm:text-base font-bold">
+                  Frontend Developer (Nov 2023 - Present)
+                </p>
+                <p>
+                  • Working on multiple development projects.
+                </p>
+                <p>
+                  • Learning and contributing to various aspects of web
+                  application security.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex">
+            <div className="flex flex-col items-center mr-6">
+              <div className="w-px h-10 bg-gray-400 sm:h-full" />
+              <div>
+                <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#43cea2]">
+                  2
                 </div>
               </div>
               <div className="w-px h-full bg-gray-400" />
@@ -67,8 +96,8 @@ const Experience = () => {
             <div className="flex flex-col items-center mr-6">
               <div className="w-px h-10 bg-gray-400 sm:h-full" />
               <div>
-                <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#43cea2]">
-                  2
+                <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#1190CB]">
+                  3
                 </div>
               </div>
               <div className="w-px h-full bg-gray-400" />
@@ -97,7 +126,7 @@ const Experience = () => {
             <div className="flex flex-col items-center mr-6">
               <div className="w-px h-10 bg-gray-400 sm:h-full" />
               <div>
-                <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#1190CB]">
+                <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#43cea2]">
                   3
                 </div>
               </div>
