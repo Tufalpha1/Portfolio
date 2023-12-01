@@ -80,7 +80,7 @@ const Experience = () => {
                   Air University Cyber Security Society
                 </h2>
                 <p className="text-sm sm:text-base font-bold">
-                  {`Developer's`} Club Lead (Dec 2022- Present)
+                  {`Developer's`} Club Lead (Dec 2022- Dec 2023)
                 </p>
                 <p>• Designed and developed aucss official website.</p>
                 <p>• Organized and coordinated numerous technical events.</p>

@@ -15,7 +15,7 @@ import Figma from "../../public/assets/skills/figma.png";
 import Docker from "../../public/assets/skills/docker.png";
 import Git from "../../public/assets/skills/git.png";
 import Postman from "../../public/assets/skills/postman.png";
-import Spline from "../../public/assets/skills/spline.png";
+import Typescript from "../../public/assets/skills/typescript.png";
 
 
 const Skills = () => {
@@ -54,6 +54,15 @@ const Skills = () => {
                 className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
                 src={Javascript}
                 alt="javascript"
+                width={158}
+                height={48}
+              />
+            </div>
+            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
+              <Image
+                className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
+                src={Typescript}
+                alt="typescript"
                 width={158}
                 height={48}
               />
@@ -117,15 +126,6 @@ const Skills = () => {
                 className="col-span-2 col-start-2 max-h-14 w-full object-contain sm:col-start-auto lg:col-span-1"
                 src={Mongodb}
                 alt="mongodb"
-                width={158}
-                height={48}
-              />
-            </div>
-            <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
-              <Image
-                className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
-                src={Actions}
-                alt="github-action"
                 width={158}
                 height={48}
               />
