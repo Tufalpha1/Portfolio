@@ -5,6 +5,7 @@ import airoverflow from "../../public/assets/experience/Airoverflow-logo.png";
 import aucss from "../../public/assets/experience/AUCSS-Logo.png";
 import xgrid from "../../public/assets/experience/Xgrid_logo.png";
 import cysecops from "../../public/assets/experience/Cysecops-logo.png";
+import bytebolt from "../../public/assets/experience/Byte-Bolt-logo.png";
 
 
 
@@ -17,7 +18,7 @@ const Experience = () => {
           Experience
         </p>
       </div>
-      <h2 className="max-w-lg mb-6 text-3xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent sm:text-4xl md:mx-auto tracking-tighter">
+      <h2 className="max-w-full mb-6 text-3xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent sm:text-4xl md:mx-auto tracking-tighter">
         Where I have worked
       </h2>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
@@ -35,24 +36,26 @@ const Experience = () => {
             <div className="flex flex-col sm:items-center sm:flex-row py-16">
               <div className="sm:mr-5 sm:my-12">
                 <Image
-                  className="flex items-center justify-center w-24 h-32 my-3 sm:w-36 rounded-full"
-                  src={airoverflow}
-                  alt="aucss-logo"
+                  className="flex items-center justify-center w-16 h-24 my-3 sm:w-24 sm:ml-3 sm:pr-3 rounded-full"
+                  src={bytebolt}
+                  alt="byte-bolt-logo"
+                  width={2560}
+                  height={1440}
                 />
               </div>
               <div className="fade">
                 <h2 className="text-xl font-bold tracking-tighter sm:text-2xl">
-                  AirOverFlow
+                  ByteBoltSec
                 </h2>
                 <p className="text-sm sm:text-base font-bold">
-                  Frontend Developer (Nov 2023 - Present)
+                  Full Stack Developer (Nov 2023 - Present)
                 </p>
-                <p>
-                  • Working on multiple development projects.
-                </p>
+
+                <p>• Working on multiple development projects.</p>
+                <p>• Designed frontend and challenges for PCC CTF 2023.</p>
                 <p>
                   • Learning and contributing to various aspects of web
-                  application security.
+                  applications and security engineering.
                 </p>
               </div>
             </div>

@@ -35,7 +35,7 @@ const About = () => {
             <div className="py-12">
               <div className="grid gap-8 items-start sm:justify-start justify-center">
                 <div className="relative group">
-                  <div className="absolute -inset-0.5 bg-gradient-to-r from-[#43cea2] to-[#185a9d] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                  <div className="absolute -inset-0.5 bg-gradient-to-r from-[#43cea2] to-[#3fc2ff] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                   <button className="relative px-7 py-4 bg-[#ecf0f3] rounded-lg leading-none flex divide-x divide-gray-600">
                     <span className="pl-6 text-black group-hover:text-gray-600 transition duration-200 text-sm sm:text-lg">
                       Check out some of my projects &rarr;

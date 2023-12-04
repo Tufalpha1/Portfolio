@@ -14,7 +14,7 @@ export const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full h-screen text-center relative inset-0 bg-[radial-gradient(#80808052_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_80%,transparent_100%)]"
+      className="w-full h-screen text-center relative inset-0 bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_80%,transparent_100%)]"
     >
       <div className="relative isolate px-6 pt-6 lg:px-8">
         <div
@@ -39,7 +39,7 @@ export const Hero = () => {
       >
         <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div className="mb-8 flex justify-center">
-            <div className="relative rounded-full px-1 sm:px-3 py-0 sm:py-1 text-xs sm:text-sm leading-6 text-gray-800 ring-1 ring-gray-900/10 hover:ring-gray-900/20 tracking-normal">
+            <div className="relative rounded-full px-1 sm:px-3 py-0 sm:py-1 text-xs sm:text-sm leading-6 text-gray-800 ring-1 ring-[#1190CB]/40 hover:ring-[#43cea2]/40 tracking-normal bg-[#ecf0f3]">
               Let&#39;s build something together &rarr;
             </div>
           </div>
@@ -67,7 +67,7 @@ export const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-[#ecf0f3]">
                 <FaLinkedinIn />
               </div>
             </Link>
@@ -76,17 +76,17 @@ export const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-[#ecf0f3]">
                 <FaGithub />
               </div>
             </Link>
             <Link href="/#contact">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-[#ecf0f3]">
                 <AiOutlineMail />
               </div>
             </Link>
             <Link href="https://teal-jacky-38.tiiny.site">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-[#ecf0f3]">
                 <BsFillPersonLinesFill />
               </div>
             </Link>
