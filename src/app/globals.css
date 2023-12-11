@@ -78,3 +78,22 @@
   }
 }
 
+.linear-wipe {
+  text-align: center;
+  
+  background: linear-gradient(to bottom left, #000 20%, #78716c 40%, #78716c 60%, #000 80% );
+  background-size: 200% auto;
+  
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }

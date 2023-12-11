@@ -39,20 +39,20 @@ export const Hero = () => {
       >
         <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
           <div className="mb-8 flex justify-center">
-            <div className="relative rounded-full px-1 sm:px-3 py-0 sm:py-1 text-xs sm:text-sm leading-6 text-gray-800 ring-1 ring-[#1190CB]/40 hover:ring-[#43cea2]/40 tracking-normal bg-[#ecf0f3]">
+            <div className="relative rounded-full px-1 sm:px-3 py-0 sm:py-1 text-xs sm:text-sm leading-6 text-gray-800 ring-1 ring-black/40 hover:ring-stone-500/40 tracking-normal bg-[#ecf0f3]">
               Let&#39;s build something together &rarr;
             </div>
           </div>
           <h1 className="py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             Hi, I&#39;m{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1190CB] to-[#43cea2] sm:text-6xl">
+            <span className="linear-wipe sm:text-6xl">
               {" "}
               Zain
             </span>
           </h1>
           <h1 className="md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             A Full Stack Web Developer and a Security Researcher
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1190CB] to-[#43cea2]">
+            <span className="linear-wipe">
               .
             </span>
           </h1>
