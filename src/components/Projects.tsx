@@ -1,12 +1,13 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import hoobankImg from "../../public/assets/projects/hoobank.png";
 import eshopImg from "../../public/assets/projects/eshop.png";
 import cysecopsImg from "../../public/assets/projects/cysecops.png";
 import aucssImg from "../../public/assets/projects/aucss.png";
 import intelligenImage from "../../public/assets/projects/intelligen.png";
 import decentralizedConnect from "../../public/assets/projects/decentralizedconnect.png";
+import ctf from "../../public/assets/projects/ctf-scoreboard.png";
 import DesignItem from "./DesignItem";
+import ProjectItem2 from "./ProjectItem2";
 
 const Projects = () => {
   return (
@@ -19,16 +20,16 @@ const Projects = () => {
           What I&apos;ve Built
         </h2>
         <div className="grid md:grid-cols-2 gap-8 py-10">
-          <ProjectItem
-            title="Bank Database App"
-            backgroundImg={hoobankImg}
-            projectUrl="/hoobank"
-            tech="React/Node JS"
+          <DesignItem
+            title="DecentralizedConnect"
+            backgroundImg={decentralizedConnect}
+            projectUrl="/decentralizedconnect"
+            tech="Next JS/Express/Solidity"
           />
-          <ProjectItem
-            title="Ecommerce App"
-            backgroundImg={eshopImg}
-            projectUrl="/eshop"
+          <ProjectItem2
+            title="CTF Scoreboard"
+            backgroundImg={ctf}
+            projectUrl="/ctf"
             tech="Next JS"
           />
           <ProjectItem
@@ -43,11 +44,11 @@ const Projects = () => {
             projectUrl="/intelligen"
             tech="Next JS"
           />
-          <DesignItem
-            title="DecentralizedConnect"
-            backgroundImg={decentralizedConnect}
-            projectUrl="/decentralizedconnect"
-            tech="Next JS/Express/Solidity"
+          <ProjectItem
+            title="Ecommerce App"
+            backgroundImg={eshopImg}
+            projectUrl="/eshop"
+            tech="Next JS"
           />
           <ProjectItem
             title="AUCSS Website"
