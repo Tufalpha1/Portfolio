@@ -38,7 +38,7 @@ const Education = () => {
                   height="24"
                 />
               </svg>
-              <span className="relative bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+              <span className="relative px-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
                 My Academic Journey
               </span>
             </span>{" "}

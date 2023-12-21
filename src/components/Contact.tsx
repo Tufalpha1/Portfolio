@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
         </div>
         <form
-          action="https://getform.io/f/b5b47b5f-72b6-4d9e-96d3-f6288f849735"
+          action="https://getform.io/f/f8164cef-4da3-4cb8-85c4-8fdf5384983c"
           method="POST"
           className="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
         >
