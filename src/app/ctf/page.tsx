@@ -4,7 +4,9 @@ import Image from "next/image";
 import ctfImg from "../../../public/assets/projects/ctf-scoreboard.png";
 import firstBlood from "../../../public/assets/projects/first-blood.png";
 import newLeader from "../../../public/assets/projects/new-leader.png";
-
+import ctf2 from "../../../public/assets/projects/ctf-scoreboard2.png";
+import firstBlood2 from "../../../public/assets/projects/first-blood2.png";
+import newLeader2 from "../../../public/assets/projects/new-leader2.png";
 
 const page = () => {
   return (
@@ -47,8 +49,8 @@ const page = () => {
           </div>
         </div>
         <h2 className="text-center py-4 mt-16">More Snaps</h2>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-y-10 sm:max-w-xl lg:grid-cols-3 lg:mx-0 lg:max-w-none cursor-pointer">
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-y-10 gap-8 sm:max-w-xl lg:grid-cols-3 lg:mx-0 lg:max-w-none cursor-pointer">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
             <Image
               className="col-span-1 max-h-full w-full object-cover sm:col-start-2 rounded-xl"
               src={firstBlood}
@@ -57,7 +59,7 @@ const page = () => {
               height={700}
             />
           </div>
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
             <Image
               className="col-span-1 col-start-2 max-h-full w-full object-cover sm:col-start-auto rounded-xl"
               src={ctfImg}
@@ -66,13 +68,40 @@ const page = () => {
               height={700}
             />
           </div>
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
             <Image
               className="col-span-1 col-start-2 max-h-full w-full object-cover sm:col-start-auto rounded-xl"
               src={newLeader}
               alt="new-leader"
               width={700}
               height={700}
+            />
+          </div>
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
+            <Image
+              className="col-span-1 max-h-full w-full object-cover sm:col-start-2 rounded-xl"
+              src={firstBlood2}
+              alt="first-blood"
+              width={1868}
+              height={1030}
+            />
+          </div>
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
+            <Image
+              className="col-span-1 col-start-2 max-h-full w-full object-cover sm:col-start-auto rounded-xl"
+              src={ctf2}
+              alt="Leaderboard-and-solves"
+              width={1850}
+              height={1071}
+            />
+          </div>
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
+            <Image
+              className="col-span-1 col-start-2 max-h-full w-full object-cover sm:col-start-auto rounded-xl"
+              src={newLeader2}
+              alt="new-leader"
+              width={1846}
+              height={1006}
             />
           </div>
         </div>

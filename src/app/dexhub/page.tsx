@@ -47,8 +47,8 @@ const page = () => {
           </div>
         </div>
         <h2 className="text-center py-4 mt-16">More Snaps</h2>
-        <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-y-10 sm:max-w-xl lg:grid-cols-3 lg:mx-0 lg:max-w-none cursor-pointer">
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
+        <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-y-10 gap-8 sm:max-w-xl lg:grid-cols-3 lg:mx-0 lg:max-w-none cursor-pointer">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
             <Image
               className="col-span-1 max-h- w-full object-cover sm:col-start-2 rounded-xl"
               src={DEX2}
@@ -57,7 +57,7 @@ const page = () => {
               height={500}
             />
           </div>
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
             <Image
               className="col-span-1 col-start-2 max-h- w-full object-cover sm:col-start-auto rounded-xl"
               src={DEX4}
@@ -66,7 +66,7 @@ const page = () => {
               height={500}
             />
           </div>
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
             <Image
               className="col-span-1 col-start-2 max-h- w-full object-cover sm:col-start-auto rounded-xl"
               src={DEX3}
