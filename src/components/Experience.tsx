@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useRef } from "react";
 import Image from "next/image";
 import airoverflow from "../../public/assets/experience/Airoverflow-logo.png";
@@ -7,17 +7,12 @@ import xgrid from "../../public/assets/experience/Xgrid_logo.png";
 import cysecops from "../../public/assets/experience/Cysecops-logo.png";
 import bytebolt from "../../public/assets/experience/Byte-Bolt-logo.png";
 
-
-
-
 const Experience = () => {
   return (
     <section className="relative isolate py-32" id="experience">
-      <div>
         <p className="text-xl tracking-tighter uppercase text-[#1190CB] text-center my-4">
           Experience
         </p>
-      </div>
       <h2 className="max-w-full mb-6 text-3xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent sm:text-4xl md:mx-auto tracking-tighter">
         Where I have worked
       </h2>

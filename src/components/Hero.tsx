@@ -30,7 +30,6 @@ export const Hero = () => {
           />
         </div>
       </div>
-
       <motion.div
         className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center"
         initial={{ opacity: 0, scale: 0.5 }}
@@ -44,17 +43,11 @@ export const Hero = () => {
             </div>
           </div>
           <h1 className="py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
-            Hi, I&#39;m{" "}
-            <span className="linear-wipe sm:text-6xl">
-              {" "}
-              Zain
-            </span>
+            Hi, I&#39;m <span className="linear-wipe sm:text-6xl"> Zain</span>
           </h1>
           <h1 className="md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             A Full Stack Web Developer and a Security Researcher
-            <span className="linear-wipe">
-              .
-            </span>
+            <span className="linear-wipe">.</span>
           </h1>
           <p className="py-4 text-black sm:max-w-[70%] m-auto text-sm sm:text-lg">
             I’m focused on building responsive frontend web applications with a

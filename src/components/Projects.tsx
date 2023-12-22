@@ -11,7 +11,7 @@ import ProjectItem2 from "./ProjectItem2";
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full">
+    <section id="projects" className="w-full scroll-mt-20">
       <div className="max-w-[1240px] mx-auto px-2 py-24">
         <p className="text-xl tracking-tighter uppercase text-[#1190CB] text-center">
           Projects

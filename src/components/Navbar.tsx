@@ -37,17 +37,17 @@ export const Navbar = () => {
     <nav
       className={
         shadow
-          ? "fixed top-0 w-full p-4 h-24 shadow-xl z-[100] ease-in-out duration-300  bg-white/0 backdrop-filter backdrop-blur-3xl"
-          : "fixed top-0 w-full h-20 z-[100]"
+          ? "fixed top-0 w-full h-24 shadow-xl z-[100] ease-in-out duration-300 bg-white/0 backdrop-filter backdrop-blur-3xl"
+          : "fixed top-0 w-full h-24 z-[100]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-4 2xl:px-16 mt-2">
+      <div className="flex justify-around items-center w-full h-full px-4 2xl:px-16 mt-2 ">
         <Image
           src={navLogo}
           alt="Zain's Logo"
           width={80}
           height={40}
-          className="h-12 w-8"
+          className="h-12 w-8 mr-32"
         />
         <div>
           <ul className="hidden font-medium md:flex">
@@ -163,4 +163,3 @@ export const Navbar = () => {
     </nav>
   );
 };
-

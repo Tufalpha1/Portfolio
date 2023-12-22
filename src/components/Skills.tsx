@@ -20,7 +20,10 @@ import Typescript from "../../public/assets/skills/typescript.png";
 
 const Skills = () => {
   return (
-    <section id="skills" className="w-full lg:h-screen px-2 relative">
+    <section
+      id="skills"
+      className="w-full lg:h-screen px-2 relative scroll-mt-20"
+    >
       <div className="absolute z-[-200] w-[60%] h-[60%] -left-[40%] top-[-20%] rounded-full blue__gradient bottom-40 overflow-hidden" />
       <div className="py-12 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">

@@ -8,7 +8,7 @@ import logo from "../../public/zLogo.png";
 
 const Contact = () => {
   return (
-    <section className="relative isolate" id="contact">
+    <section className="relative isolate scroll-mt-24" id="contact">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 sm:pt-32 lg:static lg:px-8 ">
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
