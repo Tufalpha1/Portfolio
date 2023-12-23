@@ -5,7 +5,7 @@ import cysecopsImg from "../../public/assets/projects/cysecops.png";
 import aucssImg from "../../public/assets/projects/aucss.png";
 import intelligenImage from "../../public/assets/projects/intelligen.png";
 import decentralizedConnect from "../../public/assets/projects/decentralizedconnect.png";
-import ctf from "../../public/assets/projects/ctf-scoreboard.png";
+import ctf from "../../public/assets/projects/ctf-scoreboard2.png";
 import DesignItem from "./DesignItem";
 import ProjectItem2 from "./ProjectItem2";
 
