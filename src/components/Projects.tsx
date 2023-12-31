@@ -4,7 +4,7 @@ import eshopImg from "../../public/assets/projects/eshop.png";
 import cysecopsImg from "../../public/assets/projects/cysecops.png";
 import aucssImg from "../../public/assets/projects/aucss.png";
 import intelligenImage from "../../public/assets/projects/intelligen.png";
-import decentralizedConnect from "../../public/assets/projects/decentralizedconnect.png";
+import decentraConnect from "../../public/assets/projects/decentra-connect.png";
 import ctf from "../../public/assets/projects/ctf-scoreboard2.png";
 import DesignItem from "./DesignItem";
 import ProjectItem2 from "./ProjectItem2";
@@ -22,8 +22,8 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8 py-10">
           <DesignItem
             title="DecentralizedConnect"
-            backgroundImg={decentralizedConnect}
-            projectUrl="/decentralizedconnect"
+            backgroundImg={decentraConnect}
+            projectUrl="/decentraconnect"
             tech="Next JS/Express/Solidity"
           />
           <ProjectItem2

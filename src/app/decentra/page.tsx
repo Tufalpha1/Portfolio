@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import decentraImg from "../../../public/assets/designs/decentra.png";
+import decentra from "../../../public/assets/designs/decentra.png";
 import DC2 from "../../../public/assets/designs/DC-2.png";
 import DC3 from "../../../public/assets/designs/DC-3.png";
 import DC4 from "../../../public/assets/designs/DC-4.png";
+
 
 const page = () => {
   return (
@@ -15,7 +16,7 @@ const page = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={decentraImg}
+          src={decentra}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -53,27 +54,27 @@ const page = () => {
             <Image
               className="col-span-1 max-h- w-full object-cover sm:col-start-2 rounded-xl"
               src={DC2}
-              alt="about"
-              width={500}
-              height={500}
-            />
-          </div>
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-400">
-            <Image
-              className="col-span-1 col-start-2 max-h- w-full object-cover sm:col-start-auto rounded-xl"
-              src={DC4}
               alt="nftmarketplace"
-              width={500}
+              width={710}
               height={500}
             />
           </div>
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-400">
             <Image
-              className="col-span-1 col-start-2 max-h- w-full object-cover sm:col-start-auto rounded-xl"
+              className="col-span-1 col-start-2  w-full object-cover sm:col-start-auto rounded-xl"
               src={DC3}
-              alt="features"
-              width={500}
-              height={500}
+              alt="about"
+              width={994}
+              height={707}
+            />
+          </div>
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-400">
+            <Image
+              className="col-span-1 col-start-2 w-full object-cover sm:col-start-auto rounded-xl"
+              src={DC4}
+              alt="socialmedia"
+              width={1000}
+              height={708}
             />
           </div>
         </div>

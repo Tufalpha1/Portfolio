@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import decentralizedconnect from "../../../public/assets/projects/decentralizedconnect.png";
+import decentraConnect from "../../../public/assets/projects/decentra-connect.png";
 import Tailwind from "../../../public/assets/skills/tailwind.png";
 import NodeJS from "../../../public/assets/skills/node.png";
 import Express from "../../../public/assets/skills/express.png";
@@ -17,7 +17,7 @@ const page = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={decentralizedconnect}
+          src={decentraConnect}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -37,8 +37,9 @@ const page = () => {
           </p>
           <h2 className="py-6">Overview</h2>
           <p className="text-center">
-            This is a social media application created for a decentralized
-            social media platform build on the Ethereum blockchain.
+            This is a decentralized social media platform that utilizes IPFS for content storage.
+            The frontend is built with Next JS and the backend is built with Express. MongoDB is used as a database
+            for storing user credentials and CIDs for IPFS content.
           </p>
           <div className="mt-10 flex justify-center">
             <button className="text-white bg-gradient-to-r from-[#742ce9] via-purple-500 to-[#B75CFF] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
