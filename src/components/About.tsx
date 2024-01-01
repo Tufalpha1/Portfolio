@@ -18,7 +18,7 @@ const About = () => {
           <h2 className="py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             Who I Am
           </h2>
-          <div className="py-2 text-black text-sm sm:text-lg">
+          <div className="py-2 text-black text-sm sm:text-base">
             <p>
               I am a Cybersecurity undergraduate with a love for web
               development. I thrive on building dynamic and interactive web
