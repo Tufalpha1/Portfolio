@@ -21,7 +21,7 @@ const Projects = () => {
         </h2>
         <div className="grid md:grid-cols-2 gap-8 py-10">
           <DesignItem
-            title="DecentralizedConnect"
+            title="DecentraConnect"
             backgroundImg={decentraConnect}
             projectUrl="/decentraconnect"
             tech="Next JS/Express/Solidity"

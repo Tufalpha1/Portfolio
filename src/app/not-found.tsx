@@ -3,14 +3,14 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="mt-48 flex flex-col items-center justify-center md:mt-24 md:flex-row md:space-x-6">
-      <div className="pb-8 pt-6 md:space-y-5">
-        <h1 className="pt-8 text-6xl font-extrabold leading-9 tracking-tighter text-black md:border-r-2 md:px-6 md:text-8xl md:leading-14">
+      <div className="pb-4 pt-6 md:space-y-5">
+        <h1 className="py-4 text-6xl font-extrabold leading-9 tracking-tighter text-transparent bg-clip-text bg-gradient-to-br from-black to-stone-500 md:border-r-2 md:px-6 md:text-8xl md:leading-14">
           404
         </h1>
       </div>
       <div className="max-w-md text-center md:text-left">
         <p className="mb-4 text-xl font-bold leading-normal md:text-2xl tracking-tighter">
-          {`Sorry, we couldn't find this page.`}
+          {`Sorry, The page you were looking for doesn't exist.`}
         </p>
         <Link
           href="/"
