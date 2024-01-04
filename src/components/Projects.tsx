@@ -24,7 +24,7 @@ const Projects = () => {
             title="DecentraConnect"
             backgroundImg={decentraConnect}
             projectUrl="/decentraconnect"
-            tech="Next JS/Express/Solidity"
+            tech="Next JS / Express / IPFS"
           />
           <ProjectItem2
             title="CTF Scoreboard"
