@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import au from '../../public/assets/education/AU-Logo.png'
+import au from '../../public/assets/education/AU-Logo.jpg'
 import qdc from '../../public/assets/education/QDC.jpg'
 import ssps from '../../public/assets/education/SSPS.jpg'
 
@@ -122,7 +122,7 @@ const Education = () => {
           <div className="relative p-5 duration-300 transform bg-[#ecf0f3] border-2 rounded-3xl shadow-sm border-[#1190CB] hover:-translate-y-2">
             <div className="flex items-center mb-2">
               <Image
-                className="flex items-center justify-center w-12 h-9 mr-2 rounded-full"
+                className="flex items-center justify-center w-12 h-12 mr-2 rounded-full"
                 src={au}
                 alt="au-logo"
                 width={48}

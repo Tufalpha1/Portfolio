@@ -115,8 +115,8 @@ const Experience = () => {
                 <p className="text-sm sm:text-base font-bold">
                   Project Intern (May 2023 - Sep 2023)
                 </p>
-                <p>• Development of my FYP {`'DecentralizedConnect'`}.</p>
-                <p>• UI/UX of DecentralizedConnect.</p>
+                <p>• Development of my Final Year Project {`'DecentraConnect'`}.</p>
+                <p>• Designed the UI/UX of DecentraConnect.</p>
               </div>
             </div>
           </div>
