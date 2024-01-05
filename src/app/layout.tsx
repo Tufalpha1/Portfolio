@@ -1,11 +1,8 @@
 import { Analytics } from "@vercel/analytics/react";
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { GeistSans } from "geist/font/sans";
 import Footer from '@/components/Footer'
-
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Zain',
@@ -23,7 +20,7 @@ export default function RootLayout({
       className="!scroll-smooth"
       style={{ scrollBehavior: "smooth" }}
     >
-      <body className={inter.className}>
+      <body className={GeistSans.className}>
         {children}
         <Analytics />
       </body>
