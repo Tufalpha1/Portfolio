@@ -17,7 +17,7 @@ const page = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          // src={aucssImg}
+          src={aucssImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
