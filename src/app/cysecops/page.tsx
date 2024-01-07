@@ -19,18 +19,20 @@ const page = () => {
           src={cysecopsImg}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Cybersecurity Company Website</h2>
-          <h3>Next JS / Tailwind / Strapi</h3>
+        <div className="tracking-tighter absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+          <h2 className="py-2 sm:text-5xl">Cybersecurity Company Website</h2>
+          <h3 className="sm:text-2xl">Next JS / Tailwind / Strapi</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 w-full py-8">
         <div className="col-span-4">
-          <p className="uppercase text-xl tracking-widest text-center text-[#1190CB] pt-4">
+          <p className="uppercase text-xl text-center text-[#1190CB] pt-4">
             Project
           </p>
-          <h2 className="text-center py-6">Overview</h2>
-          <p className="text-center">
+          <h2 className="text-center py-6 sm:text-4xl tracking-tighter">
+            Overview
+          </h2>
+          <p className="text-center sm:text-lg">
             This project was built for a cybersecurity startup namely CySecOps.
             The website is built using next js and tailwind css. The content is
             managed using the Strapi CMS.
@@ -46,7 +48,9 @@ const page = () => {
             </button>
           </div>
         </div>
-        <h2 className="text-center py-4 mt-16">Technologies</h2>
+        <h2 className="text-center py-4 mt-16 sm:text-4xl tracking-tighter">
+          Technologies
+        </h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none cursor-pointer">
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image

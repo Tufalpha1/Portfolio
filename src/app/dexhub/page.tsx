@@ -18,18 +18,18 @@ const page = () => {
           src={dexhubImg}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Decentralized Exchange UI</h2>
-          <h3>Figma</h3>
+        <div className="tracking-tighter absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+          <h2 className="py-2 sm:text-5xl">Decentralized Exchange UI</h2>
+          <h3 className="sm:text-2xl">Figma</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 w-full py-8">
         <div className="col-span-4 text-center">
-          <p className="uppercase text-xl tracking-widest text-center text-[#1190CB] pt-4">
+          <p className="uppercase text-xl text-center text-[#1190CB] pt-4">
             Design
           </p>
-          <h2 className="py-6">Overview</h2>
-          <p className="text-center">
+          <h2 className="py-6 sm:text-4xl tracking-tighter">Overview</h2>
+          <p className="text-center sm:text-lg">
             This is a design created for a decentralized exchange platform that
             was based upon uniswap v3. The design was created using Figma.
           </p>

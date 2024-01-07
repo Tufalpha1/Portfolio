@@ -9,11 +9,11 @@ import bytebolt from "../../public/assets/experience/Byte-Bolt-logo.png";
 
 const Experience = () => {
   return (
-    <section className="relative isolate py-32" id="experience">
+    <section className="relative isolate pt-48" id="experience">
       <p className="text-xl uppercase text-[#1190CB] text-center my-4">
         Experience
       </p>
-      <h2 className="max-w-full mb-6 text-4xl sm:text-5xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent md:mx-auto tracking-tighter">
+      <h2 className="max-w-lg mb-6 text-4xl sm:text-5xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent md:mx-auto tracking-tighter">
         Where I have worked
       </h2>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">

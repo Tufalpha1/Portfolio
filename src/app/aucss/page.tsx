@@ -20,9 +20,11 @@ const page = () => {
           src={aucssImg}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Air University Cyber Security Website</h2>
-          <h3>Next JS / Tailwind / Strapi</h3>
+        <div className="tracking-tighter absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+          <h2 className="py-2 sm:text-5xl">
+            Air University Cyber Security Website
+          </h2>
+          <h3 className="sm:text-2xl">Next JS / Tailwind / Strapi</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 w-full py-8">
@@ -30,10 +32,12 @@ const page = () => {
           <p className="uppercase text-xl tracking-widest text-center text-[#1190CB] pt-4">
             Project
           </p>
-          <h2 className="text-center py-6">Overview</h2>
-          <p className="text-center">
+          <h2 className="text-center py-6 sm:text-4xl tracking-tighter">
+            Overview
+          </h2>
+          <p className="text-center sm:text-lg">
             This project was built for AUCSS (Air University Cyber Security
-            Society). The website is built using next js and tailwind css.
+            Society). The website is built using Next JS and Tailwind CSS.
           </p>
           <div className="mt-10 flex justify-center">
             <button className="text-white bg-gradient-to-r from-[#1190CB] via-blue-500 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
@@ -46,7 +50,9 @@ const page = () => {
             </button>
           </div>
         </div>
-        <h2 className="text-center py-4 mt-16">Technologies</h2>
+        <h2 className="text-center py-4 mt-16 sm:text-4xl tracking-tighter">
+          Technologies
+        </h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-y-10 sm:max-w-xl sm:grid-cols-4 lg:mx-0 lg:max-w-none cursor-pointer">
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image

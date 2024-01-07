@@ -20,18 +20,18 @@ const page = () => {
           src={ctf2}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">CTF Scoreboard</h2>
-          <h3>Next JS / Express</h3>
+        <div className="tracking-tighter absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+          <h2 className="py-2 sm:text-5xl ">CTF Scoreboard</h2>
+          <h3 className="sm:text-2xl">Next JS / Express</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 w-full py-8">
         <div className="col-span-4 text-center">
-          <p className="uppercase text-xl tracking-widest text-center text-[#1190CB] pt-4">
+          <p className="uppercase text-xl text-center text-[#1190CB] pt-4">
             Project
           </p>
-          <h2 className="py-6">Overview</h2>
-          <p className="text-center">
+          <h2 className="py-6 tracking-tighter sm:text-4xl">Overview</h2>
+          <p className="text-center sm:text-lg">
             This is a scoreboard for the on-site CTF competition that shows the
             top 10 teams and their scores. It also shows the latest challenges
             solved. There are two alerts, one for the first blood and the other
@@ -48,7 +48,9 @@ const page = () => {
             </button>
           </div>
         </div>
-        <h2 className="text-center py-4 mt-16">More Snaps</h2>
+        <h2 className="text-center py-4 mt-16 sm:text-4xl tracking-tighter">
+          More Snaps
+        </h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-y-10 gap-8 sm:max-w-xl lg:grid-cols-3 lg:mx-0 lg:max-w-none cursor-pointer">
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
             <Image

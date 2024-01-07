@@ -19,18 +19,20 @@ const page = () => {
           src={decentra}
           alt="/"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Decentralized Social Media Application UI</h2>
-          <h3>Figma</h3>
+        <div className="tracking-tighter absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+          <h2 className="py-2 sm:text-5xl">
+            Decentralized Social Media Application UI
+          </h2>
+          <h3 className="sm:text-2xl">Figma</h3>
         </div>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 w-full py-8">
         <div className="col-span-4 text-center">
-          <p className="uppercase text-xl tracking-widest text-center text-[#1190CB] pt-4">
+          <p className="uppercase text-xl text-center text-[#1190CB] pt-4">
             Design
           </p>
-          <h2 className="py-6">Overview</h2>
-          <p className="text-center">
+          <h2 className="py-6 sm:text-4xl tracking-tighter">Overview</h2>
+          <p className="text-center sm:text-lg">
             This is a design created for a decentralized social media platform
             build on the Ethereum blockchain. The design was created using
             Figma.
@@ -48,7 +50,7 @@ const page = () => {
             </button>
           </div>
         </div>
-        <h2 className="text-center py-4 mt-16">More Snaps</h2>
+        <h2 className="text-center py-4 mt-16 sm:text-4xl tracking-tighter">More Snaps</h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-1 items-center gap-y-10 gap-8 sm:max-w-xl lg:grid-cols-3 lg:mx-0 lg:max-w-none cursor-pointer">
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-400">
             <Image
