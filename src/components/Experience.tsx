@@ -10,10 +10,10 @@ import bytebolt from "../../public/assets/experience/Byte-Bolt-logo.png";
 const Experience = () => {
   return (
     <section className="relative isolate py-32" id="experience">
-        <p className="text-xl tracking-tighter uppercase text-[#1190CB] text-center my-4">
-          Experience
-        </p>
-      <h2 className="max-w-full mb-6 text-3xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent sm:text-4xl md:mx-auto tracking-tighter">
+      <p className="text-xl uppercase text-[#1190CB] text-center my-4">
+        Experience
+      </p>
+      <h2 className="max-w-full mb-6 text-4xl sm:text-5xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent md:mx-auto tracking-tighter">
         Where I have worked
       </h2>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
@@ -39,10 +39,10 @@ const Experience = () => {
                 />
               </div>
               <div className="fade">
-                <h2 className="text-xl font-bold tracking-tighter sm:text-2xl">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
                   ByteBoltSec
                 </h2>
-                <p className="text-sm sm:text-base font-bold">
+                <p className="text-base sm:text-lg font-bold">
                   Full Stack Developer (Nov 2023 - Present)
                 </p>
 
@@ -74,15 +74,15 @@ const Experience = () => {
                 />
               </div>
               <div className="fade">
-                <h2 className="text-xl font-bold tracking-tighter sm:text-2xl">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
                   Air University Cyber Security Society
                 </h2>
-                <p className="text-sm sm:text-base font-bold">
+                <p className="text-base sm:text-lg font-bold">
                   {`Developer's`} Club Lead (Dec 2022- Dec 2023)
                 </p>
                 <p>• Designed and developed aucss official website.</p>
                 <p>• Organized and coordinated numerous technical events.</p>
-                <p className="text-sm sm:text-base mt-2 font-bold">
+                <p className="text-base sm:text-lg mt-2 font-bold">
                   Event Management Team Member (Dec 2021 - Dec 2022)
                 </p>
                 <p>• Usher for ICCWS 2022.</p>
@@ -109,13 +109,15 @@ const Experience = () => {
                 />
               </div>
               <div className="fade">
-                <h2 className="text-xl font-bold tracking-tighter sm:text-2xl">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
                   Xgrid
                 </h2>
-                <p className="text-sm sm:text-base font-bold">
+                <p className="text-base sm:text-lg font-bold">
                   Project Intern (May 2023 - Sep 2023)
                 </p>
-                <p>• Development of my Final Year Project {`'DecentraConnect'`}.</p>
+                <p>
+                  • Development of my Final Year Project {`'DecentraConnect'`}.
+                </p>
                 <p>• Designed the UI/UX of DecentraConnect.</p>
               </div>
             </div>
@@ -139,10 +141,10 @@ const Experience = () => {
                 />
               </div>
               <div className="fade">
-                <h2 className="text-xl font-bold tracking-tighter sm:text-2xl">
+                <h2 className="text-2xl font-bold tracking-tighter sm:text-3xl">
                   CySecOps
                 </h2>
-                <p className="text-sm sm:text-base font-bold">
+                <p className="text-base sm:text-lg font-bold">
                   Web Development Intern (Feb 2023 - May 2023)
                 </p>
                 <p>• Completed multiple web development projects.</p>

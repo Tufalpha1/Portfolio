@@ -15,9 +15,6 @@ const Footer = () => {
           className="w-20 h-20 mx-auto my-4"
           alt="company-logo"
         />
-        <p className="bg-clip-text bg-gradient-to-br from-black to-stone-500 text-transparent tracking-tighter font-semibold text-lg sm:text-xl">
-          Innovation. Collaboration. Success.
-        </p>
         <div className="flex items-center justify-evenly max-w-[330px] m-auto py-4 gap-8">
           <a
             href="https://www.linkedin.com/in/mzain-ul-abideen/"

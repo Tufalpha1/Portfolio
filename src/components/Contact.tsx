@@ -11,8 +11,8 @@ const Contact = () => {
     <section className="relative isolate scroll-mt-24" id="contact">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 sm:pt-32 lg:static lg:px-8 ">
-          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-            <h2 className="text-3xl font-bold sm:text-4xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+          <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg lg:mt-20">
+            <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
               Get in touch
             </h2>
             <p className="my-6 text-base sm:text-lg leading-8 text-gray-600 ">

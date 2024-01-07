@@ -13,13 +13,13 @@ const Projects = () => {
   return (
     <section id="projects" className="w-full scroll-mt-20">
       <div className="max-w-[1240px] mx-auto px-2 py-24">
-        <p className="text-xl tracking-tighter uppercase text-[#1190CB] text-center">
+        <p className="text-xl  uppercase text-[#1190CB] text-center">
           Projects
         </p>
-        <h2 className="py-8 text-center bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+        <h2 className="py-8 text-center text-4xl sm:text-5xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
           What I&apos;ve Built
         </h2>
-        <div className="grid md:grid-cols-2 gap-8 py-10">
+        <div className="grid md:grid-cols-2 gap-8 py-20">
           <DesignItem
             title="DecentraConnect"
             backgroundImg={decentraConnect}

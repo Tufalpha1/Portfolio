@@ -12,13 +12,11 @@ const About = () => {
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2 px-8">
-          <p className="uppercase text-xl tracking-tighter text-[#1190CB]">
-            About me
-          </p>
-          <h2 className="py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+          <p className="uppercase text-xl  text-[#1190CB]">About me</p>
+          <h2 className="py-4 text-4xl sm:text-5xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             Who I Am
           </h2>
-          <div className="py-2 text-black text-sm sm:text-base">
+          <div className="py-2 text-black text-sm sm:text-lg">
             <p>
               I am a Cybersecurity undergraduate with a love for web
               development. I thrive on building dynamic and interactive web
@@ -27,8 +25,10 @@ const About = () => {
               backend technologies, including databases, I am continuously
               expanding my skill set to become a well-rounded developer.
             </p>
-            <p className="mt-4 font-semibold">I specialize in:</p>
-            <div className="text-sm sm:text-base text-gray-700">
+            <p className="mt-4 font-bold text-sm sm:text-lg">
+              I specialize in:
+            </p>
+            <div className="text-sm sm:text-lg text-gray-700">
               <p>• Front-End Development (React/Next JS)</p>
               <p>• Back-End Development (Node JS)</p>
               <p>• UI/UX Design (Figma/Spline 3D)</p>

@@ -10,7 +10,7 @@ const Education = () => {
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
-            <p className="text-xl tracking-tighter uppercase text-[#1190CB] text-center my-4">
+            <p className="text-xl uppercase text-[#1190CB] text-center my-4">
               Education
             </p>
           </div>
@@ -38,7 +38,7 @@ const Education = () => {
                   height="24"
                 />
               </svg>
-              <span className="relative px-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+              <span className="relative px-2 text-4xl sm:text-5xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
                 My Academic Journey
               </span>
             </span>{" "}
@@ -55,19 +55,21 @@ const Education = () => {
                 height={60}
               />
               <div className="flex flex-col">
-                <h2 className="text-lg font-bold leading-5">
+                <h2 className="text-lg sm:text-xl font-bold leading-5">
                   Matriculation (2007-2018)
                 </h2>
-                <p className="text-sm font-medium leading-5">
+                <p className="text-sm sm:text-base font-semibold leading-5">
                   Computer Science
                 </p>
-                <p className="text-sm font-medium leading-5">Grade: A+</p>
+                <p className="text-sm sm:text-base font-semibold leading-5">
+                  Grade: A+
+                </p>
               </div>
             </div>
-            <p className="text-sm text-gray-900">
+            <p className="text-sm sm:text-base text-gray-900">
               • Assistant Senior Proctor (ASP) of the Primary Section.
             </p>
-            <p className="text-sm text-gray-900">
+            <p className="text-sm sm:text-base text-gray-900">
               {" "}
               • 1st Position in Urdu Essay Writing Intraschool Competition &
               Overall Best Urdu Essay Writer for the year 2017
@@ -95,17 +97,21 @@ const Education = () => {
                 height={60}
               />
               <div className="flex flex-col">
-                <h2 className="text-lg font-bold leading-5">
+                <h2 className="text-lg sm:text-xl font-bold leading-5">
                   Intermediate (2018-2020)
                 </h2>
-                <p className="text-sm font-medium leading-5">
+                <p className="text-sm sm:text-base font-semibold leading-5">
                   Computer Science
                 </p>
-                <p className="text-sm font-medium leading-5">Grade: A</p>
+                <p className="text-sm font-semibold leading-5">Grade: A</p>
               </div>
             </div>
-            <p className="text-sm text-gray-900">• Class Prefect</p>
-            <p className="text-sm text-gray-900">• College Football Team</p>
+            <p className="text-sm sm:text-base text-gray-900">
+              • Class Prefect
+            </p>
+            <p className="text-sm sm:text-base text-gray-900">
+              • College Football Team
+            </p>
             <p className="absolute top-0 right-0 flex items-center justify-center w-8 h-8 -mt-4 -mr-4 font-bold rounded-full bg-[#1190CB] sm:-mt-5 sm:-mr-5 sm:w-10 sm:h-10">
               <svg className="w-7" stroke="#fff" viewBox="0 0 24 24">
                 <polyline
@@ -129,20 +135,22 @@ const Education = () => {
                 height={48}
               />
               <div className="flex flex-col">
-                <h2 className="text-lg font-bold leading-5">
+                <h2 className="text-lg sm:text-xl font-bold leading-5">
                   {`Bachelor's`} (2020-2024)
                 </h2>
-                <p className="text-sm font-medium leading-5">Cyber Security</p>
-                <p className="text-sm font-medium leading-5">
+                <p className="text-sm sm:text-base font-semibold leading-5">
+                  Cyber Security
+                </p>
+                <p className="text-sm sm:text-base font-semibold leading-5">
                   Academic Standing: Good
                 </p>
               </div>
             </div>
-            <p className="text-sm text-gray-900">
+            <p className="text-sm sm:text-base text-gray-900">
               • AUCSS {`Developer's`} Club lead and Event Management team
               member.
             </p>
-            <p className="text-sm text-gray-900">
+            <p className="text-sm sm:text-base text-gray-900">
               • Participated in CTF events like NaSCon (1st Place), Ignite
               Hackathon and Pakistan Cybersecurity Challenge.
             </p>

@@ -1,5 +1,4 @@
 "use client";
-import { useId, useRef, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -10,7 +9,7 @@ import { motion } from "framer-motion";
 export const Hero = () => {
 
 
-  let id = useId();
+  
   return (
     <section
       id="home"
@@ -36,20 +35,20 @@ export const Hero = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.3 }}
       >
-        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
           <div className="mb-8 flex justify-center">
-            <div className="relative rounded-full px-1 sm:px-3 py-0 sm:py-1 text-xs sm:text-sm leading-6 text-gray-800 ring-1 ring-black/40 hover:ring-stone-500/40 tracking-normal bg-[#ecf0f3]">
+            {/* <div className="relative rounded-full px-1 sm:px-3 py-0 sm:py-1 text-xs sm:text-sm leading-6 text-gray-800 ring-1 ring-black/40 hover:ring-stone-500/40 tracking-normal bg-[#ecf0f3]">
               Let&#39;s build something together &rarr;
-            </div>
+            </div> */}
           </div>
-          <h1 className="py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
-            Hi, I&#39;m <span className="linear-wipe sm:text-6xl"> Zain</span>
+          <h1 className="text-5xl sm:text-8xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter ">
+            Hi, I&#39;m <span className="linear-wipe"> Zain</span>
           </h1>
-          <h1 className="md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+          <h1 className="text-5xl sm:text-8xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             A Full Stack Web Developer and a Security Researcher
             <span className="linear-wipe">.</span>
           </h1>
-          <p className="py-4 text-black sm:max-w-[70%] m-auto text-sm sm:text-lg">
+          <p className="py-4 text-black sm:max-w-[70%] m-auto text-base sm:text-xl">
             I’m focused on building responsive frontend web applications with a
             keen UI/UX interest, integrating backend technologies. I also like
             to play CTFs.
