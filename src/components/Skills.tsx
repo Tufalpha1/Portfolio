@@ -25,7 +25,7 @@ const Skills = () => {
       className="w-full lg:h-screen px-2 relative scroll-mt-20"
     >
       <div className="absolute z-[-200] w-[60%] h-[60%] -left-[40%] top-[-20%] rounded-full blue__gradient bottom-40 overflow-hidden" />
-      <div className="py-12 sm:py-32">
+      <div className="py-12 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <p className="uppercase text-xl text-center text-[#1190CB]">Skills</p>
           <h2 className="text-center text-4xl sm:text-5xl py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">

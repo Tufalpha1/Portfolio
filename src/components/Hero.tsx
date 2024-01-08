@@ -7,13 +7,10 @@ import { motion } from "framer-motion";
 
 
 export const Hero = () => {
-
-
-  
   return (
     <section
       id="home"
-      className="w-full h-screen text-center relative inset-0 bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_80%,transparent_100%)]"
+      className="w-full h-screen text-center relative inset-0 bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_90%_50%_at_50%_50%,#000_80%,transparent_100%)]"
     >
       <div className="relative isolate px-6 pt-6 lg:px-8">
         <div
