@@ -134,7 +134,7 @@ export const Navbar = () => {
             </ul>
             <div className="pt-20">
               <p className="uppercase text-center text-[#1190CB]">{`Let's Connect`}</p>
-              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+              <div className="flex items-center justify-evenly my-4 w-full sm:w-[80%]">
                 <Link href="https://www.linkedin.com/in/mzain-ul-abideen/">
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
                     <FaLinkedinIn />
@@ -148,11 +148,6 @@ export const Navbar = () => {
                 <Link href={"/#contact"}>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
                     <AiOutlineMail />
-                  </div>
-                </Link>
-                <Link href="https://teal-jacky-38.tiiny.site">
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-100">
-                    <BsFillPersonLinesFill />
                   </div>
                 </Link>
               </div>

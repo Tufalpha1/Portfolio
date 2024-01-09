@@ -50,7 +50,7 @@ export const Hero = () => {
             keen UI/UX interest, integrating backend technologies. I also like
             to play CTFs.
           </p>
-          <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+          <div className="flex items-center justify-evenly max-w-[330px] m-auto py-4">
             <Link
               href="https://www.linkedin.com/in/mzain-ul-abideen/"
               target="_blank"
@@ -72,11 +72,6 @@ export const Hero = () => {
             <Link href="/#contact">
               <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-[#ecf0f3]">
                 <AiOutlineMail />
-              </div>
-            </Link>
-            <Link href="https://teal-jacky-38.tiiny.site">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-[#ecf0f3]">
-                <BsFillPersonLinesFill />
               </div>
             </Link>
           </div>
