@@ -37,7 +37,7 @@ export const Navbar = () => {
     <nav
       className={
         shadow
-          ? "fixed top-0 w-full h-24 shadow-xl z-[100] ease-in-out duration-300 bg-white/0 backdrop-filter backdrop-blur-3xl"
+          ? "fixed top-0 w-full h-24 shadow-xl z-[100] ease-in-out duration-300 bg-white/50 backdrop-filter backdrop-blur-3xl"
           : "fixed top-0 w-full h-24 z-[100]"
       }
     >
@@ -115,7 +115,7 @@ export const Navbar = () => {
             </div>
           </div>
           <div className="py-4 flex flex-col">
-            <ul className="font-semibold">
+            <ul className="font-semibold ">
               <Link onClick={() => setNav(false)} href={"/"}>
                 <li className="py-4 text-base">Home</li>
               </Link>

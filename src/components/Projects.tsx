@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import eshopImg from "../../public/assets/projects/eshop.png";
+import byteboltImg from "../../public/assets/projects/byteboltsec.png";
 import cysecopsImg from "../../public/assets/projects/cysecops.png";
 import aucssImg from "../../public/assets/projects/aucss.png";
 import intelligenImage from "../../public/assets/projects/intelligen.png";
@@ -44,10 +44,10 @@ const Projects = () => {
             projectUrl="/intelligen"
             tech="Next JS"
           />
-          <ProjectItem
-            title="Ecommerce App"
-            backgroundImg={eshopImg}
-            projectUrl="/eshop"
+          <ProjectItem2
+            title="ByteBoltSec Landing Page"
+            backgroundImg={byteboltImg}
+            projectUrl="/bytebolt"
             tech="Next JS"
           />
           <ProjectItem
