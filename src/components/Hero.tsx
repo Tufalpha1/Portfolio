@@ -38,7 +38,7 @@ export const Hero = () => {
             </div> */}
           </div>
           <h1 className="text-5xl sm:text-8xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter ">
-            Hi, I&#39;m <span className="linear-wipe"> Zain</span>
+            Hi, I&#39;m Zain
           </h1>
           <h1 className="text-5xl sm:text-8xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             A Full Stack Web Developer and a Security Researcher
