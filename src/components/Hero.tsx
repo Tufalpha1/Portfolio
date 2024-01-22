@@ -31,11 +31,8 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <div className="mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
+        <div className="z-10 mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
           <div className="mb-8 flex justify-center">
-            {/* <div className="relative rounded-full px-1 sm:px-3 py-0 sm:py-1 text-xs sm:text-sm leading-6 text-gray-800 ring-1 ring-black/40 hover:ring-stone-500/40 tracking-normal bg-[#ecf0f3]">
-              Let&#39;s build something together &rarr;
-            </div> */}
           </div>
           <h1 className="text-5xl sm:text-8xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter ">
             Hi, I&#39;m Zain
