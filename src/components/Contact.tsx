@@ -66,6 +66,7 @@ const Contact = () => {
                     name="first-name"
                     id="first-name"
                     autoComplete="given-name"
+                    required
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6dd5ed]  sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -82,6 +83,7 @@ const Contact = () => {
                     type="text"
                     name="last-name"
                     id="last-name"
+                    required
                     autoComplete="family-name"
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6dd5ed]  sm:text-sm sm:leading-6"
                   />
@@ -99,6 +101,7 @@ const Contact = () => {
                     type="text"
                     name="company"
                     id="company"
+                    required
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6dd5ed]  sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -116,6 +119,7 @@ const Contact = () => {
                     name="email"
                     id="email"
                     autoComplete="email"
+                    required
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6dd5ed]  sm:text-sm sm:leading-6"
                   />
                 </div>
@@ -148,6 +152,7 @@ const Contact = () => {
                   <textarea
                     name="message"
                     id="message"
+                    required
                     rows={4}
                     className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6dd5ed]  sm:text-sm sm:leading-6"
                     defaultValue={""}
