@@ -1,5 +1,7 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
+import siliconVillage from "../../public/assets/projects/silicon-village.png";
+import quickJourney from "../../public/assets/projects/quick-journey.png";
 import byteboltImg from "../../public/assets/projects/byteboltsec.png";
 import cysecopsImg from "../../public/assets/projects/cysecops.png";
 import aucssImg from "../../public/assets/projects/aucss.png";
@@ -13,13 +15,24 @@ const Projects = () => {
   return (
     <section id="projects" className="w-full scroll-mt-20">
       <div className="max-w-[1240px] mx-auto px-2 py-24">
-        <p className="text-xl uppercase text-[#1190CB] text-center">
-          Projects
-        </p>
+        <p className="text-xl uppercase text-[#1190CB] text-center">Projects</p>
         <h2 className="py-8 text-center text-4xl sm:text-5xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
           What I&apos;ve Built
         </h2>
+
         <div className="grid md:grid-cols-2 gap-8 py-8 sm:py-20">
+          <ProjectItem
+            title="Silicon Village"
+            backgroundImg={siliconVillage}
+            projectUrl="/siliconvillage"
+            tech="Next JS"
+          />
+          <ProjectItem2
+            title="Quick Journey"
+            backgroundImg={quickJourney}
+            projectUrl="/quickjourney"
+            tech="Next JS"
+          />
           <DesignItem
             title="DecentraConnect"
             backgroundImg={decentraConnect}

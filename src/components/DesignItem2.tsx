@@ -23,6 +23,7 @@ const DesignItem: React.FC<DesignItemProps> = ({
         alt="/"
         width={700}
         height={700}
+        quality={100}
       />
       <div className="hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
         <h3 className="text-2xl text-white tracking-wider text-center">
