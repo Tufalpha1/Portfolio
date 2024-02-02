@@ -1,4 +1,4 @@
-import Image from 'next/image'
+'use client';
 import { Hero } from '@/components/Hero'
 import About from '@/components/About'
 import Skills from '@/components/Skills'
