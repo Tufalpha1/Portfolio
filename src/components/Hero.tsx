@@ -28,12 +28,12 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <div className="z-10 mx-auto max-w-3xl py-32 sm:pt-48 lg:pt-64 xl:max-w-4xl xl:my-56 sm:mb-24">
+        <div className="z-10 mx-auto max-w-6xl py-32 sm:pt-48 sm:max-w-4xl lg:pt-64 xl:my-56 sm:mb-24">
           <div className="mb-8 flex justify-center"></div>
-          <h1 className="text-5xl sm:text-6xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl ">
+          <h1 className="text-4xl sm:text-6xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl ">
             Hi, I&#39;m Zain
           </h1>
-          <h1 className="text-5xl sm:text-6xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl">
+          <h1 className="text-4xl sm:text-6xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl">
             A Full Stack Web Developer and a Security Researcher
             <span className="linear-wipe">.</span>
           </h1>
