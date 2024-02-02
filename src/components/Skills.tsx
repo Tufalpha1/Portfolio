@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Html from "../../public/assets/skills/html.png";
 import Css from "../../public/assets/skills/css.png";
@@ -14,7 +15,6 @@ import Docker from "../../public/assets/skills/docker.png";
 import Git from "../../public/assets/skills/git.png";
 import Postman from "../../public/assets/skills/postman.png";
 import Typescript from "../../public/assets/skills/typescript.png";
-
 
 const Skills = () => {
   return (
@@ -170,6 +170,6 @@ const Skills = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Skills
+export default Skills;

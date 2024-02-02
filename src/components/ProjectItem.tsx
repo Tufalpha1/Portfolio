@@ -1,6 +1,7 @@
-import React from 'react'
-import Image from 'next/image';
-import Link from 'next/link';
+"use client";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectItemProps {
   title: string;
@@ -42,4 +43,4 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   );
 };
 
-export default ProjectItem
+export default ProjectItem;

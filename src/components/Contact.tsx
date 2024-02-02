@@ -1,7 +1,6 @@
 'use client';
 import React from "react";
 import Image from "next/image";
-import contact from "../../public/contact.png";
 import logo from "../../public/zLogo.png";
 
 

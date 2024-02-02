@@ -5,12 +5,11 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-
 export const Hero = () => {
   return (
     <section
       id="home"
-      className="w-full h-screen text-center relative inset-0 bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_90%_50%_at_50%_50%,#000_80%,transparent_100%)]"
+      className="w-full h-screen text-center relative inset-0 bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_50%,#000_80%,transparent_100%)]"
     >
       <div className="relative isolate px-6 pt-6 lg:px-8">
         <div
@@ -31,13 +30,12 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <div className="z-10 mx-auto max-w-4xl py-32 sm:py-48 lg:py-56">
-          <div className="mb-8 flex justify-center">
-          </div>
-          <h1 className="text-5xl sm:text-8xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter ">
+        <div className="z-10 mx-auto max-w-3xl py-32 sm:pt-48 lg:pt-64 xl:max-w-4xl xl:my-56">
+          <div className="mb-8 flex justify-center"></div>
+          <h1 className="text-5xl sm:text-6xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl ">
             Hi, I&#39;m Zain
           </h1>
-          <h1 className="text-5xl sm:text-8xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+          <h1 className="text-5xl sm:text-6xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl">
             A Full Stack Web Developer and a Security Researcher
             <span className="linear-wipe">.</span>
           </h1>

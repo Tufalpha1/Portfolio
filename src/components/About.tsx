@@ -1,8 +1,8 @@
-import React from 'react'
-import Link from 'next/link';
-import Image from 'next/image';
-import about from '../../public/assets/about.svg'
-
+"use client";
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import about from "../../public/assets/about.svg";
 
 const About = () => {
   return (
@@ -61,6 +61,6 @@ const About = () => {
       </div>
     </section>
   );
-}
+};
 
-export default About
+export default About;

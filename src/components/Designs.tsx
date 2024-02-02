@@ -1,16 +1,15 @@
-import React from 'react'
-import DesignItem from './DesignItem';
-import DesignItem2 from './DesignItem2';
-import decentraImg from '../../public/assets/designs/decentra.png';
-import dexhubImg from '../../public/assets/designs/dexhub.png';
+"use client";
+import React from "react";
+import DesignItem from "./DesignItem";
+import DesignItem2 from "./DesignItem2";
+import decentraImg from "../../public/assets/designs/decentra.png";
+import dexhubImg from "../../public/assets/designs/dexhub.png";
 
 const Designs = () => {
   return (
     <section id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
-        <p className="text-xl uppercase text-[#1190CB] text-center">
-          Designs
-        </p>
+        <p className="text-xl uppercase text-[#1190CB] text-center">Designs</p>
         <h2 className="py-8 text-4xl sm:text-5xl text-center bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
           What I&apos;ve Made
         </h2>
@@ -31,6 +30,6 @@ const Designs = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Designs
+export default Designs;

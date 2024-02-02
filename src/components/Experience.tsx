@@ -127,7 +127,7 @@ const Experience = () => {
               <div className="w-px h-10 bg-gray-400 sm:h-full" />
               <div>
                 <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#43cea2]">
-                  3
+                  4
                 </div>
               </div>
               <div className="w-px h-full opacity-0" />

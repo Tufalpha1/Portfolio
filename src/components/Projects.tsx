@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import ProjectItem from "./ProjectItem";
 import siliconVillage from "../../public/assets/projects/silicon-village.png";

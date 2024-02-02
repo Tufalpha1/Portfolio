@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,12 +10,12 @@ interface DesignItemProps {
   projectUrl: string;
 }
 
-const DesignItem : React.FC<DesignItemProps> = ({
+const DesignItem: React.FC<DesignItemProps> = ({
   title,
   backgroundImg,
   tech,
   projectUrl,
-})  => {
+}) => {
   return (
     <div className="relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#742ce9] to-[#B75CFF]">
       <Image

@@ -1,10 +1,10 @@
-import React from 'react'
-import logo from '../../public/logo.png'
-import Image from 'next/image'
-import Link from 'next/link'
+"use client";
+import React from "react";
+import logo from "../../public/logo.png";
+import Image from "next/image";
+import Link from "next/link";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { AiOutlineMail } from 'react-icons/ai';
+import { AiOutlineMail } from "react-icons/ai";
 
 const Footer = () => {
   return (
@@ -47,6 +47,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-}
+};
 
-export default Footer
+export default Footer;

@@ -1,8 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
-import au from '../../public/assets/education/AU-Logo.jpg'
-import qdc from '../../public/assets/education/QDC.jpg'
-import ssps from '../../public/assets/education/SSPS.jpg'
+"use client";
+import React from "react";
+import Image from "next/image";
+import au from "../../public/assets/education/AU-Logo.jpg";
+import qdc from "../../public/assets/education/QDC.jpg";
+import ssps from "../../public/assets/education/SSPS.jpg";
 
 const Education = () => {
   return (
@@ -162,6 +163,6 @@ const Education = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Education
+export default Education;
