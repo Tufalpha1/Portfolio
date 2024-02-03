@@ -9,7 +9,7 @@ import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  
+
   const handleNav = () => {
     setNav(!nav);
   };
@@ -22,8 +22,7 @@ export const Navbar = () => {
         setShadow(false);
       }
     };
-    if (window !== undefined)
-    {
+    if (window !== undefined) {
       window.addEventListener("scroll", handleShadow);
     }
 
@@ -36,7 +35,7 @@ export const Navbar = () => {
     <nav
       className={
         shadow
-          ? "fixed top-0 w-full h-24 shadow-xl z-[100] ease-in-out duration-300 bg-white/50 backdrop-filter backdrop-blur-3xl"
+          ? "fixed top-0 w-full h-24 shadow-xl z-[100] ease-in-out duration-300 bg-white/50 backdrop-filter backdrop-blur-3xl rounded-[3rem] sm:rounded-b-[3rem] "
           : "fixed top-0 w-full h-24 z-[100]"
       }
     >
