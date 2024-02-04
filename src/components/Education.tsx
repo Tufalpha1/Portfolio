@@ -57,7 +57,7 @@ const Education = () => {
               />
               <div className="flex flex-col">
                 <h2 className="text-lg sm:text-xl font-bold leading-5">
-                  Matriculation (2007-2018)
+                  Matriculation (2016-2018)
                 </h2>
                 <p className="text-sm sm:text-base font-semibold leading-5">
                   Computer Science
