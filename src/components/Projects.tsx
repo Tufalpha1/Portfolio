@@ -4,7 +4,7 @@ import ProjectItem from "./ProjectItem";
 import siliconVillage from "../../public/assets/projects/silicon-village.png";
 import quickJourney from "../../public/assets/projects/quick-journey.png";
 import byteboltImg from "../../public/assets/projects/byteboltsec.png";
-import cysecopsImg from "../../public/assets/projects/cysecops.png";
+import creativeMedia from "../../public/assets/projects/creative-media-partners.png";
 import aucssImg from "../../public/assets/projects/aucss.png";
 import intelligenImage from "../../public/assets/projects/intelligen.png";
 import decentraConnect from "../../public/assets/projects/decentra-connect.png";
@@ -46,10 +46,10 @@ const Projects = () => {
             projectUrl="/ctf"
             tech="Next JS"
           />
-          <ProjectItem
-            title="CySecOps Website"
-            backgroundImg={cysecopsImg}
-            projectUrl="/cysecops"
+          <DesignItem
+            title="Marketing Agency Website"
+            backgroundImg={creativeMedia}
+            projectUrl="/creativemedia"
             tech="Next JS"
           />
           <ProjectItem
