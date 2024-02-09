@@ -13,7 +13,7 @@ zoom: 0.8;
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-black tracking-wide
+    @apply bg-white text-black tracking-wide
   }
 
   h1,

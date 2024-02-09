@@ -41,7 +41,7 @@ const page = () => {
           <h2 className="text-center py-6 sm:text-4xl tracking-tighter">
             Overview
           </h2>
-          <p className="sm:text-lg">
+          <p className="text-sm sm:text-base">
             IntelliGen is an AI-powered Software as a Service (SaaS) platform
             designed to empower businesses and individuals with the creative
             potential of artificial intelligence. IntelliGen harnesses the

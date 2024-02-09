@@ -33,7 +33,7 @@ const page = () => {
           <h2 className="text-center py-6 sm:text-4xl tracking-tighter">
             Overview
           </h2>
-          <p className="text-center sm:text-lg">
+          <p className="text-center text-sm sm:text-base">
             This landing page was built for ByteBoltSec which is a startup that
             I am currently working in. The landing page was built using Next JS.
             Tailwind css was used for styling and Framer Motion was used for

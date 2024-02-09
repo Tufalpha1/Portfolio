@@ -31,7 +31,7 @@ const page = () => {
             Project
           </p>
           <h2 className="py-6 tracking-tighter sm:text-4xl">Overview</h2>
-          <p className="text-center sm:text-lg">
+          <p className="text-center text-sm sm:text-base">
             This is a scoreboard for the on-site CTF competition that shows the
             top 10 teams and their scores. It also shows the latest challenges
             solved. There are two alerts, one for the first blood and the other

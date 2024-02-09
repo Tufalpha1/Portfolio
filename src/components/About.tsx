@@ -16,7 +16,7 @@ const About = () => {
           <h2 className="py-4 text-4xl sm:text-5xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             Who I Am
           </h2>
-          <div className="py-2 text-black text-sm sm:text-lg">
+          <div className="py-2 text-black text-sm sm:text-base">
             <p>
               I am a Cybersecurity undergraduate with a love for web
               development. I thrive on building dynamic and interactive web
@@ -25,10 +25,10 @@ const About = () => {
               backend technologies, including databases, I am continuously
               expanding my skill set to become a well-rounded developer.
             </p>
-            <p className="mt-4 font-bold text-sm sm:text-lg">
+            <p className="mt-4 font-extrabold text-sm sm:text-base">
               I specialize in:
             </p>
-            <div className="text-sm sm:text-lg text-gray-700">
+            <div className="text-sm sm:text-base text-gray-700">
               <p>• Front-End Development (React/Next JS)</p>
               <p>• Back-End Development (Node JS)</p>
               <p>• UI/UX Design (Figma/Spline 3D)</p>
@@ -39,7 +39,7 @@ const About = () => {
               <div className="grid gap-8 items-start sm:justify-start justify-center">
                 <div className="relative group">
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-[#43cea2] to-[#1190CB] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
-                  <button className="relative px-7 py-4 bg-[#ecf0f3] rounded-lg leading-none flex divide-x divide-gray-600">
+                  <button className="relative px-7 py-4 bg-white rounded-lg leading-none flex divide-x divide-gray-600">
                     <span className="pl-6 text-black group-hover:text-gray-600 transition duration-75 text-sm sm:text-lg">
                       Check out some of my projects &rarr;
                     </span>

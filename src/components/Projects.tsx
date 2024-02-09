@@ -46,7 +46,7 @@ const Projects = () => {
             projectUrl="/ctf"
             tech="Next JS"
           />
-          <DesignItem
+          <ProjectItem2
             title="Marketing Agency Website"
             backgroundImg={creativeMedia}
             projectUrl="/creativemedia"

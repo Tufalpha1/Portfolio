@@ -46,7 +46,7 @@ const Education = () => {
           </h2>
         </div>
         <div className="grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3 py-10">
-          <div className="p-5 duration-300 transform bg-[#ecf0f3] border-2 border-dashed rounded-3xl shadow-sm border-[#43cea2] hover:-translate-y-2">
+          <div className="p-5 duration-300 transform bg-white border-2 border-dashed rounded-3xl shadow-sm border-[#43cea2] hover:-translate-y-2">
             <div className="flex items-center mb-2">
               <Image
                 className="flex items-center justify-center w-12 h-12 mr-2 rounded-full"
@@ -88,7 +88,7 @@ const Education = () => {
               </svg>
             </p>
           </div>
-          <div className="p-5 duration-300 transform bg-[#ecf0f3] border-2 border-dashed rounded-3xl shadow-sm border-[#1190CB]  hover:-translate-y-2">
+          <div className="p-5 duration-300 transform bg-white border-2 border-dashed rounded-3xl shadow-sm border-[#1190CB]  hover:-translate-y-2">
             <div className="flex items-center mb-2">
               <Image
                 className="flex items-center justify-center w-12 h-12 mr-2 rounded-full"
@@ -126,7 +126,7 @@ const Education = () => {
               </svg>
             </p>
           </div>
-          <div className="relative p-5 duration-300 transform bg-[#ecf0f3] border-2 rounded-3xl shadow-sm border-[#1190CB] hover:-translate-y-2">
+          <div className="relative p-5 duration-300 transform bg-white border-2 rounded-3xl shadow-sm border-[#1190CB] hover:-translate-y-2">
             <div className="flex items-center mb-2">
               <Image
                 className="flex items-center justify-center w-12 h-12 mr-2 rounded-full"

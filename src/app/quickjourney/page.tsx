@@ -28,7 +28,7 @@ const page = () => {
             Project
           </p>
           <h2 className="py-6 sm:text-4xl tracking-tighter">Overview</h2>
-          <p className="text-center sm:text-lg">
+          <p className="text-center text-sm sm:text-base">
             {`This is a website created for a travel agency named Quick Journey. Quick Journey is a travel agency that provides services for booking hotels, and transport.
             They also provide tour packages for different locations in Pakistan especially for religious tourism.`}
           </p>

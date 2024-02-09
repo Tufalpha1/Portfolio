@@ -34,7 +34,7 @@ const page = () => {
             Project
           </p>
           <h2 className="py-6 sm:text-4xl tracking-tighter">Overview</h2>
-          <p className="text-center sm:text-lg">
+          <p className="text-center text-sm sm:text-base">
             {`This is a website created for Silicon Village Pakistan which is the
             first and largest tech hub in Pakistan. The project is being built by ByteBoltSec's team.`}
           </p>

@@ -46,9 +46,13 @@ const Experience = () => {
                   Full Stack Developer (Nov 2023 - Present)
                 </p>
 
-                <p>• Working on multiple development projects.</p>
-                <p>• Designed frontend and challenges for PCC CTF 2023.</p>
-                <p>
+                <p className="text-sm sm:text-base">
+                  • Working on multiple development projects.
+                </p>
+                <p className="text-sm sm:text-base">
+                  • Designed frontend and challenges for PCC CTF 2023.
+                </p>
+                <p className="text-sm sm:text-base">
                   • Learning and contributing to various aspects of web
                   applications and security engineering.
                 </p>
@@ -80,13 +84,19 @@ const Experience = () => {
                 <p className="text-base sm:text-lg font-bold">
                   {`Developer's`} Club Lead (Dec 2022- Dec 2023)
                 </p>
-                <p>• Designed and developed aucss official website.</p>
-                <p>• Organized and coordinated numerous technical events.</p>
+                <p className="text-sm sm:text-base">
+                  • Designed and developed aucss official website.
+                </p>
+                <p className="text-sm sm:text-base">
+                  • Organized and coordinated numerous technical events.
+                </p>
                 <p className="text-base sm:text-lg mt-2 font-bold">
                   Event Management Team Member (Dec 2021 - Dec 2022)
                 </p>
-                <p>• Usher for ICCWS 2022.</p>
-                <p>• Hosted welcome parties of multiple batches.</p>
+                <p className="text-sm sm:text-base">• Usher for ICCWS 2022.</p>
+                <p className="text-sm sm:text-base">
+                  • Hosted welcome parties of multiple batches.
+                </p>
               </div>
             </div>
           </div>
@@ -115,10 +125,12 @@ const Experience = () => {
                 <p className="text-base sm:text-lg font-bold">
                   Project Intern (May 2023 - Sep 2023)
                 </p>
-                <p>
+                <p className="text-sm sm:text-base">
                   • Development of my Final Year Project {`'DecentraConnect'`}.
                 </p>
-                <p>• Designed the UI/UX of DecentraConnect.</p>
+                <p className="text-sm sm:text-base">
+                  • Designed the UI/UX of DecentraConnect.
+                </p>
               </div>
             </div>
           </div>
@@ -147,8 +159,12 @@ const Experience = () => {
                 <p className="text-base sm:text-lg font-bold">
                   Web Development Intern (Feb 2023 - May 2023)
                 </p>
-                <p>• Completed multiple web development projects.</p>
-                <p>• Trained two junior interns.</p>
+                <p className="text-sm sm:text-base">
+                  • Completed multiple web development projects.
+                </p>
+                <p className="text-sm sm:text-base">
+                  • Trained two junior interns.
+                </p>
               </div>
             </div>
           </div>

@@ -35,7 +35,7 @@ const page = () => {
           <h2 className="text-center py-6 sm:text-4xl tracking-tighter">
             Overview
           </h2>
-          <p className="text-center sm:text-lg">
+          <p className="text-center text-sm sm:text-base">
             This project was built for AUCSS (Air University Cyber Security
             Society). The website is built using Next JS and Tailwind CSS.
           </p>

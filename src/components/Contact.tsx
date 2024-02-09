@@ -1,9 +1,7 @@
-'use client';
+"use client";
 import React from "react";
 import Image from "next/image";
 import logo from "../../public/zLogo.png";
-
-
 
 const Contact = () => {
   return (
@@ -14,7 +12,7 @@ const Contact = () => {
             <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
               Get in touch
             </h2>
-            <p className="my-6 text-base sm:text-lg leading-8 text-gray-600 ">
+            <p className="my-6 text-sm sm:text-base leading-8 text-gray-900 ">
               {`I am available for freelance work. Contact me and we'll talk.`}
             </p>
             <br />
@@ -66,7 +64,7 @@ const Contact = () => {
                     id="first-name"
                     autoComplete="given-name"
                     required
-                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6dd5ed]  sm:text-sm sm:leading-6"
+                    className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-[#6dd5ed] sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
@@ -162,7 +160,7 @@ const Contact = () => {
             <div className="mt-8 flex justify-center">
               <button
                 type="submit"
-                className="text-white block w-full bg-gradient-to-r from-[#1190CB] via-teal-500 to-[#6ed1b2]  hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-cyan-500/50 dark:shadow-lg dark:shadow-cyan-800/80 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
+                className="text-white block w-full bg-black hover:bg-black/70 focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 shadow-lg shadow-gray-400  font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2"
               >
                 {`Let's talk`}
               </button>

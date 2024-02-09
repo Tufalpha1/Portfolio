@@ -38,7 +38,7 @@ const page = () => {
             Project
           </p>
           <h2 className="py-6 sm:text-4xl tracking-tighter">Overview</h2>
-          <p className="text-center sm:text-lg">
+          <p className="text-center text-sm sm:text-base">
             This is a decentralized social media platform that utilizes IPFS for
             content storage. The frontend is built with Next JS and the backend
             is built with Express. MongoDB is used as a database for storing
@@ -55,7 +55,9 @@ const page = () => {
             </button>
           </div>
         </div>
-        <h2 className="text-center py-4 mt-16 sm:text-4xl tracking-tighter">Technologies</h2>
+        <h2 className="text-center py-4 mt-16 sm:text-4xl tracking-tighter">
+          Technologies
+        </h2>
         <div className="mx-auto mt-10 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-5 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 cursor-pointer">
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
             <Image

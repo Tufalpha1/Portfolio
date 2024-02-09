@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section id="home" className="w-full h-screen text-center relative">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808020_1px,transparent_1px),linear-gradient(to_bottom,#80808020_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_80%_45%_at_50%_50%,#000_80%,transparent_100%)]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808016_1px,transparent_1px),linear-gradient(to_bottom,#80808016_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_80%_45%_at_50%_50%,#000_80%,transparent_100%)]"></div>
       <div className="relative isolate px-6 pt-6 lg:px-8">
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -30,14 +30,14 @@ export const Hero = () => {
       >
         <div className="z-10 mx-auto max-w-6xl py-32 sm:pt-48 sm:max-w-4xl lg:pt-64 xl:my-56 sm:mb-24">
           <div className="mb-8 flex justify-center"></div>
-          <h1 className="text-4xl sm:text-6xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl ">
+          <h1 className="text-5xl sm:text-6xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl ">
             Hi, I&#39;m Zain
           </h1>
-          <h1 className="text-4xl sm:text-6xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl">
+          <h1 className="text-5xl sm:text-6xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl">
             A Full Stack Web Developer and a Security Researcher
             <span className="linear-wipe">.</span>
           </h1>
-          <p className="py-4 text-black sm:max-w-[70%] m-auto text-base sm:text-xl">
+          <p className="py-4 text-black sm:max-w-[70%] m-auto text-sm sm:text-base">
             I’m focused on building responsive frontend web applications with a
             keen UI/UX interest, integrating backend technologies. I also like
             to play CTFs.
@@ -48,7 +48,7 @@ export const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-[#ecf0f3]">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-white">
                 <FaLinkedinIn />
               </div>
             </Link>
@@ -57,12 +57,12 @@ export const Hero = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-[#ecf0f3]">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-white">
                 <FaGithub />
               </div>
             </Link>
             <Link href="/#contact">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-[#ecf0f3]">
+              <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-100 bg-white">
                 <AiOutlineMail />
               </div>
             </Link>

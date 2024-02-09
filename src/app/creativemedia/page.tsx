@@ -28,7 +28,7 @@ const page = () => {
             Project
           </p>
           <h2 className="py-6 sm:text-4xl tracking-tighter">Overview</h2>
-          <p className="text-center sm:text-lg">
+          <p className="text-center text-sm sm:text-base">
             {`This is a website created for Creative Media Partners 
               which is a group of marketing experts and diversely artistic
               and visionary individuals who work together to fulfill your brand’s needs.
@@ -41,6 +41,9 @@ const page = () => {
               media campaigns that drive results.`}
           </p>
           <div className="mt-10 flex justify-center">
+            <button className="text-black font-bold bg-gradient-to-r from-[#ffee00] via-[#ffce00] to-[#ff7400] hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+              <Link href="https://creative-media-partners.vercel.app">Demo</Link>
+            </button>
             <button className="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">
               <Link href="/#projects">
                 <p className="">Back</p>
