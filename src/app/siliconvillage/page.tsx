@@ -23,7 +23,7 @@ const page = () => {
           <h3 className="sm:text-2xl">Next JS / Node JS</h3>
         </div>
       </div>
-      <div className="bg-gradient-to-r from-[#99d5d5] via-[#4cb6b6] to-[#009797] px-4 py-3 text-white">
+      <div className="bg-gradient-to-r from-[#40e0d0] via-[#55dada] to-[#1d3463] px-4 py-3 text-slate-50">
         <p className="text-center text-sm font-medium">
           This project is currently in development.
         </p>
