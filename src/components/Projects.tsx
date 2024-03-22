@@ -8,7 +8,7 @@ import creativeMedia from "../../public/assets/projects/creative-media-partners.
 import aucssImg from "../../public/assets/projects/aucss.png";
 import intelligenImage from "../../public/assets/projects/intelligen.png";
 import decentraConnect from "../../public/assets/projects/decentra-connect.png";
-import ctf from "../../public/assets/projects/ctf-scoreboard2.png";
+import ctf from "../../public/assets/projects/ctf-scoreboard.png";
 import DesignItem from "./DesignItem";
 import ProjectItem2 from "./ProjectItem2";
 

@@ -4,9 +4,10 @@ import Image from "next/image";
 import ctfImg from "../../../public/assets/projects/ctf-scoreboard.png";
 import firstBlood from "../../../public/assets/projects/first-blood.png";
 import newLeader from "../../../public/assets/projects/new-leader.png";
-import ctf2 from "../../../public/assets/projects/ctf-scoreboard2.png";
-import firstBlood2 from "../../../public/assets/projects/first-blood2.png";
-import newLeader2 from "../../../public/assets/projects/new-leader2.png";
+import ctf from "../../../public/assets/projects/ctf-scoreboard.png";
+import winner from "../../../public/assets/projects/winner.png";
+import winner2 from "../../../public/assets/projects/winner-2.png";
+import winner3 from "../../../public/assets/projects/winner-3.png";
 
 const page = () => {
   return (
@@ -17,7 +18,7 @@ const page = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={ctf2}
+          src={ctf}
           alt="/"
         />
         <div className="tracking-tighter absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
@@ -55,33 +56,6 @@ const page = () => {
           <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
             <Image
               className="col-span-1 max-h-full w-full object-cover sm:col-start-2 rounded-xl"
-              src={firstBlood2}
-              alt="first-blood"
-              width={1868}
-              height={1030}
-            />
-          </div>
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
-            <Image
-              className="col-span-1 col-start-2 max-h-full w-full object-cover sm:col-start-auto rounded-xl"
-              src={ctf2}
-              alt="Leaderboard-and-solves"
-              width={1850}
-              height={1071}
-            />
-          </div>
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
-            <Image
-              className="col-span-1 col-start-2 max-h-full w-full object-cover sm:col-start-auto rounded-xl"
-              src={newLeader2}
-              alt="new-leader"
-              width={1846}
-              height={1006}
-            />
-          </div>
-          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
-            <Image
-              className="col-span-1 max-h-full w-full object-cover sm:col-start-2 rounded-xl"
               src={firstBlood}
               alt="first-blood"
               width={700}
@@ -104,6 +78,33 @@ const page = () => {
               alt="new-leader"
               width={700}
               height={700}
+            />
+          </div>
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
+            <Image
+              className="col-span-1 max-h-full w-full object-cover sm:col-start-2 rounded-xl"
+              src={winner2}
+              alt="winner-2"
+              width={1868}
+              height={1030}
+            />
+          </div>
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
+            <Image
+              className="col-span-1 col-start-2 max-h-full w-full object-cover sm:col-start-auto rounded-xl"
+              src={winner}
+              alt="winner-1"
+              width={1850}
+              height={1071}
+            />
+          </div>
+          <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center rounded-xl shadow-xl shadow-gray-700">
+            <Image
+              className="col-span-1 col-start-2 max-h-full w-full object-cover sm:col-start-auto rounded-xl"
+              src={winner3}
+              alt="winner-3"
+              width={1846}
+              height={1006}
             />
           </div>
         </div>
