@@ -40,7 +40,7 @@ const About = () => {
                 <div className="relative group">
                   <div className="absolute -inset-0.5 bg-gradient-to-r from-[#43cea2] to-[#1190CB] rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                   <button className="relative px-7 py-4 bg-white rounded-lg leading-none flex divide-x divide-gray-600">
-                    <span className="pl-6 text-black group-hover:text-gray-600 transition duration-75 text-sm sm:text-lg">
+                    <span className="text-black group-hover:text-gray-600 transition duration-75 text-xs sm:text-sm">
                       Check out some of my projects &rarr;
                     </span>
                   </button>
