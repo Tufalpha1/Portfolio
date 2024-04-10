@@ -8,6 +8,7 @@ const Contact = () => {
     <section className="relative isolate scroll-mt-24" id="contact">
       <div className="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div className="relative px-6 pt-24 sm:pt-32 lg:static lg:px-8 ">
+          <div className="absolute -z-10 inset-0 bg-[linear-gradient(to_right,#80808016_1px,transparent_1px),linear-gradient(to_bottom,#80808016_1px,transparent_1px)] [background-size:24px_24px] [mask-image:radial-gradient(ellipse_80%_45%_at_50%_50%,#000_80%,transparent_100%)]"></div>
           <div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg lg:mt-20">
             <h2 className="text-4xl sm:text-5xl font-bold bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
               Get in touch

@@ -8,8 +8,9 @@ const About = () => {
   return (
     <section
       id="about"
-      className="w-full md:h-screen my-44 sm:my-36 flex items-center scroll-mt-20"
+      className="relative w-full md:h-screen my-44 sm:my-36 flex items-center scroll-mt-20"
     >
+      <div className="absolute inset-0 -z-10 h-screen w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2 px-8">
           <p className="uppercase text-xl  text-[#1190CB]">About me</p>

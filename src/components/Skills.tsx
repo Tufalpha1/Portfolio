@@ -29,7 +29,7 @@ const Skills = () => {
           <h2 className="text-center text-4xl sm:text-5xl py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             What I can do
           </h2>
-          <div className="mx-auto mt-20 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 cursor-pointer">
+          <div className="mx-auto mt-20 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-0  lg:mx-0 lg:max-w-none lg:grid-cols-5 cursor-pointer">
             <div className="hover:scale-105 ease-in duration-100 flex flex-col items-center">
               <Image
                 className="col-span-2 max-h-16 w-full object-contain lg:col-span-1"
@@ -169,6 +169,7 @@ const Skills = () => {
         </div>
       </div>
     </section>
+    
   );
 };
 

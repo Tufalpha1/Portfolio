@@ -8,6 +8,7 @@ import ssps from "../../public/assets/education/SSPS.jpg";
 const Education = () => {
   return (
     <section className="relative isolate py-20">
+      <div className="absolute h-full w-full -z-10 bg-[radial-gradient(#e5e7eb_1.5px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-48">
         <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <div>
@@ -16,33 +17,9 @@ const Education = () => {
             </p>
           </div>
           <h2 className="max-w-2xl mb-6 font-sans text-3xl text-center font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-            <span className="relative inline-block">
-              <svg
-                viewBox="0 0 52 24"
-                fill="#000"
-                className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-              >
-                <defs>
-                  <pattern
-                    id="84d09fa9-a544-44bd-88b2-08fdf4cddd38"
-                    x="0"
-                    y="0"
-                    width=".135"
-                    height=".30"
-                  >
-                    <circle cx="1" cy="1" r=".7" />
-                  </pattern>
-                </defs>
-                <rect
-                  fill="url(#84d09fa9-a544-44bd-88b2-08fdf4cddd38)"
-                  width="52"
-                  height="24"
-                />
-              </svg>
               <span className="relative px-1 text-4xl sm:text-5xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
                 My Academic Journey
               </span>
-            </span>{" "}
           </h2>
         </div>
         <div className="grid gap-8 row-gap-5 md:row-gap-8 lg:grid-cols-3 py-10">

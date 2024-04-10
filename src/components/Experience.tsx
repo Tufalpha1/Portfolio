@@ -10,6 +10,7 @@ import bytebolt from "../../public/assets/experience/Byte-Bolt-logo.png";
 const Experience = () => {
   return (
     <section className="relative isolate pt-48" id="experience">
+      <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
       <p className="text-xl uppercase text-[#1190CB] text-center my-4">
         Experience
       </p>
@@ -22,7 +23,7 @@ const Experience = () => {
             <div className="flex flex-col items-center mr-6">
               <div className="w-px h-10 sm:h-full" />
               <div>
-                <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#1190CB]">
+                <div className="flex items-center justify-center w-8 h-8  text-sm font-medium border rounded-full text-white bg-black">
                   1
                 </div>
               </div>
@@ -63,7 +64,7 @@ const Experience = () => {
             <div className="flex flex-col items-center mr-6">
               <div className="w-px h-10 bg-gray-400 sm:h-full" />
               <div>
-                <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#43cea2]">
+                <div className="flex items-center justify-center w-8 h-8 text-sm font-medium border rounded-full bg-black text-white ">
                   2
                 </div>
               </div>
@@ -104,7 +105,7 @@ const Experience = () => {
             <div className="flex flex-col items-center mr-6">
               <div className="w-px h-10 bg-gray-400 sm:h-full" />
               <div>
-                <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#1190CB]">
+                <div className="flex items-center justify-center w-8 h-8 text-sm font-medium border rounded-full text-white bg-black">
                   3
                 </div>
               </div>
@@ -138,7 +139,7 @@ const Experience = () => {
             <div className="flex flex-col items-center mr-6">
               <div className="w-px h-10 bg-gray-400 sm:h-full" />
               <div>
-                <div className="flex items-center justify-center w-8 h-8 sm:w-12 sm:h-12 text-xs font-medium border rounded-full border-[#43cea2]">
+                <div className="flex items-center justify-center w-8 h-8 text-sm font-medium border rounded-full text-white bg-black">
                   4
                 </div>
               </div>
@@ -171,7 +172,7 @@ const Experience = () => {
         </div>
       </div>
       <div
-        className="pointer-events-none absolute right-12 top-1/2 -z-20 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:right-60 lg:translate-y-0 lg:transform-gpu"
+        className="pointer-events-none absolute right-12 top-1/2 -z-5 -translate-y-1/2 transform-gpu blur-3xl lg:bottom-[-12rem] lg:right-60 lg:translate-y-0 lg:transform-gpu"
         aria-hidden="true"
       >
         <div
