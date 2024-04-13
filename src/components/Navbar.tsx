@@ -35,6 +35,7 @@ const menuLinks = [
 const Navbar = () => {
   const container = useRef(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [shadow, setShadow] = useState(false);
 
   const tl = useRef<gsap.core.Timeline>();
 
@@ -75,16 +76,37 @@ const Navbar = () => {
     }
   }, [isMenuOpen]);
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY > 90 || window.scrollY === 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    if (window !== undefined) {
+      window.addEventListener("scroll", handleShadow);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", handleShadow);
+    };
+  }, []);
+
   return (
     <nav ref={container}>
-      <div className="fixed top-0 left-0 w-[100vw] bg-white/50 backdrop-filter backdrop-blur-lg shadow-md py-[2em] px-[2em] sm:px-[8em] flex justify-between items-center z-[20] ">
+      <div className={
+  shadow
+  ? "fixed top-0 left-0 w-[100%] bg-white/50 backdrop-filter rounded-xl backdrop-blur-lg shadow-lg py-[2em] px-[2em] sm:px-[8em] flex justify-between items-center z-[20] ease-in duration-500 "
+  : "fixed top-0 left-0 w-[100%]    py-[2em] px-[2em] sm:px-[8em] flex justify-between items-center z-[20] "
+}>
         <div>
           <Link href="/">
             <Image src={navLogo} alt="Zain's Logo" width={80} height={40} className="h-12 w-8" />
           </Link>
         </div>
         <div onClick={toggleMenu}>
-          <p className="cursor-pointer  text-4xl font-semibold"><HiBars3BottomRight /></p>
+          <p className="cursor-pointer text-4xl"><HiBars3BottomRight /></p>
         </div>
       </div>
       <div className="menu-overlay">
@@ -154,22 +176,22 @@ export default Navbar;
 //     setNav(!nav);
 //   };
 
-//   useEffect(() => {
-//     const handleShadow = () => {
-//       if (window.scrollY > 90 || window.scrollY === 90) {
-//         setShadow(true);
-//       } else {
-//         setShadow(false);
-//       }
-//     };
-//     if (window !== undefined) {
-//       window.addEventListener("scroll", handleShadow);
-//     }
+  // useEffect(() => {
+  //   const handleShadow = () => {
+  //     if (window.scrollY > 90 || window.scrollY === 90) {
+  //       setShadow(true);
+  //     } else {
+  //       setShadow(false);
+  //     }
+  //   };
+  //   if (window !== undefined) {
+  //     window.addEventListener("scroll", handleShadow);
+  //   }
 
-//     return () => {
-//       window.removeEventListener("scroll", handleShadow);
-//     };
-//   }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleShadow);
+  //   };
+  // }, []);
 
 
 //   return (
