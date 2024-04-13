@@ -80,25 +80,27 @@ const Navbar = () => {
       <div className="fixed top-0 left-0 w-[100vw] bg-white/50 backdrop-filter backdrop-blur-lg shadow-md py-[2em] px-[2em] sm:px-[8em] flex justify-between items-center z-[20] ">
         <div>
           <Link href="/">
-            <Image src={navLogo} alt="Zain's Logo" width={80} height={40} className="h-12 w-8 " />
+            <Image src={navLogo} alt="Zain's Logo" width={80} height={40} className="h-12 w-8" />
           </Link>
         </div>
-        <div className="menu-open" onClick={toggleMenu}>
+        <div onClick={toggleMenu}>
           <p className="cursor-pointer  text-4xl font-semibold"><HiBars3BottomRight /></p>
         </div>
       </div>
       <div className="menu-overlay">
-        <div className="flex flex-col justify-between items-center">
-          <div >
-            <Link href="/">
-              <Image src={navLogo} alt="Zain's Logo" width={80} height={40} className="h-12 w-8 " />
-            </Link>
-          </div>
+        <div className="flex flex-col justify-evenly items-start sm:py-[2em] sm:px-[6em]">
+            <div >
+              <Link href="/">
+                <Image src={navLogo} alt="Zain's Logo" width={80} height={40} className="h-12 w-8" />
+              </Link>
+            </div>
+
+
           <div className="flex-[2] flex items-end cursor-pointer" onClick={toggleMenu}>
-            <p className="text-[50px] ">&#x2715;</p>
+            <p className="text-[50px] font-bold">&#x2715;</p>
           </div>
         </div>
-        <div className="flex-[4] flex flex-col justify-between items-center pt-[6em]">
+        <div className="flex-[4] flex flex-col justify-evenly sm:items-center pt-[2em]">
           <div>
             {menuLinks.map((link, index) => (
               <div className="menu-link-item" key={index}>
@@ -115,7 +117,8 @@ const Navbar = () => {
               <Link onClick={toggleMenu} href={"https://www.linkedin.com/in/mzain-ul-abideen/"}>
                 <li className="py-1 ">Linkedin&#8599;</li>
               </Link>
-              <Link onClick={toggleMenu} href={"https://github.com/Tufalpha1"}>                 <li className="py-1">Github&#8599;</li>
+              <Link onClick={toggleMenu} href={"https://github.com/Tufalpha1"}>
+                <li className="py-1">Github&#8599;</li>
               </Link>
               <Link onClick={toggleMenu} href={"/#contact"}>
                 <li className="py-1">Email&#8599;</li>
