@@ -8,13 +8,13 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative w-full md:h-screen my-44 sm:my-36 flex items-center scroll-mt-20"
+      className="relative w-full md:h-screen my-44 sm:my-20 2xl:my-10 flex items-center scroll-mt-20"
     >
       <div className="absolute inset-0 -z-10 h-screen w-full bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"></div>
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2 px-8">
-          <p className="uppercase text-xl  text-[#1190CB]">About me</p>
-          <h2 className="py-4 text-4xl sm:text-5xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+          <p className="uppercase text-xl 2xl:text-2xl text-[#1190CB]">About me</p>
+          <h2 className="py-4 text-4xl sm:text-5xl 2xl:text-6xl bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             Who I Am
           </h2>
           <div className="py-2 text-black text-sm sm:text-base">

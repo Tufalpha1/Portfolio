@@ -98,7 +98,7 @@ const Navbar = () => {
       <div className={
   shadow
   ? "fixed top-0 left-0 w-[100%] bg-white/50 backdrop-filter rounded-xl backdrop-blur-lg shadow-lg py-[2em] px-[2em] sm:px-[8em] flex justify-between items-center z-[20] ease-in duration-500 "
-  : "fixed top-0 left-0 w-[100%]    py-[2em] px-[2em] sm:px-[8em] flex justify-between items-center z-[20] "
+  : "fixed top-0 left-0 w-[100%] py-[2em] px-[2em] sm:px-[8em] flex justify-between items-center z-[20] "
 }>
         <div>
           <Link href="/">
@@ -127,7 +127,7 @@ const Navbar = () => {
             {menuLinks.map((link, index) => (
               <div className="menu-link-item" key={index}>
                 <div className="menu-link-item-holder" >
-                  <Link href={link.link} className="text-[50px] md:text-[80px] tracking-[-0.05em] leading-[90%] font-semibold" onClick={toggleMenu} >
+                  <Link href={link.link} className="text-[50px] md:text-[80px] 2xl:text-[100px] tracking-[-0.05em] leading-[90%] font-semibold" onClick={toggleMenu} >
                     {link.title}
                   </Link>
                 </div>
@@ -135,7 +135,7 @@ const Navbar = () => {
             ))}
           </div>
           <div>
-            <ul className="flex items-start gap-4 font-medium text-sm tracking-tight leading-[60%]">
+            <ul className="flex items-start gap-4 font-medium text-sm 2xl:text-base tracking-tight leading-[60%]">
               <Link onClick={toggleMenu} href={"https://www.linkedin.com/in/mzain-ul-abideen/"}>
                 <li className="py-1 ">Linkedin&#8599;</li>
               </Link>

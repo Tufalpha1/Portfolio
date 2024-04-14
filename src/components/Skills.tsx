@@ -25,8 +25,8 @@ const Skills = () => {
       <div className="absolute z-[-200] w-[60%] h-[60%] -left-[40%] top-[-20%] rounded-full blue__gradient bottom-40 overflow-hidden" />
       <div className="py-12 sm:py-24">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <p className="uppercase text-xl text-center text-[#1190CB]">Skills</p>
-          <h2 className="text-center text-4xl sm:text-5xl py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
+          <p className="uppercase text-xl 2xl:text-2xl text-center text-[#1190CB]">Skills</p>
+          <h2 className="text-center text-4xl sm:text-5xl 2xl:text-6xl py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             What I can do
           </h2>
           <div className="mx-auto mt-20 grid max-w-lg grid-cols-2 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-4 sm:gap-x-0  lg:mx-0 lg:max-w-none lg:grid-cols-5 cursor-pointer">

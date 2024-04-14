@@ -28,16 +28,15 @@ export const Hero = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <div className="z-0 mx-auto max-w-6xl pt-32 sm:pt-48 sm:max-w-4xl lg:pt-48 xl:my-56 sm:mb-24">
-          <div className="mb-8 flex justify-center"></div>
-          <h1 className="text-5xl sm:text-6xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl ">
+        <div className="z-0 mx-auto max-w-6xl pt-16 sm:pt-40 2xl:pt-20 sm:max-w-4xl ">
+          <h1 className="text-5xl sm:text-[5rem] 2xl:text-8xl py-2 md:py-4 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             Hi, I&#39;m Zain
           </h1>
-          <h1 className="text-5xl sm:text-6xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter xl:text-7xl">
+          <h1 className="text-5xl sm:text-[5rem] 2xl:text-8xl md:py-2 bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent tracking-tighter">
             A Full Stack Web Developer and a Security Researcher
             <span className="linear-wipe">.</span>
           </h1>
-          <p className="p-4  text-black sm:max-w-[70%] m-auto text-sm sm:text-base">
+          <p className="p-4  text-black sm:max-w-[70%] m-auto text-sm sm:text-base 2xl:text-lg">
             I’m focused on building responsive frontend web applications with a
             keen UI/UX interest, integrating backend technologies. I also like
             to play CTFs.

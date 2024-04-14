@@ -11,10 +11,10 @@ const Experience = () => {
   return (
     <section className="relative isolate pt-48" id="experience">
       <div className="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#f0f0f0_1px,transparent_1px),linear-gradient(to_bottom,#f0f0f0_1px,transparent_1px)] bg-[size:6rem_4rem]"></div>
-      <p className="text-xl uppercase text-[#1190CB] text-center my-4">
+      <p className="text-xl 2xl:text-2xl uppercase text-[#1190CB] text-center my-4">
         Experience
       </p>
-      <h2 className="max-w-lg mb-6 mx-auto text-4xl sm:text-5xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent md:mx-auto tracking-tighter">
+      <h2 className="max-w-lg sm:max-w-xl mb-6 mx-auto text-4xl sm:text-5xl 2xl:text-6xl font-bold text-center leading-none bg-gradient-to-br from-black to-stone-500 bg-clip-text text-transparent md:mx-auto tracking-tighter">
         Where I have worked
       </h2>
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-4">
