@@ -29,7 +29,7 @@ const page = () => {
             Design
           </p>
           <h2 className="py-6 sm:text-4xl tracking-tighter">Overview</h2>
-          <p className="text-center text-sm sm:text-base">
+          <p className="text-center text-sm sm:text-base px-4 sm:max-w-4xl xl:max-w-full mx-auto">
             This is a design created for a decentralized exchange platform that
             was based upon uniswap v3. The design was created using Figma.
           </p>

@@ -28,7 +28,7 @@ const page = () => {
             Project
           </p>
           <h2 className="py-6 sm:text-4xl tracking-tighter">Overview</h2>
-          <p className="text-center text-sm sm:text-base">
+          <p className="text-center text-sm sm:text-base px-4 sm:max-w-4xl xl:max-w-full mx-auto">
             {`This is a website created for Creative Media Partners 
               which is a group of marketing experts and diversely artistic
               and visionary individuals who work together to fulfill your brand’s needs.

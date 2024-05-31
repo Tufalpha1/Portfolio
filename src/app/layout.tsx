@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className="!scroll-smooth"
+      className="!scroll-smooth overflow-x-hidden"
       style={{ scrollBehavior: "smooth" }}
     >
       <body className={GeistSans.className}>

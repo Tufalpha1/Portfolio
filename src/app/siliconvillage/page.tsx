@@ -31,7 +31,7 @@ const page = () => {
             Project
           </p>
           <h2 className="py-6 sm:text-4xl tracking-tighter">Overview</h2>
-          <p className="text-center text-sm sm:text-base">
+          <p className="text-center text-sm sm:text-base px-4 sm:max-w-4xl xl:max-w-full mx-auto">
             {`This is a website created for Silicon Village Pakistan which is the
             first and largest tech hub in Pakistan.
              The website is built using Next JS with multiple UI components and animations.
