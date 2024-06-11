@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
         <hr />
         <div className="flex flex-col max-w-[1240px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-900 line-clamp-2">
-          <h6 className="py-2">Developed by Zain with 🖤</h6>
+          <h6 className="py-2 tracking-tighter">Developed by Zain with 🖤</h6>
         </div>
       </div>
     </footer>

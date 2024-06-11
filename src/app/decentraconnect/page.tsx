@@ -34,7 +34,7 @@ const page = () => {
       </div>
       <div className="bg-gradient-to-r from-[#B75CFF] via-[#1fcff1] to-[#19fb9b] px-4 py-3 text-white">
         <p className="text-center text-sm font-medium">
-          This project cannot be deployed due to technical constraints.
+          This project is not deployed due to technical constraints.
         </p>
       </div>
       <div className="max-w-[1240px] mx-auto p-2 w-full py-8">
