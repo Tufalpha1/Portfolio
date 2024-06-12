@@ -24,8 +24,8 @@ function SecurityProjects() {
 
                 <Link className="group" href="/buffer-overflow">
                     <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-                        <img className="absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/assets/security/buffer-overflow.png" alt="Image Description" />
-                        <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-neutral-900">
+                        <Image className="absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/assets/security/buffer-overflow/buffer-overflow.png" alt="Buffer Overflow" width={1000} height={1000}/>
+                        <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-red-600 text-white py-1.5 px-3">
                             Operating Systems
                         </span>
                     </div>
@@ -46,8 +46,8 @@ function SecurityProjects() {
 
                 <Link className="group" href="/arp-poisoning">
                     <div className="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
-                        <img className="absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/assets/security/arp-poisoning.jpg" alt="Image Description" />
-                        <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-neutral-900">
+                        <Image className="absolute top-0 start-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl" src="/assets/security/arp-poisoning/arp-poisoning.jpg" alt="MITM Attack" width={1000} height={1000}/>
+                        <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-red-600 text-white py-1.5 px-3">
                             Network Security
                         </span>
                     </div>

