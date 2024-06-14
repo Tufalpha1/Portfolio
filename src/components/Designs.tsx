@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
-import DesignItem from "./DesignItem";
-import DesignItem2 from "./DesignItem2";
+import ProjectItem from "./ProjectItem";
 import decentraImg from "../../public/assets/designs/decentra.png";
 import dexhubImg from "../../public/assets/designs/dexhub.png";
 
@@ -14,17 +13,19 @@ const Designs = () => {
           What I&apos;ve Made
         </h2>
         <div className="grid md:grid-cols-2 gap-8 py-20">
-          <DesignItem
+          <ProjectItem
             title="Decentralized Social Media UI"
             backgroundImg={decentraImg}
             projectUrl="/decentra"
             tech="Figma"
+            className="hover:bg-gradient-to-r from-[#742ce9] to-[#B75CFF]"
           />
-          <DesignItem2
+          <ProjectItem
             title="Decentralized Exchange UI"
             backgroundImg={dexhubImg}
             projectUrl="/dexhub"
             tech="Figma"
+            className="hover:bg-gradient-to-r from-[#42E0BB] to-[#1D84E2]"
           />
         </div>
       </div>

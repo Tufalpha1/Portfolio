@@ -2,12 +2,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import clsx from "clsx";
 
 interface ProjectItemProps {
   title: string;
   backgroundImg: any;
   tech: string;
   projectUrl: string;
+  className?: string;
 }
 
 const ProjectItem: React.FC<ProjectItemProps> = ({
@@ -15,11 +17,15 @@ const ProjectItem: React.FC<ProjectItemProps> = ({
   backgroundImg,
   tech,
   projectUrl,
+  className,
 }) => {
   return (
-    <div
-      className={`relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group hover:bg-gradient-to-r from-[#2193b0] to-[#6dd5ed]`}
-    >
+      <div
+        className={clsx([
+          `relative flex items-center justify-center h-auto w-full shadow-xl shadow-gray-400 rounded-xl group`,
+          className,
+        ])}
+      >
       <Image
         className="rounded-xl group-hover:opacity-10"
         src={backgroundImg}

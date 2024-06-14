@@ -9,8 +9,6 @@ import aucssImg from "../../public/assets/projects/aucss.png";
 import intelligenImage from "../../public/assets/projects/intelligen.png";
 import decentraConnect from "../../public/assets/projects/decentra-connect.png";
 import ctf from "../../public/assets/projects/ctf.png";
-import DesignItem from "./DesignItem";
-import ProjectItem2 from "./ProjectItem2";
 
 const Projects = () => {
   return (
@@ -27,48 +25,56 @@ const Projects = () => {
             backgroundImg={siliconVillage}
             projectUrl="/siliconvillage"
             tech="Next JS"
+            className="hover:bg-gradient-to-r from-[#42e5d9] to-[#21456e]"
           />
-          <ProjectItem2
+          <ProjectItem
             title="Quick Journey"
             backgroundImg={quickJourney}
             projectUrl="/quickjourney"
             tech="Next JS"
+            className="hover:bg-gradient-to-r from-[#ffdd00] to-[#fcb900]"
           />
-          <DesignItem
+          <ProjectItem
             title="DecentraConnect"
             backgroundImg={decentraConnect}
             projectUrl="/decentraconnect"
             tech="Next JS / Express / IPFS"
+            className="hover:bg-gradient-to-r from-[#742ce9] to-[#B75CFF]"
           />
-          <DesignItem
+          <ProjectItem
             title="CTF Scoreboard"
             backgroundImg={ctf}
             projectUrl="/ctf"
             tech="Next JS"
+            className="hover:bg-gradient-to-r from-[#fb08ea] to-[#551b97]"
           />
-          <ProjectItem2
+          <ProjectItem
             title="Marketing Agency Website"
             backgroundImg={creativeMedia}
             projectUrl="/creativemedia"
             tech="Next JS"
+            className="hover:bg-gradient-to-r from-[#ffec00] to-[#ff7f00]"
           />
           <ProjectItem
             title="IntelliGen Full Stack Website"
             backgroundImg={intelligenImage}
             projectUrl="/intelligen"
             tech="Next JS"
+            className="hover:bg-gradient-to-r from-[#38a68d] to-[#c0e46b]"
           />
-          <ProjectItem2
+          <ProjectItem
             title="ByteBoltSec Landing Page"
             backgroundImg={byteboltImg}
             projectUrl="/bytebolt"
             tech="Next JS"
+            className="hover:bg-gradient-to-r from-[#ffdc03] to-[#fbb133]"
           />
           <ProjectItem
             title="AUCSS Website"
             backgroundImg={aucssImg}
             projectUrl="/aucss"
             tech="Next JS"
+            className="hover:bg-gradient-to-r from-[#58b7d8] to-[#2c669d]"
           />
         </div>
       </div>
